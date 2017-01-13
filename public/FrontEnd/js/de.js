@@ -32,7 +32,7 @@ var translateLanding=[
 {
     "id": "tour",
     "en":"Tours",
-    "de":"Tours"
+    "de":"Touren"
 },
 {
     "id": "page1_tagline",

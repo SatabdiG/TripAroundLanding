@@ -1,24 +1,51 @@
 <!-- This is the Main landing Page for TripAround -->
 <!--<h1>Welcome to Trip Around </h1> -->
 <!--<div id="fullpage">-->
-<div class = "container-landing">
+<nav class="navbar navbar-light navbar-fixed-top">
+   
+    <a href="#" class="nav-logo"></a>
 
-<nav class="navbar navbar-light navbar-fixed-top" style="background-color: #DB3E00;">
-    <div class="container-fluid">
-        <div class="navbar-header">
+    <div class="container nav-container">
+
+        <ul class="nav-right-center">
+            <div class"row">
+                <ul>
+                    <li>
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <a href="#login" class="typo-nav" id="login"></a>
+                        <a href="#searchtours" class="btn-xs typo-nav btn-nav" id="tour"></a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+
+        <div class="dropdown nav-lang">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="lang"><span class="caret"></span></a>
+            <!-- <button class="dropdown-toggle btn btn-default" type="button">DE</button> -->
+            <ul class="dropdown-menu nav-dropdown pull-right" id="langdropdown">
+                <li>
+                    <a href="#" id="ger" class="nav-dropdown-item"></a>
+                </li>
+                <li>
+                    <a href="#" id="eng" class="nav-dropdown-item"></a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <!-- <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <IMG STYLE=" WIDTH:259px; HEIGHT:50px; position: absolute;" class="img-responsive" SRC="/FrontEnd/Pictures/logo.png"/>
-        </div>
+        </div> -->
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right" style="padding-top:7px">
+        <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
                  <li><a href="#login" class="btn btn-default btn-white" id="login"></a></li>
-                 <li><a href="#searchtours" class="btn btn-default btn-red" id="tour">  <img style="WIDTH:15px; HEIGHT:15px" src ="/FrontEnd/Pictures/magnifying-glass.png"/></a></li>
+                 <li><a href="#searchtours" class="btn btn-default btn-red" id="tour">
                  <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="lang"><span class="caret"></span></a>
                     <ul class="dropdown-menu" id="langdropdown">
@@ -26,14 +53,20 @@
                         <li><a href="#" id = "ger"></a></li>
                     </ul>
                  </li>
-            </ul>
+            </ul> -->
                 <!--<a href="#login" class="btn btn-default btn-white" id="login"></a>
                 <a href="#searchtours" class="btn btn-default btn-red" id="tour">  <img style="WIDTH:15px; HEIGHT:15px" src ="/FrontEnd/Pictures/magnifying-glass.png"/></a>-->
-            </ul>
-        </div>
+           <!--  </ul> -->
+       <!--  </div> -->
     </div>
 
 </nav>
+
+<section class="cover-container">
+  <!--   <div class="cover"></div> -->
+</section>
+    
+
 
 <!--<div style = "position:fixed; left:0px; top:0px;">
     <IMG class = "img-responsive" STYLE=" width:100%; HEIGHT:71px; position: relative" SRC="/FrontEnd/Pictures/head.jpg"/>
@@ -230,6 +263,7 @@
                 <div class="col-md-8">
                     <p class="title" id="feat_head5">Teile und inspiriere andere!</p>
                     <p class = "content" id="feat_content5">Wenn du von deinem Erlebnis zurückkommst, zeig es deinen Freunden und der Welt. Teile deine Erfahrungen, um andere zu inspirieren. Einfach Bilder hochladen. Wir helfen dir mit ein bisschen Magie deine Erfahrungen zu einem unvergesslichen Highlight aufzubereiten.</p>
+
                 </div>
                 <div class="col-md-2">
                     <IMG class="feature_images" SRC="/FrontEnd/Pictures/Share.png" style = "WIDTH:190px; HEIGHT:180px" align="right"/>
