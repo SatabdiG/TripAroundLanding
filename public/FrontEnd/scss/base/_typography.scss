@@ -1,15 +1,24 @@
-.typo-cover {
-  color: rgba(238, 80, 34, 1);
+// All Styles for text styling
+
+.typo-head-cover {
+  color: $primary;
   display: block;
   font-family: 'Bangers', sans-serif, cursive;
-  font-size: 6.5rem;
+  font-size: 7.2rem;
   letter-spacing: 0.2rem;
-  margin: 23vh auto;
-  position: absolute;
+  margin: 23vh auto 3%;
   left: 0;
   right: 0;
   text-align: center;
   -webkit-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
+}
+
+.typo-head-big {
+  color: $primary;
+  display: block;
+  font-family: 'Bangers', sans-serif, cursive;
+  font-size: 4.5rem;
+  letter-spacing: 0.2rem;
 }

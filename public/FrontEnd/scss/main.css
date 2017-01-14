@@ -74,9 +74,10 @@ li {
   color: #ee5022;
   display: block;
   font-family: 'Bangers', sans-serif, cursive;
-  font-size: 7.2rem;
+  font-size: 6.5rem;
   letter-spacing: 0.2rem;
-  margin: 23vh auto 3%;
+  margin: 23vh auto;
+  position: absolute;
   left: 0;
   right: 0;
   text-align: center;
@@ -136,23 +137,23 @@ li {
   position: relative;
   width: 100%;
   height: 100vh; }
-  .cover-container:after {
-    border-top: 6px solid #fae4d1;
-    content: "";
-    background: white;
-    position: absolute;
-    bottom: -10%;
-    left: -100px;
-    width: 150%;
-    height: 30%;
-    -webkit-transform: rotate(-3deg);
-        -ms-transform: rotate(-3deg);
-            transform: rotate(-3deg); }
+
+.cover-container::after {
+  border-top: 6px solid #fae4d1;
+  content: "";
+  background: white;
+  position: absolute;
+  bottom: -10%;
+  left: -100px;
+  width: 150%;
+  height: 30%;
+  -webkit-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+          transform: rotate(-3deg); }
 
 .cover-content-container {
   position: absolute;
-  width: 100%;
-  z-index: 3; }
+  width: 100%; }
 
 .btn-nav {
   margin-left: 14px; }
@@ -161,43 +162,22 @@ li {
   color: #ee5022; }
 
 .btn-xs {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border: 1px solid #ee5022;
   border-radius: 10px;
   color: white;
-  display: inline;
-  font-size: 0.9rem;
+  font-size: 1rem;
   background: #ee5022;
   padding: 10px 20px 10px 20px;
   text-transform: uppercase; }
-  .btn-xs:hover {
-    border: 1px solid #ee5022;
-    color: #ee5022;
-    background: white;
-    padding: 10px 20px 10px 20px; }
 
-.btn-xl {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  background: #ee5022;
-  border: 1px solid #ee5022;
-  border-radius: 10px;
-  color: white;
-  display: inline-block;
-  font-size: 18px;
-  padding: 18px 24px 18px 24px;
-  margin: 1%;
-  width: 100%;
-  max-width: 297px;
-  text-transform: uppercase; }
-  .btn-xl:hover {
-    border: 1px solid #ee5022;
-    color: #ee5022;
-    background: white; }
+.btn-xs:hover {
+  color: #ee5022;
+  background: white;
+  padding: 10px 20px 10px 20px; }
 
 .is-hidden {
   display: none; }
 
 .is-visible {
   display: block; }
+
+/*# sourceMappingURL=main.css.map */

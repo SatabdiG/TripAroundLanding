@@ -2,7 +2,7 @@ var translateLanding=[
 {
   "id": "SearchTour",
   "en": "Tour Search",
-  "de": "Tour Suchen"
+  "de": "Touren Suchen"
 },
 {
    "id": "SaveTour",
@@ -36,8 +36,8 @@ var translateLanding=[
 },
 {
     "id": "page1_tagline",
-    "en":"The Place for your dream Trip",
-    "de":"Dein Ort für deine Rundreise..."
+    "en":"The Place for <br>your dream Trip",
+    "de":"Dein Ort für<br>deine Rundreise"
 },
 
 {
