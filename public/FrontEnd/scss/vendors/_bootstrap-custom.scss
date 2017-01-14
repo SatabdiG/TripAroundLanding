@@ -1,0 +1,25 @@
+// Overwriting bootstrap styles
+
+// Buttons/dropdown
+
+.btn-default {
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.btn-default:hover {
+  background: none;
+  color: rgba(238, 80, 34, 1);
+}
+
+.btn-default:active,
+.btn-default:focus, {
+  background: none;
+  outline: none;
+}
+
+.dropdown-menu>li>a:hover {
+  background: rgba(238, 80, 34, 1);
+  color: white;
+}

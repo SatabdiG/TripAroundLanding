@@ -1,0 +1,39 @@
+/* ----------------------------------------------------------------------
+CATEGORIZING:
+1. HELPERS: Mixins, functions, variables (color-schemes, fonts, and so on).
+2. VENDORS: External libraries and frameworks. E.g. Bootstrap, jQueryUI ...
+3. BASE: Really basic stuff like link styles or body background and styling for typography.
+4. LAYOUT: Styles for the main sections of the layout. E.g. header, footer ...
+5. COMPONENTS: Can contain all kinds of specific modules like buttons, a slider, a widget. Smaller modules than in the layout folder.
+6. STATES: Styles for different states like "is-active".
+7. THEMES: For sites with multiple themes.
+----------------------------------------------------------------------- */
+
+/*-------------------------------
+MAIN.SCSS: IMPORTING STYLESHEETS
+--------------------------------*/
+
+// HELPERS
+@import "helpers/mixins";
+@import "helpers/variables";
+
+// VENDORS
+@import "vendors/bootstrap-custom";
+
+// BASE
+@import "base/base";
+@import "base/normalize";
+@import "base/typography";
+
+// LAYOUn
+// @import "layout/nav";
+@import "layout/navigation";
+@import "layout/cover";
+// @import "layout/about";
+
+// COMPONENTS
+@import "components/buttons";
+
+// STATES
+@import "states/states";
+// THEMES
