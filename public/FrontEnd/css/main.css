@@ -223,16 +223,16 @@ i {
   display: table;
   position: relative;
   width: 100%;
-  height: 150px; }
+  height: 100px; }
   .footer-container:before {
     border-top: 6px solid #fae4d1;
     content: "";
     background: #ee5022;
     position: absolute;
-    top: -10%;
+    top: -77%;
     left: -100px;
     width: 150%;
-    height: 30%;
+    height: 110px;
     -webkit-transform: rotate(-3deg);
         -ms-transform: rotate(-3deg);
             transform: rotate(-3deg);
