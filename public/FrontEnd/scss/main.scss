@@ -25,14 +25,15 @@ MAIN.SCSS: IMPORTING STYLESHEETS
 @import "base/normalize";
 @import "base/typography";
 
-// LAYOUn
+// LAYOUT
 // @import "layout/nav";
 @import "layout/navigation";
-@import "layout/cover";
-// @import "layout/about";
+@import "layout/landingpage";
+@import "layout/footer";
 
 // COMPONENTS
 @import "components/buttons";
+@import "components/images";
 
 // STATES
 @import "states/states";

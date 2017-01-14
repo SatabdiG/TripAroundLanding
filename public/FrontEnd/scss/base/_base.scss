@@ -20,13 +20,13 @@ html {
 }
 
 body {
-  color: black;
+  color: $black;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
 
 a {
-  color: black;
+  color: $black;
   cursor: pointer;
   outline: none;
   text-decoration: none;
@@ -35,6 +35,7 @@ a {
 a:hover {
   outline: none;
   text-decoration: none;
+  color: $black;
 }
 
 a:focus {
@@ -49,4 +50,9 @@ a:active {
 ul,
 li {
   list-style: none;
+}
+
+i {
+  margin: 0;
+  padding: 0;
 }

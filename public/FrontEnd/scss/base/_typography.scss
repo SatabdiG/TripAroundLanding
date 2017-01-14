@@ -1,5 +1,7 @@
 // All Styles for text styling
 
+// Headlines
+
 .typo-head-cover {
   color: $primary;
   display: block;
@@ -15,10 +17,54 @@
   transform: rotate(-3deg);
 }
 
+.typo-head-copytext {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
 .typo-head-big {
   color: $primary;
   display: block;
   font-family: 'Bangers', sans-serif, cursive;
   font-size: 4.5rem;
   letter-spacing: 0.2rem;
+}
+
+.typo-tiles-head {
+  background: $primary;
+  color: $white;
+  display: block;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 20px;
+}
+
+.typo-tiles-info {
+  display: table-cell;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+// Copy text styles
+
+.typo-copy-text-xl {
+  font-size: 1.2rem;
+}
+
+// Styles for social media icons in footer
+
+.typo-social-icons {
+  color: $white;
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+.typo-nav-items {
+  color: $white;
+  text-align: right;
 }

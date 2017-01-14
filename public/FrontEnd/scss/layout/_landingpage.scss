@@ -1,0 +1,75 @@
+// Styles for Cover on landingpage
+
+
+// Styles for the cover on top of the landingpage
+
+.cover-container {
+  background: url("/FrontEnd/Pictures/cover-landingpage.jpg") 60% 100% no-repeat;
+  background-size: cover;
+  margin-bottom: 200px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  &:after {
+    border-top: 6px solid $secondary;
+    content: "";
+    background: $white;
+    position: absolute;
+    bottom: -10%;
+    left: -100px;
+    width: 150%;
+    height: 30%;
+    transform: rotate(-3deg);
+  }
+}
+
+.cover-content-container {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+// Styles for the tiles on the landingpage
+
+.tiles-container {
+  margin: 30px;
+}
+
+.tiles-info-content {
+  background: $secondary-lighter;
+  display: table;
+  float: left;
+  margin: 0;
+  padding: 18px;
+  width: 50%;
+  height: 105px;
+  text-align: center;
+
+  &:nth-of-type(1) {
+    background: $secondary-light;
+  }
+
+  &:nth-of-type(4) {
+    background: $secondary-light;
+  }
+}
+
+// Style for the feature module
+
+.features-container-right {
+  margin-top: 120px;
+}
+
+// Styles for the infographic module 
+
+.infographic-container {
+  background: $secondary;
+  width: 100%;
+}
+
+// Styles for the about module
+
+.about-row-margin {
+  margin-bottom: 40px;
+}

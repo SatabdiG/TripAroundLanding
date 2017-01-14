@@ -4,6 +4,10 @@
   margin-left: 14px;
 }
 
+.btn-text-link {
+  color: red;
+}
+
 .btn-typo-nav {
 
   &:hover {
@@ -16,7 +20,7 @@
   -moz-border-radius: 10;
   border: 1px solid $primary;
   border-radius: 10px;
-  color: white;
+  color: $white;
   display: inline;
   font-size: 0.9rem;
   background: $primary;
@@ -26,7 +30,7 @@
   &:hover {
     border: 1px solid $primary;
     color: $primary;
-    background: white;
+    background: $white;
     padding: 10px 20px 10px 20px;
   }
 }
@@ -37,7 +41,7 @@
   background: $primary;
   border: 1px solid $primary;
   border-radius: 10px;
-  color: white;
+  color: $white;
   display: inline-block;
   font-size: 18px;
   padding: 18px 24px 18px 24px;
@@ -49,6 +53,6 @@
   &:hover {
     border: 1px solid $primary;
     color: $primary;
-    background: white;
+    background: $white;
   }
 }
