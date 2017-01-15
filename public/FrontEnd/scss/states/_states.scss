@@ -5,3 +5,13 @@
 .is-visible {
 	display: block;
 }
+
+.btn-is-active {
+	background: $primary;
+	color: $white;
+
+	&:hover {
+		background: $primary;
+		color: $white;
+	}
+}

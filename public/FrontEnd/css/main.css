@@ -114,6 +114,12 @@ i {
   letter-spacing: 0.2rem;
   margin-bottom: 34px; }
 
+.typo-teaser {
+  font-size: 1.6rem;
+  line-height: 130%;
+  text-align: center;
+  margin: 0; }
+
 .typo-tiles-description {
   background: rgba(250, 228, 209, 0.4);
   color: black;
@@ -197,6 +203,15 @@ i {
 .nav-right-items {
   margin-left: 14px; }
 
+.tours-subnav-container {
+  margin: 60px 0 30px 0; }
+
+.subnav-tours-btn-container {
+  display: inline;
+  margin-left: 1.5%; }
+  .subnav-tours-btn-container:nth-child(1) {
+    margin-left: 0; }
+
 .cover-image-container {
   background: url("/FrontEnd/Pictures/cover-landingpage.jpg") 60% 100% no-repeat;
   background-size: cover;
@@ -272,6 +287,17 @@ i {
   margin-top: 72px;
   margin-bottom: 44px; }
 
+.tours-ov-head-container {
+  margin-top: 140px; }
+
+.tours-ov-map-container {
+  position: relative; }
+
+.tours-ov-social-container {
+  position: absolute;
+  top: 0;
+  right: -50px; }
+
 .footer-container {
   background: #ee5022;
   display: table;
@@ -330,6 +356,24 @@ i {
 .btn-typo-nav-white:hover {
   color: #fae4d1; }
 
+.btn-social-cirlce {
+  background: #ee5022;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 2em;
+  padding: 0;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center; }
+  .btn-social-cirlce:hover {
+    background: rgba(238, 80, 34, 0.5); }
+
+.btn-social-circle-typo {
+  color: white; }
+
 .btn-xs {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
@@ -347,7 +391,7 @@ i {
     background: white;
     padding: 10px 20px 10px 20px; }
 
-.btn-xl, .btn-xl-in-text {
+.btn-xl, .btn-xl-active, .btn-xl-inv, .btn-xl-in-text {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
   background: #ee5022;
@@ -361,10 +405,25 @@ i {
   width: 100%;
   max-width: 297px;
   text-transform: uppercase; }
-  .btn-xl:hover, .btn-xl-in-text:hover {
+  .btn-xl:hover, .btn-xl-active:hover, .btn-xl-inv:hover, .btn-xl-in-text:hover {
     border: 1px solid #ee5022;
     color: #ee5022;
     background: white; }
+  .btn-xl:active, .btn-xl-active:active, .btn-xl-inv:active, .btn-xl-in-text:active {
+    background: green; }
+
+.btn-xl-active:hover {
+  border: 1px solid #ee5022;
+  color: #ee5022;
+  background: white; }
+
+.btn-xl-inv {
+  background: white;
+  color: #ee5022; }
+  .btn-xl-inv:hover {
+    border: 1px solid #ee5022;
+    color: white;
+    background: #ee5022; }
 
 .btn-xl-in-text {
   margin: 0; }
@@ -423,3 +482,10 @@ i {
 
 .is-visible {
   display: block; }
+
+.btn-is-active {
+  background: #ee5022;
+  color: white; }
+  .btn-is-active:hover {
+    background: #ee5022;
+    color: white; }

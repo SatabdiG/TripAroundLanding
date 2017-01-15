@@ -395,10 +395,6 @@
   background-color: #F28123;
 }
 
-.navbar-custom {
-  background-color:#FF8017;
-}
-
 .customplacement{
   position: absolute;
   top: 5%;
@@ -447,14 +443,6 @@
   position: relative;
   top:5%;
   right:3%;
-}
-
-.navbar-custom a {
-  color: #0b0b0b;
-}
-
-.navbar-custom li a {
-  color: #0b0b0b;
 }
 
 #logout {
@@ -536,29 +524,7 @@
   height: 70px;
 }
 
-.btn-toolbar {
-/*  right: 20px;
-  position: absolute;
-  top:20px;*/
-  padding-top:8px;
-  padding-right:10px;
-}
 
-.btn-white {
-  color: #000000;
-  background-color: #ffffff;
-  border-color: #d3d3d3;
-}
-
-.btn-white:hover {
-  color: #222222;
-  background-color: #f7f7f7;
-  border-color: #d3d3d3;
-}
-
-.RbtnMargin { 
-  margin-left: 5px; 
-}
 
 /*.container-page3{
   display:inline-block;
@@ -627,81 +593,6 @@
   left:30px;
 }
 
-#page1 {
-  position: relative;
-  /*background-image: url(http://main.triparound.de/WordPress46/wp-content/uploads/2016/08/Fotografieren-gr%C3%BCn_kl3.jpg);*/
-  background-image:url("/FrontEnd/Pictures/LandingPic.png");
-  background-repeat: no-repeat;
-  /*  left: 30px;
-  right: 30px;*/
-  /* height: auto;*/
-  /*background-size: 1500px 800px;*/
-  /*max-width:600px;*/
-  height:auto;
-  background-size:100% 100%;
-  max-width:100%;
-  padding-bottom:100px;
-  padding-top:20px;
-  margin-top:-22px;
-  /*    background-position:center;*/
-}
-
-#page2 {
-  position: relative;
-  /*background-image: url(http://main.triparound.de/WordPress46/wp-content/uploads/2016/08/Fotografieren-gr%C3%BCn_kl3.jpg);*/
-  /*background-image:url("/FrontEnd/Pictures/texture3.jpg");*/
-  background-color: #ffb366;
-  background-repeat: no-repeat;
-  /* background-size: 1500px 800px;*/
-  /*  top:800px;*/
-  /*  left: 30px;
-  right: 30px;*/
-  background-size:100% 100%;
-  max-width:100%;
-  height: auto;
-  z-index:-1;
-}
-
-#page3 {
-  position: relative;
-  /*background-image: url(http://main.triparound.de/WordPress46/wp-content/uploads/2016/08/Fotografieren-gr%C3%BCn_kl3.jpg);*/
-  /*background-image:url("/FrontEnd/Pictures/vintage.jpg");*/
-  background-color: #FFAC4A;
-  background-repeat: repeat;
-  background-size:100% 100%;
-   max-width:100%;
-  /* height: 1200px;*/
-  height:auto;
-  /*background-size: 1500px 800px;*/
-  /*left: 30px;
-  right: 30px;
-  height: 1200px;
-  top:1500px;*/
-  z-index:-1;
-}
-
-#page4 {
-  position: relative;
-  /*background-image:url("/FrontEnd/Pictures/pic3.jpg");*/
-  background-color: #FFEAC7;
-  background-repeat: no-repeat;
-  /*background-size: 1500px 800px;*/
-  /*height: 300px;
-  left: 30px;
-  right: 30px;
-  top:2700px;
-  height: 1000px;*/
-  background-size:100% 100%;
-  max-width:100%;
-  height:auto;
-}
-
-#footer{
-  position: absolute;
-  right:0;
-  bottom:0;
-  font-color:#ff6347;
-}
 
 .table-borderless tbody tr td{
   border: none;
