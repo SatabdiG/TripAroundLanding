@@ -30,6 +30,8 @@
   margin-bottom: 34px;
 }
 
+// Tiles
+
 .typo-tiles-head {
   background: $primary;
   color: $white;
@@ -50,13 +52,17 @@
   }
 }
 
+.typo-tiles-topbar {
+  display: inline;
+}
+
 // Copy text styles
 
 .typo-copy-text-xl {
   font-size: 1.2rem;
 }
 
-// Styles for social media icons in footer
+// Styles for icons
 
 .typo-social-icons {
   color: $white;
@@ -67,4 +73,8 @@
 .typo-nav-items {
   color: $white;
   text-align: right;
+}
+
+.typo-tiles-icon-topbar {
+  font-size: 1.4rem;
 }

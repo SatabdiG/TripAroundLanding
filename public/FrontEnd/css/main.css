@@ -130,6 +130,9 @@ i {
   .typo-tiles-info:hover {
     color: black; }
 
+.typo-tiles-topbar {
+  display: inline; }
+
 .typo-copy-text-xl {
   font-size: 1.2rem; }
 
@@ -141,6 +144,9 @@ i {
 .typo-nav-items {
   color: white;
   text-align: right; }
+
+.typo-tiles-icon-topbar {
+  font-size: 1.4rem; }
 
 .navbar {
   background: white;
@@ -212,23 +218,6 @@ i {
 .tours-container {
   margin-top: -280px;
   z-index: 1; }
-
-.tiles-container {
-  margin-bottom: 30px; }
-
-.tiles-info-content {
-  background: rgba(250, 228, 209, 0.4);
-  display: table;
-  float: left;
-  margin: 0;
-  padding: 18px;
-  width: 50%;
-  height: 105px;
-  text-align: center; }
-  .tiles-info-content:nth-of-type(1) {
-    background: rgba(250, 228, 209, 0.7); }
-  .tiles-info-content:nth-of-type(4) {
-    background: rgba(250, 228, 209, 0.7); }
 
 .features-container {
   margin-top: 72px; }
@@ -380,6 +369,39 @@ i {
 .img-infographic {
   margin: 0 auto;
   width: 65%; }
+
+.tiles-container {
+  margin-bottom: 30px; }
+
+.tiles-topbar-container {
+  background: rgba(250, 228, 209, 0.4);
+  opacity: 0.9;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: calc(100% - 30px);
+  height: 55px;
+  padding: 16px; }
+
+.tiles-info-content {
+  background: rgba(250, 228, 209, 0.4);
+  display: table;
+  float: left;
+  margin: 0;
+  padding: 18px;
+  width: 50%;
+  height: 105px;
+  text-align: center; }
+  .tiles-info-content:nth-of-type(1) {
+    background: rgba(250, 228, 209, 0.7); }
+  .tiles-info-content:nth-of-type(4) {
+    background: rgba(250, 228, 209, 0.7); }
+
+.tiles-topbar-icons {
+  display: inline; }
+
+.tiles-topbar-icon-right {
+  float: right; }
 
 .is-hidden {
   display: none; }

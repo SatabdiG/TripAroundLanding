@@ -39,29 +39,6 @@
   z-index: 1;
 }
 
-.tiles-container {
-  margin-bottom: 30px;
-}
-
-.tiles-info-content {
-  background: $secondary-lighter;
-  display: table;
-  float: left;
-  margin: 0;
-  padding: 18px;
-  width: 50%;
-  height: 105px;
-  text-align: center;
-
-  &:nth-of-type(1) {
-    background: $secondary-light;
-  }
-
-  &:nth-of-type(4) {
-    background: $secondary-light;
-  }
-}
-
 // Style for the feature module
 
 .features-container {
