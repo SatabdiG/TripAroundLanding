@@ -32,6 +32,16 @@
 
 // Tiles
 
+.typo-tiles-description {
+  background: $secondary-lighter;
+  color: $black;
+  display: block;
+  font-size: 1rem;
+  padding: 20px;
+  margin: 0;
+  text-align: left;
+}
+
 .typo-tiles-head {
   background: $primary;
   color: $white;

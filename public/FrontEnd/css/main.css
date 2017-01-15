@@ -114,6 +114,15 @@ i {
   letter-spacing: 0.2rem;
   margin-bottom: 34px; }
 
+.typo-tiles-description {
+  background: rgba(250, 228, 209, 0.4);
+  color: black;
+  display: block;
+  font-size: 1rem;
+  padding: 20px;
+  margin: 0;
+  text-align: left; }
+
 .typo-tiles-head {
   background: #ee5022;
   color: white;
@@ -153,7 +162,7 @@ i {
   border-bottom: 4px solid #fae4d1;
   height: 70px;
   margin: 0;
-  position: relative; }
+  position: fixed; }
 
 .nav-container {
   padding: 22px; }
@@ -240,7 +249,9 @@ i {
 .tours-header-container {
   background: url("/frontend/pictures/tours-head-img.jpg");
   background-size: cover;
+  border-bottom: 4px solid #fae4d1;
   display: table;
+  margin-top: 70px;
   width: 100%;
   height: 35vh; }
 
@@ -256,6 +267,10 @@ i {
   padding-left: 48px;
   width: 100%;
   height: 63px; }
+
+.tours-search-form-container {
+  margin-top: 72px;
+  margin-bottom: 44px; }
 
 .footer-container {
   background: #ee5022;
