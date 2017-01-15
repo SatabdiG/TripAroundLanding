@@ -43,6 +43,22 @@ i {
   padding: 0;
 }
 
+::-webkit-input-placeholder {
+   color: $primary-light;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $primary-light;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $primary-light;  
+}
+
+:-ms-input-placeholder {  
+   color: $primary-light;  
+}
+
 * {
   @include font-smoothing($value: antialiased);
   box-sizing: border-box;

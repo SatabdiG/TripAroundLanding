@@ -63,6 +63,20 @@ i {
   margin: 0;
   padding: 0; }
 
+::-webkit-input-placeholder {
+  color: rgba(238, 80, 34, 0.5); }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(238, 80, 34, 0.5); }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(238, 80, 34, 0.5); }
+
+:-ms-input-placeholder {
+  color: rgba(238, 80, 34, 0.5); }
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -237,11 +251,22 @@ i {
 .tours-header-container {
   background: url("/frontend/pictures/tours-head-img.jpg");
   background-size: cover;
+  display: table;
   width: 100%;
   height: 35vh; }
 
-.tour-header-typo-container {
-  display: table; }
+.tours-header-typo-container {
+  display: table-cell;
+  vertical-align: middle; }
+
+.tours-search {
+  background: url("/frontend/pictures/tours-magnifying-glass.png") 14px 14px no-repeat;
+  border: 1px solid #ee5022;
+  border-radius: 10px;
+  color: #ee5022;
+  padding-left: 48px;
+  width: 100%;
+  height: 63px; }
 
 .footer-container {
   background: #ee5022;
