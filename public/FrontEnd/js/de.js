@@ -41,24 +41,24 @@ var translateLanding=[
 },
 
 {
-    "id": "page2_heading",
+    "id": "infographic_heading",
     "en":"Our Features",
-    "de":"So funktionert's"
+    "de":"So funktionerts"
 },
 {
-    "id": "page3_heading",
+    "id": "features_heading",
     "en":"Your Options",
     "de":"Deine Features"
 },
 {
     "id": "feat_head1",
-    "en":"Overview Screenshot",
-    "de":"Entdecke die Möglichkeiten!"
+    "en":"Itinerary view screenshot",
+    "de":"Profitiere von den Erfahrungen anderer!"
 },
 {
     "id": "feat_head2",
-    "en":"Itinerary view screenshot",
-    "de":"Profitiere von den Erfahrungen anderer!"
+    "en":"Overview Screenshot",
+    "de":"Entdecke die Möglichkeiten!"
 },
 {
     "id": "feat_head3",
@@ -77,13 +77,13 @@ var translateLanding=[
 },
 {
     "id": "feat_content1",
-    "en":"Browse through various tours. Get first hand information from travelers to destinations that have seemed unattainable to you so far. Find the adventure that fits your imagination.",
-    "de":"Browse durch Touren verschiedenster Rundreisen. Erlebe Erfahrungsberichte von Reisenden zu Reisezielen die für dich bisher unerreichbar erschienen. Finde das Abenteuer, das zu deinen Vorstellungen passt."
+    "en":"Use the knowledge of travelers who have already explored your destination. Lets you have an idea about the appropriate length of stay at your stops and how you can connect them best. On this experience, build the discovery tour that contains your personal touch",
+    "de":"Nutze das Wissen von Reisenden, die deine Destination bereits erkundet haben. Lass dir ein Gefühl für die passende Aufenthaltsdauer an deinen Stopps geben und wie du sie am besten verbindest. Baue auf diesen Erfahrungen die Entdeckungstour auf, die deine persönliche Note enthält."
 },
 {
     "id": "feat_content2",
-    "en":"Use the knowledge of travelers who have already explored your destination. Lets you have an idea about the appropriate length of stay at your stops and how you can connect them best. On this experience, build the discovery tour that contains your personal touch",
-    "de":"Nutze das Wissen von Reisenden, die deine Destination bereits erkundet haben. Lass dir ein Gefühl für die passende Aufenthaltsdauer an deinen Stopps geben und wie du sie am besten verbindest. Baue auf diesen Erfahrungen die Entdeckungstour auf, die deine persönliche Note enthält."
+    "en":"Browse through various tours. Get first hand information from travelers to destinations that have seemed unattainable to you so far. Find the adventure that fits your imagination.",
+    "de":"Browse durch Touren verschiedenster Rundreisen. Erlebe Erfahrungsberichte von Reisenden zu Reisezielen die für dich bisher unerreichbar erschienen. Finde das Abenteuer, das zu deinen Vorstellungen passt."
 },
 {
     "id": "feat_content3",
@@ -99,6 +99,26 @@ var translateLanding=[
     "id": "feat_content5",
     "en":"When you return from your experience, double it up by sharing with your friends and the world. Inspire others by share your experiences with them. You only need to upload your pictures. We will help you with a bit of magic to make your experiences a memorable highlight.",
     "de":"Wenn du von deinem Erlebnis zurückkommst, zeig es deinen Freunden und der Welt. Teile deine Erfahrungen, um andere zu inspirieren. Einfach Bilder hochladen. Wir helfen dir mit ein bisschen Magie deine Erfahrungen zu einem unvergesslichen Highlight aufzubereiten."
+},
+{
+    "id": "about_heading",
+    "en":"About us",
+    "de":"Über uns"
+},
+{
+    "id": "about_head1",
+    "en":"Our Mission",
+    "de":"Unsere Mission"
+},
+{
+    "id": "about_content1",
+    "en":"Unterschiedlicher und multikultureller könnte das Team TripAround kaum sein, aber eine gemeinsame Vision verbindet uns: Wir wollen das Rundreisen vom Planen bis Erinnern einfacher und effizienter machen. Dafür setzen wir uns mit aktuellster Technik aus der universitären Forschung ein. Wir befreien dich von Zeitraubendem und geben dir mehr Zeit für Erlebnisse. Wir wollen den Wissensdurst nach Ländern, Kulturen, fremdem Essen und den schönsten Flecken auf unserem Planeten entfachen, und Lust auf Erlebnisse fernab des Massentourismus machen.",
+    "de":"Unterschiedlicher und multikultureller könnte das Team TripAround kaum sein, aber eine gemeinsame Vision verbindet uns: Wir wollen das Rundreisen vom Planen bis Erinnern einfacher und effizienter machen. Dafür setzen wir uns mit aktuellster Technik aus der universitären Forschung ein. Wir befreien dich von Zeitraubendem und geben dir mehr Zeit für Erlebnisse. Wir wollen den Wissensdurst nach Ländern, Kulturen, fremdem Essen und den schönsten Flecken auf unserem Planeten entfachen, und Lust auf Erlebnisse fernab des Massentourismus machen."
+},
+{
+    "id": "about_content2",
+    "en":"Dabei helfen wir dir, dass du bei deiner Tour nicht nur entspannen sondern auch Erfahrungen mitbringen kannst, um die dich alle beneiden werden. Lass die schönen Momente deiner Tour also nicht in einem Ordner verschwinden, sondern lass uns gemeinsam blitzschnell die besten Bilder finden und unvergesslich machen. Lass deine Tour automatisch auf deiner Entdeckerkarte aufbereiten und folge dem roten Faden. Teile so deine Erlebnisse mit der Welt und lass andere aus deinen Erfahrungen lernen. So baust du dir Schritt für Schritt eine Lebenschronik deiner Touren durch Orte, Städte, Länder und Kontinente. Und vor allem machst du anderen Mut, selbst die Welt zu entdecken! Doch das ist nur der Anfang. Zukünftig werden wir dir durch tolle technische Innovationen noch viel mehr bieten können. Also: jetzt deine Touren unvergesslich machen, Neues erleben und immer wieder von besonderen TripAround-Möglichkeiten begeistern lassen! Wir suchen noch Genies aus allen Fachbereichen, die unsere Leidenschaft fürs Reisen teilen. Wenn du dich mit unserer Mission identifizieren kannst, zögere nicht uns deine Bewerbung zuzuschicken an <a class=\"btn-text-link\" href=\"mailto:hello@triparound.de\">hello@triparound.de</a>.",
+    "de":"Dabei helfen wir dir, dass du bei deiner Tour nicht nur entspannen sondern auch Erfahrungen mitbringen kannst, um die dich alle beneiden werden. Lass die schönen Momente deiner Tour also nicht in einem Ordner verschwinden, sondern lass uns gemeinsam blitzschnell die besten Bilder finden und unvergesslich machen. Lass deine Tour automatisch auf deiner Entdeckerkarte aufbereiten und folge dem roten Faden. Teile so deine Erlebnisse mit der Welt und lass andere aus deinen Erfahrungen lernen. So baust du dir Schritt für Schritt eine Lebenschronik deiner Touren durch Orte, Städte, Länder und Kontinente. Und vor allem machst du anderen Mut, selbst die Welt zu entdecken! Doch das ist nur der Anfang. Zukünftig werden wir dir durch tolle technische Innovationen noch viel mehr bieten können. Also: jetzt deine Touren unvergesslich machen, Neues erleben und immer wieder von besonderen TripAround-Möglichkeiten begeistern lassen! Wir suchen noch Genies aus allen Fachbereichen, die unsere Leidenschaft fürs Reisen teilen. Wenn du dich mit unserer Mission identifizieren kannst, zögere nicht uns deine Bewerbung zuzuschicken an <a class=\"btn-text-link\" href=\"mailto:hello@triparound.de\">hello@triparound.de</a>."
 },
 ];
 var translateLogin=[
