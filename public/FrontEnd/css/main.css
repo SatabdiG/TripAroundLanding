@@ -81,7 +81,6 @@ i {
   font-family: 'Bangers', sans-serif, cursive;
   font-size: 7.2rem;
   letter-spacing: 0.2rem;
-  margin: 23vh auto 3%;
   left: 0;
   right: 0;
   text-align: center;
@@ -131,7 +130,7 @@ i {
 
 .navbar {
   background: white;
-  border-bottom: 6px solid #fae4d1;
+  border-bottom: 4px solid #fae4d1;
   height: 70px;
   top: 0px; }
 
@@ -167,7 +166,7 @@ i {
 .nav-right-items {
   margin-left: 14px; }
 
-.cover-container {
+.cover-image-container {
   margin-top: 72px;
   background: url("/FrontEnd/Pictures/cover-landingpage.jpg") 60% 100% no-repeat;
   background-size: cover;
@@ -176,8 +175,8 @@ i {
   width: 100%;
   height: 100vh;
   z-index: -1; }
-  .cover-container:before {
-    border-top: 6px solid #fae4d1;
+  .cover-image-container:before {
+    border-top: 4px solid #fae4d1;
     content: "";
     background: white;
     position: absolute;
@@ -190,8 +189,10 @@ i {
             transform: rotate(-3deg); }
 
 .cover-content-container {
+  margin: 22vh auto 3%;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  top: 0; }
 
 .tours-container {
   margin-top: -280px;

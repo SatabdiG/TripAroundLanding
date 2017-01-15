@@ -3,7 +3,7 @@
 
 // Styles for the cover on top of the landingpage
 
-.cover-container {
+.cover-image-container {
   @include modules-margin;
   background: url("/FrontEnd/Pictures/cover-landingpage.jpg") 60% 100% no-repeat;
   background-size: cover;
@@ -14,7 +14,7 @@
   z-index: -1;
 
   &:before {
-    border-top: 6px solid $secondary;
+    border-top: 4px solid $secondary;
     content: "";
     background: $white;
     position: absolute;
@@ -27,8 +27,10 @@
 }
 
 .cover-content-container {
+  margin: 22vh auto 3%;
   position: absolute;
   width: 100%;
+  top: 0;
 }
 
 // Styles for the tiles on the landingpage
