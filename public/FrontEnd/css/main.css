@@ -288,6 +288,9 @@ i {
 .btn-typo-nav:hover {
   color: #ee5022; }
 
+.btn-typo-nav-white:hover {
+  color: #fae4d1; }
+
 .btn-xs {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
