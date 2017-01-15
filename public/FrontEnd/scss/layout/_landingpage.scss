@@ -4,14 +4,16 @@
 // Styles for the cover on top of the landingpage
 
 .cover-container {
+  @include modules-margin;
   background: url("/FrontEnd/Pictures/cover-landingpage.jpg") 60% 100% no-repeat;
   background-size: cover;
   margin-bottom: 200px;
   position: relative;
   width: 100%;
   height: 100vh;
+  z-index: -1;
 
-  &:after {
+  &:before {
     border-top: 6px solid $secondary;
     content: "";
     background: $white;
@@ -27,13 +29,17 @@
 .cover-content-container {
   position: absolute;
   width: 100%;
-  z-index: 3;
 }
 
 // Styles for the tiles on the landingpage
 
+.tours-container {
+  margin-top: -280px;
+  z-index: 1;
+}
+
 .tiles-container {
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .tiles-info-content {
@@ -57,6 +63,10 @@
 
 // Style for the feature module
 
+.features-container {
+  @include modules-margin;
+}
+
 .features-container-right {
   margin-top: 120px;
 }
@@ -64,11 +74,17 @@
 // Styles for the infographic module 
 
 .infographic-container {
+  @include modules-margin;
   background: $secondary;
+  padding: 1.5%;
   width: 100%;
 }
 
 // Styles for the about module
+
+.about-container {
+  @include modules-margin;
+}
 
 .about-row-margin {
   margin-bottom: 40px;

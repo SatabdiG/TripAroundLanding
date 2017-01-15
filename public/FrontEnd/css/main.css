@@ -29,18 +29,6 @@ MAIN.SCSS: IMPORTING STYLESHEETS
   background: #ee5022;
   color: white; }
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  *:before {
-    box-sizing: border-box; }
-  *:after {
-    box-sizing: border-box; }
-
 html {
   overflow-y: scroll;
   font-size: 16px; }
@@ -75,6 +63,18 @@ i {
   margin: 0;
   padding: 0; }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  *:before {
+    box-sizing: border-box; }
+  *:after {
+    box-sizing: border-box; }
+
 .typo-head-cover {
   color: #ee5022;
   display: block;
@@ -98,7 +98,8 @@ i {
   display: block;
   font-family: 'Bangers', sans-serif, cursive;
   font-size: 4.5rem;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.2rem;
+  margin-bottom: 34px; }
 
 .typo-tiles-head {
   background: #ee5022;
@@ -167,13 +168,15 @@ i {
   margin-left: 14px; }
 
 .cover-container {
+  margin-top: 72px;
   background: url("/FrontEnd/Pictures/cover-landingpage.jpg") 60% 100% no-repeat;
   background-size: cover;
   margin-bottom: 200px;
   position: relative;
   width: 100%;
-  height: 100vh; }
-  .cover-container:after {
+  height: 100vh;
+  z-index: -1; }
+  .cover-container:before {
     border-top: 6px solid #fae4d1;
     content: "";
     background: white;
@@ -188,11 +191,14 @@ i {
 
 .cover-content-container {
   position: absolute;
-  width: 100%;
-  z-index: 3; }
+  width: 100%; }
+
+.tours-container {
+  margin-top: -280px;
+  z-index: 1; }
 
 .tiles-container {
-  margin: 30px; }
+  margin-bottom: 30px; }
 
 .tiles-info-content {
   background: rgba(250, 228, 209, 0.4);
@@ -208,12 +214,20 @@ i {
   .tiles-info-content:nth-of-type(4) {
     background: rgba(250, 228, 209, 0.7); }
 
+.features-container {
+  margin-top: 72px; }
+
 .features-container-right {
   margin-top: 120px; }
 
 .infographic-container {
+  margin-top: 72px;
   background: #fae4d1;
+  padding: 1.5%;
   width: 100%; }
+
+.about-container {
+  margin-top: 72px; }
 
 .about-row-margin {
   margin-bottom: 40px; }
@@ -221,6 +235,7 @@ i {
 .footer-container {
   background: #ee5022;
   display: table;
+  margin-top: 200px;
   position: relative;
   width: 100%;
   height: 100px; }
@@ -289,7 +304,7 @@ i {
     background: white;
     padding: 10px 20px 10px 20px; }
 
-.btn-xl {
+.btn-xl, .btn-xl-in-text {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
   background: #ee5022;
@@ -303,10 +318,13 @@ i {
   width: 100%;
   max-width: 297px;
   text-transform: uppercase; }
-  .btn-xl:hover {
+  .btn-xl:hover, .btn-xl-in-text:hover {
     border: 1px solid #ee5022;
     color: #ee5022;
     background: white; }
+
+.btn-xl-in-text {
+  margin: 0; }
 
 .img-tiles {
   background-size: cover;

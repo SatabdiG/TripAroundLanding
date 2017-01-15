@@ -1,18 +1,4 @@
-* {
-  @include font-smoothing($value: antialiased);
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  &:before {
-    box-sizing: border-box;
-  }
-
-  &:after {
-    box-sizing: border-box;
-  }
-}
+// Reset styles
 
 html { 
   overflow-y: scroll;
@@ -55,4 +41,20 @@ li {
 i {
   margin: 0;
   padding: 0;
+}
+
+* {
+  @include font-smoothing($value: antialiased);
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &:before {
+    box-sizing: border-box;
+  }
+
+  &:after {
+    box-sizing: border-box;
+  }
 }

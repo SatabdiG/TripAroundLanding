@@ -56,3 +56,8 @@
     background: $white;
   }
 }
+
+.btn-xl-in-text {
+  @extend .btn-xl;
+  margin: 0;
+}
