@@ -4,7 +4,9 @@
   background: white;
   border-bottom: 4px solid $secondary;
   height: 70px;
-  top: 0px;
+  margin: 0;
+  position: relative;
+  // top: 0px;
 }
 
 .nav-container {
@@ -28,6 +30,7 @@
 
 .nav-lang {
   position: absolute;
+  top: 20px;
   right: 20px;
 }
 

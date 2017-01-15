@@ -4,7 +4,6 @@
 // Styles for the cover on top of the landingpage
 
 .cover-image-container {
-  @include modules-margin;
   background: url("/FrontEnd/Pictures/cover-landingpage.jpg") 60% 100% no-repeat;
   background-size: cover;
   margin-bottom: 200px;
