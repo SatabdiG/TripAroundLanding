@@ -67,18 +67,18 @@ i {
   padding: 0; }
 
 ::-webkit-input-placeholder {
-  color: rgba(238, 80, 34, 0.5); }
+  color: #ef582b; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: rgba(238, 80, 34, 0.5); }
+  color: #ef582b; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: rgba(238, 80, 34, 0.5); }
+  color: #ef582b; }
 
 :-ms-input-placeholder {
-  color: rgba(238, 80, 34, 0.5); }
+  color: #ef582b; }
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -124,7 +124,7 @@ i {
   margin: 0; }
 
 .typo-tiles-description {
-  background: rgba(250, 228, 209, 0.4);
+  background: #fcefe3;
   color: black;
   display: block;
   font-size: 1rem;
@@ -372,7 +372,7 @@ i {
   text-decoration: none;
   text-align: center; }
   .btn-social-cirlce:hover {
-    background: rgba(238, 80, 34, 0.5); }
+    background: #ef582b; }
 
 .btn-social-circle-typo {
   color: white; }
@@ -451,7 +451,7 @@ i {
   margin-bottom: 30px; }
 
 .tiles-topbar-container {
-  background: rgba(250, 228, 209, 0.4);
+  background: #fcefe3;
   opacity: 0.9;
   position: absolute;
   left: 15px;
@@ -461,7 +461,7 @@ i {
   padding: 16px; }
 
 .tiles-info-content {
-  background: rgba(250, 228, 209, 0.4);
+  background: #fcefe3;
   display: table;
   float: left;
   margin: 0;
@@ -470,15 +470,18 @@ i {
   height: 105px;
   text-align: center; }
   .tiles-info-content:nth-of-type(1) {
-    background: rgba(250, 228, 209, 0.7); }
+    background: #fbe9da; }
   .tiles-info-content:nth-of-type(4) {
-    background: rgba(250, 228, 209, 0.7); }
+    background: #fbe9da; }
 
 .tiles-topbar-icons {
   display: inline; }
 
 .tiles-topbar-icon-right {
   float: right; }
+
+.timeline-container {
+  margin-top: 72px; }
 
 .timeline {
   list-style: none;
@@ -487,8 +490,8 @@ i {
   font-weight: 300; }
 
 .timeline:before {
-  top: 0;
-  bottom: 0;
+  top: 10px;
+  bottom: 0px;
   position: absolute;
   content: " ";
   width: 2px;
@@ -497,7 +500,7 @@ i {
   margin-left: -1.5px; }
 
 .timeline > li {
-  margin-bottom: 120px;
+  margin-bottom: 150px;
   position: relative;
   width: 50%;
   float: left;
@@ -518,10 +521,10 @@ i {
   clear: both; }
 
 .timeline > li > .timeline-panel {
-  width: calc(100% - 60px);
+  background: #fae4d1;
+  width: calc(100% - 90px);
   float: left;
   border: 1px solid #dcdcdc;
-  background: #ffffff;
   position: relative; }
 
 .timeline > li > .timeline-badge {
@@ -549,36 +552,12 @@ i {
   left: -14px;
   right: auto; }
 
-.timeline-title {
-  margin-top: 0;
-  color: inherit; }
-
-.timeline-heading h4 {
-  font-weight: 400;
-  padding: 0 15px;
-  color: #4679bd; }
-
-.timeline-body > p, .timeline-body > ul {
-  padding: 10px 15px;
-  margin-bottom: 0; }
-
-.timeline-footer {
-  padding: 5px 15px;
-  background-color: #f4f4f4; }
-
-.timeline-footer p {
-  margin-bottom: 0; }
-
-.timeline-footer > a {
-  cursor: pointer;
-  text-decoration: none; }
-
 .timeline > li.timeline-inverted {
   float: right;
   clear: right; }
 
 .timeline > li:nth-child(2) {
-  margin-top: 120px; }
+  margin-top: 300px; }
 
 .timeline > li.timeline-inverted > .timeline-badge {
   left: -17px; }
@@ -603,7 +582,7 @@ i {
   ul.timeline > li > .timeline-badge {
     left: 23px;
     margin-left: 0;
-    top: 16px; }
+    top: -2px; }
 
   ul.timeline > li > .timeline-panel {
     float: right; }
@@ -628,6 +607,69 @@ i {
 
   .timeline > li.timeline-inverted > .timeline-badge {
     left: 23px; } }
+.jcarousel-wrapper {
+  background: #fcefe3;
+  margin: 20px auto;
+  position: relative;
+  border: 10px solid #fae4d1;
+  width: 90%;
+  height: 170px; }
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.jcarousel li {
+  float: left;
+  width: 200px;
+  height: 150px;
+  margin-right: 1px; }
+
+.jcarousel img {
+  max-height: 150px;
+  position: absolute; }
+
+.jcarousel .loading {
+  text-align: center;
+  line-height: 90px
+  /* Fake vertical aligning */ }
+
+/** Carousel Controls **/
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 35px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: black;
+  font-size: 46px; }
+
+.jcarousel-control-prev {
+  left: -34px;
+  float: left; }
+
+.jcarousel-control-next {
+  right: -34px;
+  float: right; }
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+  display: block; }
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+  cursor: default; }
+
 .is-hidden {
   display: none; }
 
