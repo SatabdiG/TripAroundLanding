@@ -26,10 +26,13 @@ a:hover {
 
 a:focus {
   outline: none;
+  color: none;
+  text-decoration: none;
 }
 
 a:active {
   outline: none;
+  text-decoration: none;
 }
 
 
