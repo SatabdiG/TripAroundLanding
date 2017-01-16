@@ -1,16 +1,30 @@
+// Grid for tiles
+
+.tiles-grid {
+ -moz-column-width: 360px;
+ -webkit-column-width: 360px;
+ -moz-column-gap: 30px;
+ -webkit-column-gap: 30px; 
+  
+}
+
 // Styles for tiles
 
 .tiles-container {
+  display: inline-block;
+  padding:  0;
+  position: relative; 
+  width: 100%;
   margin-bottom: 30px;
 }
 
 .tiles-topbar-container {
   background: $secondary-lighter;
-  opacity: 0.9;
+  opacity: 0.7;
   position: absolute;
-  left: 15px;
+  left: 0;
   top: 0;
-  width: calc(100% - 30px);
+  width: 100%;
   height: 55px;
   padding: 16px;
 }
