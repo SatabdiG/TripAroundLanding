@@ -1,0 +1,62 @@
+.login-container {
+	background: url("/frontend/pictures/login-background-image.jpg") 50% 50% no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.login-form-container {
+	margin: 30vh auto;
+	max-width: 400px;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+// Login Page
+
+.user-back-container {
+	margin-top: 62px;
+}
+
+.row-logo {
+  padding-bottom: 15px;
+}
+
+.user-form {
+  margin-bottom: 15px;
+}
+
+.user-form > h2 {
+  font-size: 22px;
+}
+
+.user-form .input-top,
+.user-form .input-middle,
+.user-form .input-bottom {
+  margin-bottom: 4px;
+	border-radius: 10px;
+}
+
+
+.user-form .input-single {
+  margin-bottom: 15px;
+}
+
+.user-form .form-control {
+  font-size: 14px;
+  position: relative;
+}
+
+.user-form .form-control:focus {
+  z-index: 2;
+}
+
+.user-selection {
+	background: $black-lighter;
+	border-radius: 10px;
+	font-size: 14px;
+	width: 100%;
+	height: 46px;
+}

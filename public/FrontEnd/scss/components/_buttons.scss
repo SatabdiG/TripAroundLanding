@@ -65,6 +65,23 @@
   }
 }
 
+.btn-xs-inv {
+  @extend .btn-xs;
+  background: $white;
+  color: $primary;
+
+  &:hover {
+    border: 1px solid $primary;
+    color: $white;
+    background: $primary;
+  }
+}
+
+.btn-xs-login {
+  @extend .btn-xs;
+  width: 100%;
+}
+
 .btn-xl {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;

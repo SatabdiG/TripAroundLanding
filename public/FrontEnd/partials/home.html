@@ -1,63 +1,123 @@
-<div class="container-login">
-  <button class="btn btn-primary" id="goback">Go Back</button>
-  <!--Login form -->
-  <div class="row">
-    <div class="col-sm-12">
-      <h1>TripAround</h1>
-      <form id="userentry" class="user-form">
-        <div class="form-group">
-          <label for="usr" class="sr-only">Username</label>
-          <input type="text" id="usr" name="username" class="form-control input-top input-lg" placeholder="Username" required autofocus>
-          <label for="pass" class="sr-only">Password</label>
-          <input type="password" id="pass" name="password" class="form-control input-bottom input-lg" placeholder="Password" required>
+<!-- This is login page -->
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-light navbar-fixed-top">
+   
+    <a href="#" class="nav-logo"></a>
+
+    <div class="container nav-container">
+
+        <ul class="nav-right-center">
+            <div class"row">
+                <ul>
+                    <li>
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <a href="" class="btn-typo-nav" id="">Login</a>
+                        <a href="" class="btn-xs btn-nav" id="">Touren</a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+
+        <div class="dropdown nav-lang">
+             <a href="" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="">Sprache</a>
+            <ul class="dropdown-menu nav-dropdown pull-right" id="">
+                <li>
+                    <a href="" id="ger" class="nav-dropdown-item">Deutsch</a>
+                </li>
+                <li>
+                    <a href="" id="eng" class="nav-dropdown-item">Englisch</a>
+                </li>
+            </ul>
         </div>
-        <input type="submit" id="usersub" class="btn btn-lg btn-primary btn-block" value="Sign In"/>
-      </form>
-      <div id="usertext"></div>
+
     </div>
-  </div>
-  <!--Register new user & continue as guest -->
-  <div class="row">
-    <div class="col-sm-6">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="registerbutton"></button>
+
+</nav>
+
+<!-- Login -->
+
+<div class="login-container">
+    
+    <!--Login form -->
+    <div class="container login-form-container">
+        <div class="row">
+
+            <form id="userentry" class="user-form">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="usr" class="sr-only">Username</label>
+                        <input type="text" id="usr" name="username" class="form-control input-top input-lg" placeholder="Username" required autofocus>
+                        <label for="pass" class="sr-only">Password</label>
+                        <input type="password" id="pass" name="password" class="form-control input-bottom input-lg" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <button type="button" class="btn-xs-inv" data-toggle="modal" data-target="#myModal" id="registerbutton"></button>
+                </div>
+                <div class="col-xs-6">
+                    <input type="submit" id="usersub" class="btn-xs-login" value="Sign In"/>
+                </div>
+                <div id="usertext"></div>
+            </form>
+            
+            <!-- Continue as guest -->
+            <div class="col-xs-12 text-right">
+                <a href="" class="button btn-typo-nav-white typo-white typo-copy-text-m" id="guestlink"></a>
+            </div>
+            
+            <!-- Back button -->
+            <div class="col-xs-12 text-center user-back-container">
+                <button class="btn-xs" id="goback">Go Back</button>
+            </div>
+
+        </div>
+
     </div>
-    <div class="col-sm-6">
-      <a href="" class="button" id="guestlink">Continue as guest</a>
-    </div>
-  </div>
+  
 </div>
 
 <!-- Modal for user registration-->
+
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="registerLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-        <h4 class="modal-title" id="registerLabel"></h4>
-      </div>
-      <div class="modal-body">
-        <form id="registerusr" class="user-form">
-          <div class="form-group">
-            <label for="username" class="sr-only">Username</label>
-            <input type="text" id="username" name="username" class="form-control input-top input-lg" placeholder="Username" required>
-            <label for="password" class="sr-only">Password</label>
-            <input type="password" id="password" name="password" class="form-control input-middle input-lg" placeholder="Password" required>
-            <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" name="name" class="form-control input-middle input-lg" placeholder="Name" required>
-            <label for="email" class="sr-only">Email</label>
-            <input type="email" id="email" name="email" class="form-control input-bottom input-lg" placeholder="Email" required>
-            <select name="usertype" required>
-              <option value="user account" id="useracct">User Account</option>
-              <option value="Seller " id="selleracct">Seller</option>
-            </select>
-          </div>
-          <div id="info"></div>
-        </form>
-        <div class="text-right">
-          <button type="button" class="btn btn-default" data-dismiss="modal" id="closebutton">Close</button>
-          <button type="button" class="btn btn-primary" id="register">Register</button>
+
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                <h4 class="modal-title" id="registerLabel"></h4>
+            </div>
+
+            <div class="modal-body">
+                <form id="registerusr" class="user-form">
+                    <div class="form-group">
+                        <label for="username" class="sr-only">Username</label>
+                        <input type="text" id="username" name="username" class="form-control input-top input-lg" placeholder="Username" required>
+                        <label for="password" class="sr-only">Password</label>
+                        <input type="password" id="password" name="password" class="form-control input-middle input-lg" placeholder="Password" required>
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" name="name" class="form-control input-middle input-lg" placeholder="Name" required>
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" class="form-control input-bottom input-lg" placeholder="Email" required>
+                        <select class="user-selection" name="usertype" required>
+                            <option value="user account" id="useracct">User Account</option>
+                            <option value="Seller " id="selleracct">Seller</option>
+                        </select>
+                    </div>
+                <div id="info"></div>
+                </form>
+
+                <div class="text-right">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="closebutton">Close</button>
+                    <button type="button" class="btn-xs" id="register">Register</button>
+                </div>
+            </div>
+
         </div>
-      </div>
+
     </div>
-  </div>
+
 </div>

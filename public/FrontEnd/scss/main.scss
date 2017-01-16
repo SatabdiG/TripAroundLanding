@@ -26,12 +26,12 @@ MAIN.SCSS: IMPORTING STYLESHEETS
 @import "base/typography";
 
 // LAYOUT
-// @import "layout/nav";
 @import "layout/navigation";
 @import "layout/landingpage";
 @import "layout/tours";
 @import "layout/footer";
 @import "layout/gallery";
+@import "layout/login";
 
 // COMPONENTS
 @import "components/buttons";

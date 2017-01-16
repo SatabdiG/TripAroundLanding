@@ -92,6 +92,18 @@ i {
   *:after {
     box-sizing: border-box; }
 
+.typo-white {
+  color: white; }
+
+.typo-black {
+  color: black; }
+
+.typo-copy-text-xl {
+  font-size: 1.2rem; }
+
+.typo-copy-text-m {
+  font-size: 0.9rem; }
+
 .typo-head-cover {
   color: #ee5022;
   display: block;
@@ -163,9 +175,6 @@ i {
 
 .typo-tiles-topbar {
   display: inline; }
-
-.typo-copy-text-xl {
-  font-size: 1.2rem; }
 
 .typo-social-icons {
   color: white;
@@ -375,6 +384,55 @@ i {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.85rem; }
 
+.login-container {
+  background: url("/frontend/pictures/login-background-image.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh; }
+
+.login-form-container {
+  margin: 30vh auto;
+  max-width: 400px;
+  position: absolute;
+  left: 0;
+  right: 0; }
+
+.user-back-container {
+  margin-top: 62px; }
+
+.row-logo {
+  padding-bottom: 15px; }
+
+.user-form {
+  margin-bottom: 15px; }
+
+.user-form > h2 {
+  font-size: 22px; }
+
+.user-form .input-top,
+.user-form .input-middle,
+.user-form .input-bottom {
+  margin-bottom: 4px;
+  border-radius: 10px; }
+
+.user-form .input-single {
+  margin-bottom: 15px; }
+
+.user-form .form-control {
+  font-size: 14px;
+  position: relative; }
+
+.user-form .form-control:focus {
+  z-index: 2; }
+
+.user-selection {
+  background: #fafafa;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  height: 46px; }
+
 .btn-nav {
   margin-left: 14px; }
 
@@ -405,7 +463,7 @@ i {
 .btn-social-circle-typo {
   color: white; }
 
-.btn-xs {
+.btn-xs, .btn-xs-inv, .btn-xs-login {
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
   border: 1px solid #ee5022;
@@ -416,11 +474,22 @@ i {
   background: #ee5022;
   padding: 10px 20px 10px 20px;
   text-transform: uppercase; }
-  .btn-xs:hover {
+  .btn-xs:hover, .btn-xs-inv:hover, .btn-xs-login:hover {
     border: 1px solid #ee5022;
     color: #ee5022;
     background: white;
     padding: 10px 20px 10px 20px; }
+
+.btn-xs-inv {
+  background: white;
+  color: #ee5022; }
+  .btn-xs-inv:hover {
+    border: 1px solid #ee5022;
+    color: white;
+    background: #ee5022; }
+
+.btn-xs-login {
+  width: 100%; }
 
 .btn-xl, .btn-xl-active, .btn-xl-inv, .btn-xl-in-text {
   -webkit-border-radius: 10;
