@@ -267,7 +267,7 @@
   cursor: hand;
 }
 
-.thumbnail {
+/*.thumbnail {
   position:relative;
   width: 200px;
   height: 200px;
@@ -297,7 +297,7 @@
   padding-bottom: 30px;
   text-align: center;
   overflow-x: hidden;
-}
+}*/
 
 .mapobj {
   width: 100%;

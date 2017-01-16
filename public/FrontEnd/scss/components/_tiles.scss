@@ -1,17 +1,14 @@
-// Grid for tiles
+Grid for tiles
 
 .tiles-grid {
- column-width: 360px;
- column-gap: 30px;
+  min-width: 360px;
 }
 
 // Styles for tiles
 
 .tiles-container {
-  display: inline-block;
-  padding:  0;
   position: relative; 
-  width: 100%;
+  min-width: 360px;
   margin-bottom: 30px;
 }
 
@@ -19,9 +16,9 @@
   background: $secondary-lighter;
   opacity: 0.7;
   position: absolute;
-  left: 0;
+  left: 15px;
   top: 0;
-  width: 100%;
+  width: calc(100% - 30px);
   height: 55px;
   padding: 16px;
 }
@@ -52,3 +49,42 @@
 .tiles-topbar-icon-right {
   float: right;
 }
+
+
+
+* { box-sizing: border-box; }
+
+
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 160px;
+  height: 120px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item--width2 { width: 320px; }
+.grid-item--width3 { width: 480px; }
+.grid-item--width4 { width: 640px; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
