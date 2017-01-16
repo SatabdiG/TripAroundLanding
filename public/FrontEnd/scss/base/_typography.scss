@@ -37,6 +37,23 @@
   margin: 0;
 }
 
+// Styles in gallery section
+
+.typo-head-tourstop {
+  color: $white;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  width: 100%;
+}
+
+.typo-tourstop-triangle {
+  line-height: 170%;
+}
+
 // Tiles
 
 .typo-tiles-description {
