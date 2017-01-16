@@ -104,6 +104,17 @@ i {
 .typo-copy-text-m {
   font-size: 0.9rem; }
 
+.typo-figcaption {
+  background: #fcefe3;
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
 .typo-head-cover {
   color: #ee5022;
   display: block;
@@ -509,8 +520,6 @@ i {
     border: 1px solid #ee5022;
     color: #ee5022;
     background: white; }
-  .btn-xl:active, .btn-xl-active:active, .btn-xl-inv:active, .btn-xl-in-text:active {
-    background: green; }
 
 .btn-xl-active:hover {
   border: 1px solid #ee5022;
@@ -547,9 +556,17 @@ i {
 .img-gallery-thumb {
   background-size: cover;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
   margin-bottom: 30px;
   width: 100%;
-  height: 262px; }
+  height: 262px;
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
+  .img-gallery-thumb:hover {
+    box-shadow: 0px 0px 13px 1px #a8a8a8;
+    -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out; }
 
 .tiles-container {
   margin-bottom: 30px; }
