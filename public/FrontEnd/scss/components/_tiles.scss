@@ -1,11 +1,8 @@
 // Grid for tiles
 
 .tiles-grid {
- -moz-column-width: 360px;
- -webkit-column-width: 360px;
- -moz-column-gap: 30px;
- -webkit-column-gap: 30px; 
-  
+ column-width: 360px;
+ column-gap: 30px;
 }
 
 // Styles for tiles
