@@ -512,6 +512,38 @@ input[type=radio] {
 .share-social-container {
   margin-top: 16px; }
 
+.img-upload-dropzone {
+  background: #fafafa;
+  border: 1px dashed #ee5022;
+  border-radius: 10px; }
+
+input[type=file] {
+  margin: 0 auto;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.dropzone .dz-preview.dz-file-preview .dz-image,
+.dropzone .dz-preview .dz-details .dz-filename span, .dropzone .dz-preview .dz-details .dz-size span,
+.dropzone .dz-preview .dz-image,
+.dropzone .dz-preview .dz-progress,
+.dropzone .dz-preview .dz-error-message {
+  border-radius: 0; }
+
+.dz-image-preview button {
+  background: #ee5022;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  font-size: 13px;
+  padding: 2px 6px;
+  position: absolute;
+  left: 16px; }
+
+.dropzone .dz-preview .dz-image {
+  height: 125px; }
+
 .btn-icon-status {
   margin-left: 10px; }
   .btn-icon-status:first-child {
