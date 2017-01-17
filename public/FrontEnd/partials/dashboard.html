@@ -12,7 +12,7 @@
             <div class"row">
                 <ul>
                     <li>
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
                         <a href="" class="btn-typo-nav" id="logoutbutton">Logout</a>
                         <a href="" class="btn-xs btn-nav" id="">Touren</a>
                     </li>
@@ -45,7 +45,7 @@
         <h2 class="typo-head-big">Dashboard</h2>
 
         <div class="dashboard-teaser-container">
-            <h5 class="typo-teaser-dashboard">Hallo <span>{{userid}}</span>. Willkommen im Dashboard von TripAround. Hier kannst du neue Touren erstellen oder dich von  favorisierten Touren inspirieren lassen.</h5>
+            <h5 class="typo-teaser-dashboard" id"dashb">Hallo <span id="welcome">{{userid}}</span>. Willkommen im Dashboard von TripAround. Hier kannst du neue Touren erstellen oder dich von  favorisierten Touren inspirieren lassen.</h5>
         </div>
 
     </div>
@@ -61,7 +61,7 @@
 
         <h2 class="typo-head-big">Meine Touren</h2>
 
-        <a href="" class="btn-xl btn-xl-in-text btn-success" id="savebutt" data-toggle="modal">Neue Tour erstellen</a>
+        <a href="" class="btn-xl btn-xl-in-text btn-xl-margin-bottom" id="savebutt" data-toggle="modal">Neue Tour erstellen</a>
 
         <div class="row">
             
@@ -821,6 +821,52 @@
 
 </section>
 
+<!-- Footer -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-container-content">
+
+            <ul class="footer-social-container">
+                <li class="footer-social-icons">
+                    <a href="">
+                        <i class="fa fa-facebook typo-social-icons btn-typo-nav-white" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="footer-social-icons">
+                    <a href="">
+                        <i class="fa fa-twitter typo-social-icons btn-typo-nav-white" aria-hidden="true"></i>
+                    </a>
+                <li class="footer-social-icons">
+                    <a href="">
+                        <i class="fa fa-instagram typo-social-icons btn-typo-nav-white"  aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer-nav-container">
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">FAQ</a>
+                </li>
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">Partner</a>
+                </li>
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">AGB</a>
+                </li>
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">Impressum</a>
+                </li>
+             </ul>
+             
+        </div>
+
+    </div>
+
+</footer>
+
 
 
 
@@ -855,8 +901,8 @@
 -->
 
 <!--<h1>TripAround</h1> -->
-<h3 style="display: inline;" id ="welcome"></h3>
-<h3 style="display: inline;">{{userid}}</h3>
+<!-- <h3 style="display: inline;" id ="welcome"></h3>
+<h3 style="display: inline;">{{userid}}</h3> -->
 <!--
 <button class="btn btn-primary" id="logoutbutton">Log Out </button>
 <div class="row steps">
@@ -883,7 +929,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+<!--     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -891,7 +937,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">TripAround</a>
-    </div>
+    </div> -->
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -904,9 +950,9 @@
         <li><a href="#searchtours" id="search"></a></li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-right">
+   <!--    <ul class="nav navbar-nav navbar-right">
         <li><button class="btn btn-primary" id="logoutbutton">Log Out </button></li>
-      </ul>
+      </ul> -->
 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -925,7 +971,7 @@
 <div class="row">
   <div class="col-lg-12">
       <!--<a class="btn btn-primary" href="" id="viewbutt" ><i class="fa fa-map-o fa-lg" aria-hidden="true"></i> View saved maps </a>-->
-      <a class="btn btn-success" href="" id="savebutt" data-toggle="modal"><i class="fa fa-map-o fa-lg"></i><!--<sup>&nbsp;<i class="fa fa-plus fa-lg"></i></sup>-->&nbsp;Create new map</a>
+      <!-- <a class="btn btn-success" href="" id="savebutt" data-toggle="modal"><i class="fa fa-map-o fa-lg"></i> --><!--<sup>&nbsp;<i class="fa fa-plus fa-lg"></i></sup>--><!-- &nbsp;Create new map</a> -->
   </div>
 </div>
 <!-- User can create a new map -->
@@ -945,56 +991,52 @@
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Create a new map</h4>
-      </div>
-      <div class="modal-body">
-        <form id="createform">
-          <div id="infofrm"></div>
-          <div class="form-group">
-            <label for="mapname">Name your map</label>
-            <input type="text" id="mapname" class="form-control" aria-describedby="maphelp" placeholder="Example: Weekend in Paris">
-          </div>
-          <div class="form-group">
-            <label for="descriptiontext">Describe your trip</label>
-            <textarea class="form-control" id="descriptiontext" rows="3" placeholder="Example: My friends and I went to Paris for a weekend. We had so much fun!"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="desc">When was your tour?</label>
-          </div>
-          <div class="form-group">
-            <!--<label for="startDate">Start Date</label>-->
-            <input id="datetimepicker1" type="text" class="form-control" placeholder="Start Date"/>
-          </div>
-          <div class="form-group">
-            <!--<label for="endDate">End Date</label>-->
-            <input id="datetimepicker2" type="text" class="form-control" placeholder="End Date"/>
-          </div>
-          <div class="form-group">
-            <label for="containGeos">Do your pictures have geotags?</label><br/>
-            <div class="btn-group" id="geoTags_info" data-toggle="buttons">
-            <label for="yesGeo"><input type="radio" name="have_geos" value="1" checked>Yes</label><br/>
-            <label for="noGeo"><input type="radio" name="have_geos" value="0" >No</label><br/>
-            <label for="tryGeo"><input type="radio" name="have_geos" value="2" > Don't know, let's try with one picture</label>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Create a new map</h4>
             </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
-        <button type="button" class="btn btn-success" id="submit">Submit</button>
-      </div>
+            <div class="modal-body">
+                <form id="createform">
+                    <div id="infofrm"></div>
+                    <div class="form-group">
+                        <label class="dashboard-label-head" for="mapname">Name your map</label>
+                        <input type="text" id="mapname" class="form-control" aria-describedby="maphelp" placeholder="Example: Weekend in Paris">
+                    </div>
+                    <div class="form-group">
+                        <label class="dashboard-label-head" for="descriptiontext">Describe your trip</label>
+                        <textarea class="form-control" id="descriptiontext" rows="3" placeholder="Example: My friends and I went to Paris for a weekend. We had so much fun!"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="dashboard-label-head" for="desc">When was your tour?</label>
+                        <!--<label for="startDate">Start Date</label>-->
+                        <input id="datetimepicker1" type="text" class="form-control" placeholder="Start Date"/>
+                        <!--<label for="endDate">End Date</label>-->
+                        <input id="datetimepicker2" type="text" class="form-control" placeholder="End Date"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="dashboard-label-head" for="containGeos">Do your pictures have geotags?</label><br/>
+                        <div class="btn-group" id="geoTags_info" data-toggle="buttons">
+                        <label class="dashboard-label-radio" for="yesGeo"><input type="radio" name="have_geos" value="1" checked>Yes</label><br/>
+                        <label class="dashboard-label-radio" for="noGeo"><input type="radio" name="have_geos" value="0" >No</label><br/>
+                        <label class="dashboard-label-radio" for="tryGeo"><input type="radio" name="have_geos" value="2" >Don't know, let's try with one picture</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+                <button type="button" class="btn btn-success btn-xs" id="submit">Submit</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div id="viewmapregion">
 </div>
 
-<div id="myinspiration">My inspiration</div>
+<!-- <div id="myinspiration">My inspiration</div> -->
 
 <div id="inspiarea"></div>
 

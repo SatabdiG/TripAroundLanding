@@ -473,6 +473,28 @@ i {
   max-width: 50%;
   padding: 24px; }
 
+.modal-title {
+  font-size: 18px;
+  font-weight: 700; }
+
+.dashboard-label-head {
+  font-weight: 400; }
+
+.dashboard-label-radio {
+  font-weight: 400; }
+
+.form-control {
+  border-radius: 10px;
+  margin-bottom: 4px;
+  height: 46px; }
+
+.btn-group {
+  font-weight: 400; }
+
+.input[type=checkbox],
+input[type=radio] {
+  margin-right: 6px; }
+
 .btn-icon-status {
   margin-left: 10px; }
   .btn-icon-status:first-child {
@@ -570,6 +592,9 @@ i {
 
 .btn-xl-in-text {
   margin: 0; }
+
+.btn-xl-margin-bottom {
+  margin-bottom: 44px; }
 
 .img-tiles {
   background-size: cover;

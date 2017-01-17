@@ -24,3 +24,33 @@
 	max-width: 50%;
 	padding: 24px;
 }
+
+// Overwrite Boostrap modal styles
+
+.modal-title {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.dashboard-label-head {
+	font-weight: 400;
+}
+
+.dashboard-label-radio {
+	font-weight: 400;
+}
+
+.form-control {
+	border-radius: 10px;
+	margin-bottom: 4px;
+	height: 46px;
+}
+
+.btn-group {
+	font-weight: 400;
+}
+
+.input[type=checkbox], 
+input[type=radio] {
+	margin-right: 6px;
+}
