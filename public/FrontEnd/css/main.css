@@ -254,6 +254,14 @@ i {
   .subnav-tours-btn-container:nth-child(1) {
     margin-left: 0; }
 
+.subnav-small-left-items {
+  display: inline;
+  float: left; }
+
+.subnav-small-right-items {
+  display: inline;
+  float: right; }
+
 .cover-image-container {
   background: url("/FrontEnd/Pictures/cover-landingpage.jpg") 60% 100% no-repeat;
   background-size: cover;
@@ -531,8 +539,6 @@ input[type=radio] {
   color: white; }
 
 .btn-xs, .btn-xs-inv, .btn-xs-login {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
   border: 1px solid #ee5022;
   border-radius: 10px;
   color: white;
@@ -551,16 +557,14 @@ input[type=radio] {
   background: white;
   color: #ee5022; }
   .btn-xs-inv:hover {
+    background: #ee5022;
     border: 1px solid #ee5022;
-    color: white;
-    background: #ee5022; }
+    color: white; }
 
 .btn-xs-login {
   width: 100%; }
 
 .btn-xl, .btn-xl-active, .btn-xl-inv, .btn-xl-in-text {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
   background: #ee5022;
   border: 1px solid #ee5022;
   border-radius: 10px;
@@ -595,6 +599,34 @@ input[type=radio] {
 
 .btn-xl-margin-bottom {
   margin-bottom: 44px; }
+
+.btn-subnav-small, .btn-small-active {
+  background: white;
+  border: 1px solid #ee5022;
+  border-radius: 10px;
+  color: #ee5022;
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase;
+  width: 140px; }
+  .btn-subnav-small:hover, .btn-small-active:hover {
+    background: #ee5022;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px 10px 20px; }
+
+.btn-small-active {
+  background: #ee5022;
+  color: white; }
+  .btn-small-active:hover {
+    background: white;
+    border: 1px solid #ee5022;
+    color: #ee5022; }
+
+.btn-small-dashboard {
+  background: #f2f2f2;
+  border: 1px solid #ee5022; }
 
 .img-tiles {
   background-size: cover;

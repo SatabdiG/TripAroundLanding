@@ -53,8 +53,6 @@
 }
 
 .btn-xs {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
   border: 1px solid $primary;
   border-radius: 10px;
   color: $white;
@@ -78,9 +76,9 @@
   color: $primary;
 
   &:hover {
+    background: $primary;
     border: 1px solid $primary;
     color: $white;
-    background: $primary;
   }
 }
 
@@ -90,8 +88,6 @@
 }
 
 .btn-xl {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
   background: $primary;
   border: 1px solid $primary;
   border-radius: 10px;
@@ -141,4 +137,42 @@
 
 .btn-xl-margin-bottom {
   margin-bottom: 44px;
+}
+
+// Buttons for subnavigation
+
+.btn-subnav-small {
+  background: $white;
+  border: 1px solid $primary;
+  border-radius: 10px;
+  color: $primary;
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase;
+  width: 140px;
+
+  &:hover {
+    background: $primary;
+    border: 1px solid $white;
+    color: $white;
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+.btn-small-active {
+  @extend .btn-subnav-small;
+  background: $primary;
+  color: $white;
+
+  &:hover {
+    background: $white;
+    border: 1px solid $primary;
+    color: $primary;
+  }
+}
+
+.btn-small-dashboard {
+  background: $black-light;
+  border: 1px solid $primary;
 }

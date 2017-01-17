@@ -3,6 +3,7 @@
 $white: rgba(255, 255, 255, 1);
 $black: rgba(0, 0, 0, 1);
 
+$black-light: lighten($black,95%);
 $black-lighter: lighten($black,98%);
 
 $primary: rgba(238, 80, 34, 1);
