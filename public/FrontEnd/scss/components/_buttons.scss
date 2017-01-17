@@ -30,7 +30,7 @@
   }
 }
 
-.btn-social-cirlce {
+.btn-social-circle {
   background: $primary;
   border-radius: 50%;
   cursor: pointer;
@@ -44,8 +44,22 @@
   text-align: center;
 
   &:hover {
-    background: $primary-light;
+    background: $white;
+    border: 1px solid $primary;
+    color: $primary;
   }
+
+  &:hover .btn-social-circle-typo {
+    color: $primary;
+  }
+}
+
+.btn-social-circle-sharing {
+  @extend .btn-social-circle;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0;
+
 }
 
 .btn-social-circle-typo {
