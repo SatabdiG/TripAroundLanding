@@ -1,5 +1,13 @@
 // Styles for all buttons
 
+.btn-icon-status {
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
 .btn-nav {
   margin-left: 14px;
 }
@@ -21,7 +29,6 @@
     color: $secondary;
   }
 }
-
 
 .btn-social-cirlce {
   background: $primary;

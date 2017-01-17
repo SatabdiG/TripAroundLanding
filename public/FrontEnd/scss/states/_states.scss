@@ -15,3 +15,13 @@
 		color: $white;
 	}
 }
+
+// States for puclic and private icon on tiles
+
+.icon-is-active {
+	color: $white;
+}
+
+.icon-not-active {
+	color: $primary-medium;
+}

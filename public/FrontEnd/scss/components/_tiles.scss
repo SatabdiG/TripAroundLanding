@@ -3,8 +3,7 @@
 }
 
 .tiles-topbar-container {
-  background: $secondary-lighter;
-  opacity: 0.7;
+  background: $secondary-transparent;
   position: absolute;
   left: 15px;
   top: 0;
@@ -32,10 +31,41 @@
   }
 }
 
+.tiles-share-container {
+  display: inline;
+}
+
+.tiles-share-container:hover .tiles-share-icons-container {
+  display: block;
+}
+
+.tiles-share-icons-container {
+  display: none;
+  position: absolute;
+  right: -14px;
+  bottom: 22px;
+
+  &:hover {
+    display: block;
+  }
+}
+
 .tiles-topbar-icons {
   display: inline;
+  position: relative;
+  margin-right: 8px;
 }
 
 .tiles-topbar-icon-right {
   float: right;
+}
+
+.tiles-topbar-status-container {
+  background: $primary;
+  display: inline;
+  height: 55px;
+  padding: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

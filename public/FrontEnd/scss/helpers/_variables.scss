@@ -8,8 +8,11 @@ $black-lighter: lighten($black,98%);
 $primary: rgba(238, 80, 34, 1);
 $secondary: rgba(250, 228, 209, 1);
 
+$primary-medium: lighten($primary,15%);
 $primary-light: lighten($primary,2%);
 $primary-lighter: lighten($primary,4%);
 
 $secondary-light: lighten($secondary,2%);
 $secondary-lighter: lighten($secondary,4%);
+
+$secondary-transparent: rgba(250, 228, 209, 0.7);

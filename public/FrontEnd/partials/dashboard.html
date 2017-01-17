@@ -1,3 +1,579 @@
+<!-- Dashboard -->
+
+<!-- Navigation -->
+
+<script>$(document).ready(function(){
+
+  $( "#test-toggle").click(function() {
+    console.log("alloalloooo");
+  });
+  
+});
+</script>
+
+<nav class="navbar navbar-light navbar-fixed-top">
+   
+    <a href="#" class="nav-logo"></a>
+
+    <div class="container nav-container">
+
+        <ul class="nav-right-center">
+            <div class"row">
+                <ul>
+                    <li>
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <a href="" class="btn-typo-nav" id="logoutbutton">Logout</a>
+                        <a href="" class="btn-xs btn-nav" id="">Touren</a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+
+        <div class="dropdown nav-lang">
+             <a href="" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="">Sprache</a>
+            <ul class="dropdown-menu nav-dropdown pull-right" id="">
+                <li>
+                    <a href="" id="ger" class="nav-dropdown-item">Deutsch</a>
+                </li>
+                <li>
+                    <a href="" id="eng" class="nav-dropdown-item">Englisch</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- Head image -->
+
+<section id="dashboard-header-image">
+
+<div class="dashboard-header-container">
+    <div class="dashboard-header-typo-container text-center">
+        <h2 class="typo-head-big">Dashboard</h2>
+
+        <div class="dashboard-teaser-container">
+            <h5 class="typo-teaser-dashboard">Hallo <span>{{userid}}</span>. Willkommen im Dashboard von TripAround. Hier kannst du neue Touren erstellen oder dich von  favorisierten Touren inspirieren lassen.</h5>
+        </div>
+
+    </div>
+</div>
+  
+</section>
+
+<section id="my-tours">
+
+    <div class="container text-center">
+
+        <h2 class="typo-head-big">Meine Touren</h2>
+
+        <div class="row">
+            
+            <!-- tiles container -->
+            <div class="col-lg-4 tiles-container">
+                <a href="#overview" class="tiles-single-container">
+                    <!-- topbar container -->
+                    <div class="tiles-topbar-container text-left">
+                        <ul>
+                            <li class="tiles-topbar-icons">
+                                <i class="fa fa-eye typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                <p class="typo-tiles-topbar">1365</p>
+                            </li>
+                            <!-- share button -->
+                            <li class="tiles-topbar-icons">
+                                <div class="tiles-share-container">
+                                    <i class="fa fa-share-alt typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                    <ul class="tiles-share-icons-container">
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-facebook btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-instagram btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-twitter btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-pinterest-p btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- edit and delete button button -->
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-pencil typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-trash typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <!-- right side icons -->
+                            <ul>
+                                <li class="tiles-topbar-status-container">
+                                    <a href="" class="btn-icon-status btn-private">
+                                        <i class="fa fa-lock typo-tiles-icon-topbar typo-white btn-private icon-is-active" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="" class="btn-icon-status btn-public">
+                                        <i class="fa fa-globe typo-tiles-icon-topbar typo-white btn-public icon-not-active" aria-hidden="true"></i>
+                                    <a href="">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <!-- tiles image -->
+                    <div class="img-tiles" style="background-image:url(/frontend/pictures/landing-tile-placeholder-01.jpg);"></div>
+                    <!-- tiles tour name -->
+                    <h3 class="typo-tiles-head text-center">Frankreich & Spanien</h3>
+                    <!-- tiles description -->
+                    <p class="typo-tiles-description">Reise im VW-Bus von Hamburg bis Madrid und wieder zurück.</p>
+                    <!-- tiles bottom information -->
+                    <div class="tiles-info-container">
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>21 Tage</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>642 km</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>8 Stops</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Flug, Schiff</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- tiles container -->
+            <div class="col-lg-4 tiles-container">
+                <a href="#overview" class="tiles-single-container">
+                    <!-- topbar container -->
+                    <div class="tiles-topbar-container text-left">
+                        <ul>
+                            <li class="tiles-topbar-icons">
+                                <i class="fa fa-eye typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                <p class="typo-tiles-topbar">135</p>
+                            </li>
+                            <!-- share button -->
+                            <li class="tiles-topbar-icons">
+                                <div class="tiles-share-container">
+                                    <i class="fa fa-share-alt typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                    <ul class="tiles-share-icons-container">
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-facebook btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-instagram btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-twitter btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-pinterest-p btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- edit and delete button button -->
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-pencil typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-trash typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <!-- right side icons -->
+                            <ul>
+                                <li class="tiles-topbar-status-container">
+                                    <a href="" class="btn-icon-status btn-private">
+                                        <i class="fa fa-lock typo-tiles-icon-topbar typo-white btn-private icon-not-active" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="" class="btn-icon-status btn-public">
+                                        <i class="fa fa-globe typo-tiles-icon-topbar typo-white btn-public icon-is-active" aria-hidden="true"></i>
+                                    <a href="">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <!-- tiles image -->
+                    <div class="img-tiles" style="background-image:url(/frontend/pictures/landing-tile-placeholder-02.jpg);"></div>
+                    <!-- tiles tour name -->
+                    <h3 class="typo-tiles-head text-center">Island</h3>
+                    <!-- tiles description -->
+                    <p class="typo-tiles-description">Roadtrip in den Sommermonaten von Mai bis August einmal quer durch die USA und Kanada</p>
+                    <!-- tiles bottom information -->
+                    <div class="tiles-info-container">
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>32 Tage</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>232 km</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>4 Stops</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Flug, Schiff, Bahn, Auto</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                
+            <!-- tiles container -->
+            <div class="col-lg-4 tiles-container">
+                <a href="#overview" class="tiles-single-container">
+                    <!-- topbar container -->
+                    <div class="tiles-topbar-container text-left">
+                        <ul>
+                            <li class="tiles-topbar-icons">
+                                <i class="fa fa-eye typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                <p class="typo-tiles-topbar">915</p>
+                            </li>
+                            <!-- share button -->
+                            <li class="tiles-topbar-icons">
+                                <div class="tiles-share-container">
+                                    <i class="fa fa-share-alt typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                    <ul class="tiles-share-icons-container">
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-facebook btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-instagram btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-twitter btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-pinterest-p btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- edit and delete button button -->
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-pencil typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-trash typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <!-- right side icons -->
+                            <ul>
+                                <li class="tiles-topbar-status-container">
+                                    <a href="" class="btn-icon-status btn-private">
+                                        <i class="fa fa-lock typo-tiles-icon-topbar typo-white btn-private icon-is-active" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="" class="btn-icon-status btn-public">
+                                        <i class="fa fa-globe typo-tiles-icon-topbar typo-white btn-public icon-not-active" aria-hidden="true"></i>
+                                    <a href="">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <!-- tiles image -->
+                    <div class="img-tiles" style="background-image:url(/frontend/pictures/landing-tile-placeholder-02.jpg);"></div>
+                    <!-- tiles tour name -->
+                    <h3 class="typo-tiles-head text-center">Roadtrip durch Südostasien</h3>
+                    <!-- tiles description -->
+                    <p class="typo-tiles-description">Mit zwei Freunden einmal quer durch Thailand</p>
+                    <!-- tiles bottom information -->
+                    <div class="tiles-info-container">
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>32 Tage</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>232 km</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>4 Stops</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Flug, Schiff, Bahn, Auto</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- tiles container -->
+            <div class="col-lg-4 tiles-container">
+                <a href="#overview" class="tiles-single-container">
+                    <!-- topbar container -->
+                    <div class="tiles-topbar-container text-left">
+                        <ul>
+                            <li class="tiles-topbar-icons">
+                                <i class="fa fa-eye typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                <p class="typo-tiles-topbar">1365</p>
+                            </li>
+                            <!-- share button -->
+                            <li class="tiles-topbar-icons">
+                                <div class="tiles-share-container">
+                                    <i class="fa fa-share-alt typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                    <ul class="tiles-share-icons-container">
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-facebook btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-instagram btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-twitter btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-pinterest-p btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- edit and delete button button -->
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-pencil typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-trash typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <!-- right side icons -->
+                            <ul>
+                                <li class="tiles-topbar-status-container">
+                                    <a href="" class="btn-icon-status btn-private">
+                                        <i class="fa fa-lock typo-tiles-icon-topbar typo-white btn-private icon-not-active" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="" class="btn-icon-status btn-public">
+                                        <i class="fa fa-globe typo-tiles-icon-topbar typo-white btn-public icon-is-active" aria-hidden="true"></i>
+                                    <a href="">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <!-- tiles image -->
+                    <div class="img-tiles" style="background-image:url(/frontend/pictures/landing-tile-placeholder-01.jpg);"></div>
+                    <!-- tiles tour name -->
+                    <h3 class="typo-tiles-head text-center">Frankreich & Spanien</h3>
+                    <!-- tiles description -->
+                    <p class="typo-tiles-description">Reise im VW-Bus von Hamburg bis Madrid und wieder zurück.</p>
+                    <!-- tiles bottom information -->
+                    <div class="tiles-info-container">
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>21 Tage</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>642 km</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>8 Stops</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Flug, Schiff</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- tiles container -->
+            <div class="col-lg-4 tiles-container">
+                <a href="#overview" class="tiles-single-container">
+                    <!-- topbar container -->
+                    <div class="tiles-topbar-container text-left">
+                        <ul>
+                            <li class="tiles-topbar-icons">
+                                <i class="fa fa-eye typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                <p class="typo-tiles-topbar">135</p>
+                            </li>
+                            <!-- share button -->
+                            <li class="tiles-topbar-icons">
+                                <div class="tiles-share-container">
+                                    <i class="fa fa-share-alt typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                    <ul class="tiles-share-icons-container">
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-facebook btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-instagram btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-twitter btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-pinterest-p btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- edit and delete button button -->
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-pencil typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-trash typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <!-- right side icons -->
+                            <ul>
+                                <li class="tiles-topbar-status-container">
+                                    <a href="" class="btn-icon-status btn-private">
+                                        <i class="fa fa-lock typo-tiles-icon-topbar typo-white btn-private icon-is-active" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="" class="btn-icon-status btn-public">
+                                        <i class="fa fa-globe typo-tiles-icon-topbar typo-white btn-public icon-not-active" aria-hidden="true"></i>
+                                    <a href="">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <!-- tiles image -->
+                    <div class="img-tiles" style="background-image:url(/frontend/pictures/landing-tile-placeholder-02.jpg);"></div>
+                    <!-- tiles tour name -->
+                    <h3 class="typo-tiles-head text-center">Island</h3>
+                    <!-- tiles description -->
+                    <p class="typo-tiles-description">Roadtrip in den Sommermonaten von Mai bis August einmal quer durch die USA und Kanada</p>
+                    <!-- tiles bottom information -->
+                    <div class="tiles-info-container">
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>32 Tage</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>232 km</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>4 Stops</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Flug, Schiff, Bahn, Auto</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                
+            <!-- tiles container -->
+            <div class="col-lg-4 tiles-container">
+                <a href="#overview" class="tiles-single-container">
+                    <!-- topbar container -->
+                    <div class="tiles-topbar-container text-left">
+                        <ul>
+                            <li class="tiles-topbar-icons">
+                                <i class="fa fa-eye typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                <p class="typo-tiles-topbar">915</p>
+                            </li>
+                            <!-- share button -->
+                            <li class="tiles-topbar-icons">
+                                <div class="tiles-share-container">
+                                    <i class="fa fa-share-alt typo-tiles-icon-topbar" aria-hidden="true"></i>
+                                    <ul class="tiles-share-icons-container">
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-facebook btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-instagram btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-twitter btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="btn-social-cirlce">
+                                            <a>
+                                                <i class="fa fa-pinterest-p btn-social-circle-typo" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- edit and delete button button -->
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-pencil typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <li class="tiles-topbar-icons">
+                                <a class="fa fa-trash typo-tiles-icon-topbar" aria-hidden="true"></a>
+                            </li>
+                            <!-- right side icons -->
+                            <ul>
+                                <li class="tiles-topbar-status-container">
+                                    <a href="" class="btn-icon-status btn-private">
+                                        <i class="fa fa-lock typo-tiles-icon-topbar typo-white btn-private icon-is-active" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="" class="btn-icon-status btn-public">
+                                        <i class="fa fa-globe typo-tiles-icon-topbar typo-white btn-public icon-not-active" aria-hidden="true"></i>
+                                    <a href="">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <!-- tiles image -->
+                    <div class="img-tiles" style="background-image:url(/frontend/pictures/landing-tile-placeholder-02.jpg);"></div>
+                    <!-- tiles tour name -->
+                    <h3 class="typo-tiles-head text-center">Roadtrip durch Südostasien</h3>
+                    <!-- tiles description -->
+                    <p class="typo-tiles-description">Mit zwei Freunden einmal quer durch Thailand</p>
+                    <!-- tiles bottom information -->
+                    <div class="tiles-info-container">
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>32 Tage</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>232 km</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>4 Stops</p>
+                        </div>
+                        <div class="tiles-info-content">
+                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Flug, Schiff, Bahn, Auto</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        
+        <a href="#searchtours" class="btn-xl btn-xl-in-text" id="SearchTour">Zeige alle Touren</a>
+
+    </div>
+
+</section>
+
+
+
 <style>
   .datepicker{z-index:1151 !important;}
 </style>
@@ -53,37 +629,7 @@
   </div>
 </div> -->
 
-<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">TripAround</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#dashboard" id="dashboard"> <span class="sr-only">(current)</span></a></li>
-        <li class="disabled"><a id="upload"></a></li>
-        <li class="disabled"><a id="gallery"></a></li>
-        <li class="disabled"><a id ="editmap"></a></li>
-        <li class="disabled"><a id ="viewite"></a></li>
-        <li><a href="#searchtours" id="search"></a></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><button class="btn btn-primary" id="logoutbutton">Log Out </button></li>
-      </ul>
-
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 <!--Display user's last created Maps -->
 <div class="row">
   <div class="col-lg-12">
@@ -204,3 +750,4 @@
 <div id="publishconformation" title="Publish Maps">
   <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-triangle fa-3x pull-left" aria-hidden="true"></i> This Map will be published </div>
 </div>
+

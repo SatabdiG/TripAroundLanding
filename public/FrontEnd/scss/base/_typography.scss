@@ -40,6 +40,7 @@
   font-family: 'Bangers', sans-serif, cursive;
   font-size: 7.2rem;
   letter-spacing: 0.2rem;
+  margin-bottom: 60px;
   left: 0;
   right: 0;
   text-align: center;
@@ -66,7 +67,13 @@
   font-size: 1.6rem;
   line-height: 130%;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.typo-teaser-dashboard {
+  @extend .typo-teaser;
+  width: 100%;
 }
 
 // Styles in gallery section
@@ -137,4 +144,5 @@
 
 .typo-tiles-icon-topbar {
   font-size: 1.4rem;
+  display: inline;
 }

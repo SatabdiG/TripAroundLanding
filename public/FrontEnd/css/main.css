@@ -121,6 +121,7 @@ i {
   font-family: 'Bangers', sans-serif, cursive;
   font-size: 7.2rem;
   letter-spacing: 0.2rem;
+  margin-bottom: 60px;
   left: 0;
   right: 0;
   text-align: center;
@@ -140,11 +141,15 @@ i {
   letter-spacing: 0.2rem;
   margin-bottom: 34px; }
 
-.typo-teaser {
+.typo-teaser, .typo-teaser-dashboard {
   font-size: 1.6rem;
   line-height: 130%;
   text-align: center;
-  margin: 0; }
+  margin: 0 auto;
+  width: 50%; }
+
+.typo-teaser-dashboard {
+  width: 100%; }
 
 .typo-head-tourstop {
   color: white;
@@ -197,7 +202,8 @@ i {
   text-align: right; }
 
 .typo-tiles-icon-topbar {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  display: inline; }
 
 .navbar {
   background: white;
@@ -444,6 +450,31 @@ i {
   width: 100%;
   height: 46px; }
 
+.dashboard-header-container {
+  background: url("/frontend/pictures/dashboard-background-image.jpg");
+  background-size: cover;
+  border-bottom: 4px solid #fae4d1;
+  display: table;
+  margin-top: 70px;
+  width: 100%;
+  height: 35vh; }
+
+.dashboard-header-typo-container {
+  display: table-cell;
+  vertical-align: middle; }
+
+.dashboard-teaser-container {
+  background: white;
+  opacity: 0.7;
+  margin: 0 auto;
+  max-width: 50%;
+  padding: 24px; }
+
+.btn-icon-status {
+  margin-left: 10px; }
+  .btn-icon-status:first-child {
+    margin-left: 0; }
+
 .btn-nav {
   margin-left: 14px; }
 
@@ -572,8 +603,7 @@ i {
   margin-bottom: 30px; }
 
 .tiles-topbar-container {
-  background: #fcefe3;
-  opacity: 0.7;
+  background: rgba(250, 228, 209, 0.7);
   position: absolute;
   left: 15px;
   top: 0;
@@ -595,11 +625,36 @@ i {
   .tiles-info-content:nth-of-type(4) {
     background: #fbe9da; }
 
-.tiles-topbar-icons {
+.tiles-share-container {
   display: inline; }
+
+.tiles-share-container:hover .tiles-share-icons-container {
+  display: block; }
+
+.tiles-share-icons-container {
+  display: none;
+  position: absolute;
+  right: -14px;
+  bottom: 22px; }
+  .tiles-share-icons-container:hover {
+    display: block; }
+
+.tiles-topbar-icons {
+  display: inline;
+  position: relative;
+  margin-right: 8px; }
 
 .tiles-topbar-icon-right {
   float: right; }
+
+.tiles-topbar-status-container {
+  background: #ee5022;
+  display: inline;
+  height: 55px;
+  padding: 16px;
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 .timeline-container {
   margin-top: 72px; }
@@ -787,3 +842,9 @@ i {
   .btn-is-active:hover {
     background: #ee5022;
     color: white; }
+
+.icon-is-active {
+  color: white; }
+
+.icon-not-active {
+  color: #f38869; }
