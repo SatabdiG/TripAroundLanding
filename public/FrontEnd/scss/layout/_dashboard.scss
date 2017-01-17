@@ -1,3 +1,7 @@
+.dashboard-container {
+	@include modules-margin;
+}
+
 .dashboard-header-container {
 	background: url("/frontend/pictures/dashboard-background-image.jpg");
 	background-size: cover;

@@ -24,4 +24,14 @@
 
 .icon-not-active {
 	color: $primary-medium;
+
+	&:hover {
+		color: $white;
+	}
+}
+
+// State icon for favorite tours
+
+.tour-is-fav {
+	color: $primary;
 }
