@@ -730,6 +730,13 @@ function dashboardfunction(){
     $(this).prev().children('i').addClass('icon-not-active');
   });
 
+  $('#show-all-inspirations').click(function() {
+    $('.inspirations-invisible-container').slideToggle('is-hidden');
+  });
+
+  $('#show-all-tours').click(function() {
+    $('.tours-invisible-container').slideToggle('is-hidden');
+  });
 
 
     translateFunction(translateNavbar,translateDashboard);
