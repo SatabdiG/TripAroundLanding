@@ -715,6 +715,21 @@ function dashboardfunction(){
   $("#beforepagebutton").click(function(){
     window.location.href="#"; });*/
 
+  // Change the state of the public/privat icon in dashboard
+  $('.btn-private').click(function() {
+    $(this).children('i').removeClass('icon-not-active');
+    $(this).children('i').addClass('icon-is-active');
+    $(this).next().children('i').removeClass('icon-is-active');
+    $(this).next().children('i').addClass('icon-not-active');
+  });
+
+  $('.btn-public').click(function() {
+    $(this).children('i').removeClass('icon-not-active');
+    $(this).children('i').addClass('icon-is-active');
+    $(this).prev().children('i').removeClass('icon-is-active');
+    $(this).prev().children('i').addClass('icon-not-active');
+  });
+
 
 
     translateFunction(translateNavbar,translateDashboard);
