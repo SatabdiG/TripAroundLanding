@@ -19,7 +19,7 @@
 }
 
 #googleMap {
-  height: 500px;
+/*  height: 500px;*/
 }
 
 #something{
@@ -97,7 +97,7 @@
 }
 
 
-#IteniaryPage {
+/*#IteniaryPage {
   width: 100%;
   padding-bottom: 75%;
   background-color: #d2e1fc ;
@@ -105,7 +105,7 @@
 
 #IteniaryPage button{
   margin: 10px;
-}
+}*/
 
 .itenary-panel {
   position: relative;
@@ -274,14 +274,14 @@
   overflow-x: hidden;
 }
 
-.menuheader {
+/*.menuheader {
   text-align: center;
 }
-
-.menubutton {
+*/
+/*.menubutton {
   width: 75%;
   background-color: #DB3E00;
-}
+}*/
 
 .favthumbcontainer a {
   color: #ffb366;

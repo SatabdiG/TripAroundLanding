@@ -186,6 +186,40 @@
   }
 }
 
+// Buttons in iteniary view
+
+.btn-iteniary {
+  @extend .btn-xs;
+  height: 55px;
+  }
+
+.btn-iteniary-duration {
+  background: $primary;
+  border: 1px solid $primary;
+  border-color: none;
+  border-radius: 10px;
+  color: $white;
+  font-size: 1.6rem;
+  padding: 2%;
+  position: relative;
+  width: 55px;
+  height: 55px;
+}
+
+.btn-iteniary-dropdown {
+  background: $white;
+  border: none;
+  color: $black;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+
+  &:hover {
+    background: $primary;
+    color: $white;
+  }
+}
+
 // .btn-small-dashboard {
 //   background: $black-light;
 //   border: 1px solid $primary;
