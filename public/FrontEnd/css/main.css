@@ -896,7 +896,7 @@ input[type=file] {
   padding: 10px 0;
   position: relative;
   font-weight: 300;
-  z-index: -9999; }
+  z-index: 0; }
   .timeline:before {
     content: " ";
     background: #ee5022;
