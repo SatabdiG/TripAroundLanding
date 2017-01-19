@@ -706,7 +706,8 @@ input[type=file] {
             transition: all 0.3s ease-out; }
 
 .tiles-grid {
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%; }
   .tiles-grid:after:before, .tiles-grid:after:after {
     content: " ";
     /* 1 */
@@ -718,7 +719,8 @@ input[type=file] {
 .tiles-single-container {
   width: 360px;
   float: left;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  overflow: hidden; }
 
 .tiles-container {
   margin-bottom: 30px; }

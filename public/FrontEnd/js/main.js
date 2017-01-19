@@ -715,6 +715,15 @@ function dashboardfunction(){
   $("#beforepagebutton").click(function(){
     window.location.href="#"; });*/
 
+  // Initialize Masonry (grid)
+  $('.tiles-grid').masonry({
+    itemSelector: '.tiles-single-container',
+    columnWidth: 360,
+    gutter: 30,
+    isFitWidth: true,
+    transitionDuration: 0
+  });
+
   // Change the state of the public/privat icon in dashboard
   $('.btn-private').click(function() {
     $(this).children('i').removeClass('icon-not-active');

@@ -2,6 +2,7 @@
 
 .tiles-grid {
   margin: 0 auto;
+  height: 100%;
 
   &:after {
     @include clearfix();
@@ -12,6 +13,7 @@
   width: 360px;
   float: left;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 // Styles for tiles
