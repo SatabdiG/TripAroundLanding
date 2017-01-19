@@ -705,15 +705,30 @@ input[type=file] {
     -webkit-transition: all 0.3s ease-out;
             transition: all 0.3s ease-out; }
 
+.tiles-grid {
+  margin: 0 auto; }
+  .tiles-grid:after:before, .tiles-grid:after:after {
+    content: " ";
+    /* 1 */
+    display: table
+    /* 2 */ }
+  .tiles-grid:after:after {
+    clear: both; }
+
+.tiles-single-container {
+  width: 360px;
+  float: left;
+  margin-bottom: 30px; }
+
 .tiles-container {
   margin-bottom: 30px; }
 
 .tiles-topbar-container {
   background: rgba(250, 228, 209, 0.7);
   position: absolute;
-  left: 15px;
+  left: 0;
   top: 0;
-  width: calc(100% - 30px);
+  width: 100%;
   height: 55px;
   padding: 16px; }
 
