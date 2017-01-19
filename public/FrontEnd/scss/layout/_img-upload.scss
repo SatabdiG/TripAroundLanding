@@ -4,12 +4,21 @@
 	border-radius: 10px;
 }
 
+.img-upload-itenairy {
+	margin-bottom: 8px;
+	min-height: 120px;
+}
+
+.img-upload-itenairy-title {
+	height: 303px;
+}
+
 input[type=file] {
 	margin: 0 auto;
 	font-size: 14px;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 25px;
+	left: 25px;
 }
 
 // Overwrite dropzone classes

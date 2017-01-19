@@ -1,0 +1,272 @@
+<!-- Iteniary page -->
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-light navbar-fixed-top">
+   
+    <a href="#" class="nav-logo"></a>
+
+    <div class="container nav-container">
+
+        <ul class="nav-right-center">
+            <div class"row">
+                <ul>
+                    <li>
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <a href="" class="btn-typo-nav" id="logoutbutton">Logout</a>
+                        <a href="" class="btn-xs btn-nav" id="">Touren</a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+
+        <div class="dropdown nav-lang">
+             <a href="" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="">Sprache</a>
+            <ul class="dropdown-menu nav-dropdown pull-right" id="">
+                <li>
+                    <a href="" id="ger" class="nav-dropdown-item">Deutsch</a>
+                </li>
+                <li>
+                    <a href="" id="eng" class="nav-dropdown-item">Englisch</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- Head with Title and describtion of the tour -->
+
+<section id="tours-ov-header-image">
+
+    <div class="container text-center">
+
+        <div class="tours-ov-head-container">
+            <h2 class="typo-head-big text-center">Spanien & Südfrankreich</h2>
+            <h5 class="typo-teaser">Reise im VW-Bus von Hamburg bis Madrid und wieder zurück</h5>
+        </div>
+
+</section>
+
+<!-- Subnavigation small -->
+
+<section id="tours-ov-subnav">
+    
+    <div class="container text-center">
+
+        <div class="tours-subnav-container">
+            <ul>
+                <li class="subnav-tours-btn-container">
+                    <a href="" class="btn-subnav-small">&#9664; Dashboard</a>
+                </li>
+                <li class="subnav-tours-btn-container">
+                    <a href="#viewtour" class="btn-subnav-small">Übersicht</a>
+                </li>
+                <li class="subnav-tours-btn-container">
+                    <a href="" class="btn-subnav-small btn-small-active">Reiseroute</a>
+                </li>
+                <li class="subnav-tours-btn-container">
+                    <a href="" class="btn-subnav-small">Foto-Upload</a>
+                </li>
+                <li class="subnav-tours-btn-container">
+                    <a href="" class="btn-subnav-small">Galerie</a>
+                </li>
+                <li class="subnav-tours-btn-container">
+                    <a href="" class="btn-subnav-small">Share</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- Maps placeholder -->
+
+<section id="tours-overview-map">
+    
+    <div class="container tours-ov-map-container">
+        <img class="img-responsive" src="/frontend/pictures/tours-maps-placeholder-small.png">
+    </div>
+
+</section>
+
+<section>
+    
+    <div class="container">
+
+        <div class="row">
+
+            <!--  <div class="col-md-12">
+                <div id="googleMap" class="iteniary-map"></div>
+            </div> -->
+        </div>
+        
+        <!-- Create your tour stop here -->
+        <div class="row iteniary-add-container">
+
+            <div class="w3-container w3-blue" id="IteniaryPage">
+                <!--Iteniary pages go here -->
+
+                <!--Create Iteniary pages here -->
+                <div class="col-md-4">
+                    <input type="text" placeholder="Enter Tour Stop" id="place" class="iteniary-search-form">
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" placeholder="Time" id="duration" class="iteniary-search-form">
+                </div>
+
+                <div class="col-md-1">
+                    <div class="dropdown iteniary-dropdown-container" id="dropdownd">
+                        <button class="btn-iteniary-duration" type="button" id="durationclick" data-toggle="dropdown"><i class="fa fa-calendar" aria-hidden="true"></i><span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" id="durationmenu">
+                            <li role="presentation">
+                                <div class="iteniary-dropdown-header">Duration in Days</div>
+                            </li>
+                            <li role="presentation"><button role="menuitem" tabindex="-1"  id="dur1" class="btn-iteniary-dropdown">1</button></li>
+                            <li role="presentation"><button role="menuitem" tabindex="-1" id="dur2" class="btn-iteniary-dropdown">2</button></li>
+                            <li role="presentation"><button role="menuitem" tabindex="-1" id="dur3" class="btn-iteniary-dropdown">3</button></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 text-left">
+                    <button type="button" class="btn-iteniary" id="createTourStop">Tourstop hinzufügen</button>
+                </div>
+
+                <div class="col-md-2 text-right">
+                    <button type="button" class="btn-iteniary" id="replayTourAnimation">Replay</button>
+                </div>
+                <!--<button type="button" class="btn btn-primary" id="saveIteniary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save </button>-->
+            </div>
+
+        </div>
+        
+
+        <div class="row">
+
+            <div id="" class="col-xs-12">
+                <h3 class="itenary-header">7 Tage Bordeaux</h3>
+            </div>
+                
+            <!-- Add thumbnail -->   
+            <div class="col-lg-4">
+                <div id="" class="itenary-thumbnail">
+
+                    <form id="uploadForm2" enctype="multipart/form-data">
+                        <p id="uploadstatus"></p>
+                
+                            <input type="file" multiple="multiple" id="" accept="image/*" resize="none">
+                      
+                        <div id="dropzonePreview" class="dropzone img-upload-dropzone img-upload-itenairy-title">
+                            <div class="dz-default dz-message"><small class="text-muted">Titelbild hinzufügen</small></div>
+                        </div>
+                        <span id="status"></span>
+                    </form>
+
+                </div>
+            </div>
+            
+            <!-- Add description -->  
+            <div class="col-lg-8">
+                <div id="" class="itenary-des"><textarea id="" class="textboxiteniarypage " placeholder="Bitte fügen Sie eine Beschreibungstext hinzu"></textarea>
+                </div>
+            </div>
+            
+            <!-- Add images to gallery -->
+            <div class="col-lg-8">
+                <div class="imageuploadform">
+                    <form id="uploadForm2" enctype="multipart/form-data">
+                        <p id="uploadstatus"></p>
+
+                            <input type="file" name="userPhoto" multiple id="userphoto" />
+
+                        <div id="dropzonePreview" class="dropzone img-upload-dropzone img-upload-itenairy">
+                            <div class="dz-default dz-message"><small class="text-muted">Bilder zum Tourstop hinzufügen</small></div>
+                        </div>
+                        <span id="status"></span>
+                    </form>
+                    <button type="button" class="btn-xs" id="replayTourAnimation">Tourstop Löschen</button>
+                    <div class="float-right">
+                        <button type="button" class="btn-xs-inv" id="replayTourAnimation">Edit</button>
+                        <button type="button" class="btn-xs" id="replayTourAnimation">Speichern</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="jcarousel-wrapper jcarousel-wrapper-iteniary">
+                    <div class="jcarousel">
+                        <ul>
+                            <li><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></li>
+                            <li><img src="/frontend/pictures/landing-tile-placeholder-02.jpg" alt=""></li>
+                            <li><img src="/frontend/pictures/landing-tile-placeholder-03.jpg" alt=""></li>
+                            <li><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></li>
+                            <li><img src="/frontend/pictures/landing-tile-placeholder-02.jpg" alt=""></li>
+                            <li><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                    <a href="#" class="jcarousel-control-next">&rsaquo;</a> 
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-container-content">
+
+            <ul class="footer-social-container">
+                <li class="footer-social-icons">
+                    <a href="">
+                        <i class="fa fa-facebook typo-social-icons btn-typo-nav-white" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="footer-social-icons">
+                    <a href="">
+                        <i class="fa fa-twitter typo-social-icons btn-typo-nav-white" aria-hidden="true"></i>
+                    </a>
+                <li class="footer-social-icons">
+                    <a href="">
+                        <i class="fa fa-instagram typo-social-icons btn-typo-nav-white"  aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer-nav-container">
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">FAQ</a>
+                </li>
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">Partner</a>
+                </li>
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">AGB</a>
+                </li>
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">Impressum</a>
+                </li>
+             </ul>
+             
+        </div>
+
+    </div>
+
+</footer>

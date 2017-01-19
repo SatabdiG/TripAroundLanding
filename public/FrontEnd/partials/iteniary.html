@@ -1,147 +1,4 @@
-Iteniary page -->
-
-<!-- Navigation -->
-
-<nav class="navbar navbar-light navbar-fixed-top">
-   
-    <a href="#" class="nav-logo"></a>
-
-    <div class="container nav-container">
-
-        <ul class="nav-right-center">
-            <div class"row">
-                <ul>
-                    <li>
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                        <a href="" class="btn-typo-nav" id="">Login</a>
-                        <a href="" class="btn-xs btn-nav" id="">Touren</a>
-                    </li>
-                </ul>
-            </div>
-        </ul>
-
-        <div class="dropdown nav-lang">
-             <a href="" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="">Sprache</a>
-            <ul class="dropdown-menu nav-dropdown pull-right" id="">
-                <li>
-                    <a href="" id="ger" class="nav-dropdown-item">Deutsch</a>
-                </li>
-                <li>
-                    <a href="" id="eng" class="nav-dropdown-item">Englisch</a>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-
-</nav>
-
-<!-- Head with Title and describtion of the tour -->
-
-<section id="tours-ov-header-image">
-
-    <div class="container text-center">
-
-        <div class="tours-ov-head-container">
-            <h2 class="typo-head-big text-center">Spanien & Südfrankreich</h2>
-            <h5 class="typo-teaser">Reise im VW-Bus von Hamburg bis Madrid und wieder zurück</h5>
-        </div>
-
-</section>
-
-<!-- Subnavigation small -->
-
-<section id="tours-ov-subnav">
-    
-    <div class="container text-center">
-
-        <div class="tours-subnav-container">
-            <ul>
-                <li class="subnav-tours-btn-container">
-                    <a href="" class="btn-subnav-small">&#9664; Dashboard</a>
-                </li>
-                <li class="subnav-tours-btn-container">
-                    <a href="#viewtour" class="btn-subnav-small">Übersicht</a>
-                </li>
-                <li class="subnav-tours-btn-container">
-                    <a href="" class="btn-subnav-small">Reiseroute</a>
-                </li>
-                <li class="subnav-tours-btn-container">
-                    <a href="" class="btn-subnav-small">Foto-Upload</a>
-                </li>
-                <li class="subnav-tours-btn-container">
-                    <a href="" class="btn-subnav-small btn-small-active">Galerie</a>
-                </li>
-                <li class="subnav-tours-btn-container">
-                    <a href="" class="btn-subnav-small">Share</a>
-                </li>
-            </ul>
-        </div>
-        
-    </div>
-
-</section>
-
-<section>
-    
-    <div class="container">
-
-        <div class="row">
-
-            <div id="googlemapcontainer">
-
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <div id="googleMap" class="iteniary-map"></div>
-                    </div>
-     
-                        <div class="w3-container w3-blue" id="IteniaryPage">
-                            <!--Iteniary pages go here -->
-                            <!--Create Iteniary pages here -->
-                            <div class="col-md-4">
-                                <input type="text" placeholder="Enter Tour Stop" id="place" class="iteniary-search-form">
-                            </div>
-                            <div class="col-md-3">
-                                <input type="text" placeholder="Time" id="duration" class="iteniary-search-form-duration">
-                                <div class="dropdown iteniary-dropdown-container" id="dropdownd">
-                                    <button class="btn-iteniary-duration" type="button" id="durationclick" data-toggle="dropdown"><i class="fa fa-calendar" aria-hidden="true"></i><span class="caret"></span></button>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" id="durationmenu">
-                                        <li role="presentation">
-                                            <div class="iteniary-dropdown-header">Duration in Days</div>
-                                        </li>
-                                        <li role="presentation"><button role="menuitem" tabindex="-1"  id="dur1" class="btn-iteniary-dropdown">1</button></li>
-                                        <li role="presentation"><button role="menuitem" tabindex="-1" id="dur2" class="btn-iteniary-dropdown">2</button></li>
-                                        <li role="presentation"><button role="menuitem" tabindex="-1" id="dur3" class="btn-iteniary-dropdown">3</button></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-3">
-                                <button type="button" class="btn-iteniary" id="createTourStop"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
-                            </div>
-                            <div class="col-md-2 text-right">
-                                <button type="button" class="btn-iteniary" id="replayTourAnimation"><i class="fa fa-repeat" aria-hidden="true"></i></button>
-                            </div>
-                            <!--<button type="button" class="btn btn-primary" id="saveIteniary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save </button>-->
-                        </div>
-
-                </div>
-            </div>
-
-        </div>
-        
-    </div>
-
-
-</section>
-
-
-
-
-
-
-
+<!-- Iteniary page -->
 <!--<h1>(TripAround logo)</h1>-->
 <!--<h3>Welcome, {{userid}}</h3>-->
 <h3 style="display: inline;" id ="welcome"></h3>
@@ -210,14 +67,14 @@ Iteniary page -->
 </div>
 
 
-<!-- <div class="row">
+<div class="row">
     <div id="googlemapcontainer">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="w3-container w3-blue" id="IteniaryPage"> -->
+                    <div class="w3-container w3-blue" id="IteniaryPage">
                         <!--Iteniary pages go here -->
                        <!--Create Iteniary pages here -->
-<!--                         <input type="text" placeholder="Enter Tour Stop" id="place">
+                        <input type="text" placeholder="Enter Tour Stop" id="place">
                         <input type="text" placeholder="Time" id="duration">
                         <div class="dropdown" id="dropdownd">
                             <button class="btn btn-default dropdown-toggle" type="button" id="durationclick" data-toggle="dropdown">|||
@@ -235,9 +92,9 @@ Iteniary page -->
                             </ul>
                         </div>
                         <button type="button" class="btn btn-primary" id="createTourStop"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-primary" id="replayTourAnimation"><i class="fa fa-repeat" aria-hidden="true"></i></button> -->
+                        <button type="button" class="btn btn-primary" id="replayTourAnimation"><i class="fa fa-repeat" aria-hidden="true"></i></button>
                         <!--<button type="button" class="btn btn-primary" id="saveIteniary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save </button>-->
-<!--                     </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
                     <div id="googleMap" ></div>

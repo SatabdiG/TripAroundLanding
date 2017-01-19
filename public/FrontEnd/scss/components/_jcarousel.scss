@@ -7,6 +7,16 @@
   height: 170px;
 }
 
+.jcarousel-wrapper-iteniary {
+  @extend .jcarousel-wrapper;
+  background: $secondary;
+  border-top: 10px solid $secondary;
+  border-bottom: 10px solid $secondary;
+  border-left: 40px solid $secondary;
+   border-right: 40px solid $secondary;
+  width: 100%;
+}
+
 /** Carousel **/
 
 .jcarousel {

@@ -19,7 +19,7 @@
 }
 
 #googleMap {
-/*  height: 500px;*/
+  height: 500px;
 }
 
 #something{
@@ -107,7 +107,7 @@
   margin: 10px;
 }*/
 
-.itenary-panel {
+/*.itenary-panel {
   position: relative;
   width : 100%;
   height:  auto;
@@ -163,7 +163,7 @@
   position: static;
   margin: 10px;
   font-size: medium;
-}
+}*/
 
 
 
