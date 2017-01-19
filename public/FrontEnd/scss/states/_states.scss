@@ -35,3 +35,13 @@
 .tour-is-fav {
 	color: $primary;
 }
+
+// Sticky elements on scroll
+
+.subnav-big-is-sticky {
+	position: fixed;
+	z-index: 9999;
+	top: 60px;
+	left: 0;
+	width: 100%;
+}

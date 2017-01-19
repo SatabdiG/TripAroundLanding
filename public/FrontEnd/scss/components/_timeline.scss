@@ -4,12 +4,12 @@
   @include modules-margin;
 }
 
-
  .timeline {
   list-style: none;
   padding: 10px 0;
   position: relative;
   font-weight: 300;
+  z-index: -9999;
 
   &:before {
     content:" ";

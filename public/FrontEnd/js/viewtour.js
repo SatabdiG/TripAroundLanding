@@ -16,6 +16,19 @@ function viewtourcontroller()
     {
         serachmap=sessionStorage.getItem("searchmap");
     }
+
+
+    // Make navigation sticky
+    var stickyOffset = $('.subnav-big-container').offset().top - 60;
+
+    $(window).scroll(function(){
+        var sticky = $('.subnav-big-container'),
+            scroll = $(window).scrollTop();
+          
+        if (scroll >= stickyOffset) sticky.addClass('subnav-big-is-sticky');
+        else sticky.removeClass('subnav-big-is-sticky');
+    });
+
     $(document).ready(function(){
         initialize();
         itemarkers=[];
