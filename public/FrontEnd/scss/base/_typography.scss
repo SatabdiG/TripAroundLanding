@@ -14,6 +14,16 @@
 
 .typo-copy-text-xl {
   font-size: 1.2rem;
+
+  @include respond-to('small') {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+   @include respond-to('xxsmall') {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
 }
 
 .typo-copy-text-m {
@@ -39,6 +49,7 @@
   display: block;
   font-family: 'Bangers', sans-serif, cursive;
   font-size: 7.2rem;
+  line-height: 95%;
   letter-spacing: 0.2rem;
   margin-top: 0;
   margin-bottom: 60px;
@@ -49,13 +60,34 @@
 
   @include respond-to('medium') {
     transform: rotate(0deg);
-    font-size: 3.5rem;
+    font-size: 5.5rem;
+    margin-bottom: 30px;
+  }
+
+  @include respond-to('xsmall') {
+    transform: rotate(0deg);
+    font-size: 3.7rem;
+    margin-bottom: 30px;
+  }
+
+  @include respond-to('xxsmall') {
+    transform: rotate(0deg);
+    font-size: 2.9rem;
+    margin-bottom: 15px;
   } 
 }
 
 .typo-head-copytext {
   font-size: 1.3rem;
   font-weight: 700;
+
+  @include respond-to('small') {
+    font-size: 1.2rem;
+  }
+
+  @include respond-to('xxsmall') {
+    font-size: 1.1rem;
+  }
 }
 
 .typo-head-big {
@@ -63,8 +95,19 @@
   display: block;
   font-family: 'Bangers', sans-serif, cursive;
   font-size: 4.5rem;
+  line-height: 95%;
   letter-spacing: 0.2rem;
   margin-bottom: 34px;
+
+  @include respond-to('xsmall') {
+    font-size: 3rem;
+    margin-bottom: 24px;
+  }
+
+  @include respond-to('xsmall') {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
 }
 
 .typo-teaser {

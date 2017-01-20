@@ -47,6 +47,18 @@
 
 .features-container-right {
   margin-top: 120px;
+
+  @include respond-to('small') {
+    margin-top: 0;
+  }
+}
+
+.features-plane {
+  display: block;
+
+  @include respond-to('medium') {
+    display: none;
+  }
 }
 
 // Styles for the infographic module 
@@ -54,7 +66,8 @@
 .infographic-container {
   @include modules-margin;
   background: $secondary;
-  padding: 1.5%;
+  padding-top: 24px;
+  padding-bottom: 48px;
   width: 100%;
 }
 

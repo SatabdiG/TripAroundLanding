@@ -17,7 +17,23 @@
 
 .img-infographic {
 	margin: 0 auto;
-	width: 65%;
+	width: 42%;
+
+  @include respond-to('xlarge') {
+    width: 60%;
+  }
+
+  @include respond-to('medium') {
+    width: 70%;
+  }
+
+  @include respond-to('small') {
+    width: 80%;
+  }
+
+  @include respond-to('xsmall') {
+    width: 95%;
+  }
 }
 
 .img-gallery-thumb {

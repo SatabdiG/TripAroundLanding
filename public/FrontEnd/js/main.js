@@ -721,6 +721,7 @@ function dashboardfunction(){
     columnWidth: 360,
     gutter: 30,
     isFitWidth: true,
+    isAnimated: false,
     transitionDuration: 0
   });
 
@@ -739,6 +740,7 @@ function dashboardfunction(){
     $(this).prev().children('i').addClass('icon-not-active');
   });
 
+  // Show all inspirations/favorites
   $('#show-all-inspirations').click(function() {
     $('.inspirations-invisible-container').slideToggle('is-hidden');
   });

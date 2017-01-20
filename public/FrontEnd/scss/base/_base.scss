@@ -78,6 +78,18 @@ i {
   }
 }
 
+.container-padding {
+  padding: 0;
+
+  @include respond-to('large') {
+    padding: 0 24px;
+  } 
+
+  @include respond-to('medium') {
+    padding: 0 36px;
+  } 
+}
+
 .float-right {
   float: right;
 }

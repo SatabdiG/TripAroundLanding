@@ -2,7 +2,6 @@
 
 .footer-container {
 	background: $primary;
-	display: table;
 	margin-top: 200px;
 	position: relative;
 	width: 100%;
@@ -23,10 +22,16 @@
 }
 
 .footer-container-content {
-	display: table-cell;
-	padding-right: 40px;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	width: 100%;
 	text-align: right;
-	vertical-align: middle;
+
+	@include respond-to('xsmall') {
+		right: 16px;
+		bottom: 16px;
+	}
 }
 
 .footer-social-container {
@@ -35,7 +40,7 @@
 
 .footer-social-icons {
 	display: inline;
-	margin-left: 0.75%;
+	margin-left: 1.25%;
 }
 
 .footer-nav-container {
@@ -47,7 +52,7 @@
 
 .footer-nav-items {
 	display: inline;
-	margin-left: 1.5%;
+	margin-left: 2%;
 
 	&:nth-child(1) {
 		margin-left: 0;

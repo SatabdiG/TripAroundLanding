@@ -107,7 +107,7 @@
   border-radius: 10px;
   color: $white;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding: 18px 24px 18px 24px;
   margin: 1%;
   width: 100%;
@@ -118,6 +118,18 @@
     border: 1px solid $primary;
     color: $primary;
     background: $white;
+  }
+
+  @include respond-to('small') {
+    border: 1px solid $primary;
+    border-radius: 10px;
+    color: $white;
+    display: inline-block;
+    font-size: 1rem;
+    background: $primary;
+    padding: 12px 24px 12px 24px;
+    text-transform: uppercase;
+    width: auto;
   }
 }
 
