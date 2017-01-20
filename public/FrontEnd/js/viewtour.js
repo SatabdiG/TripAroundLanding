@@ -29,6 +29,16 @@ function viewtourcontroller()
         else sticky.removeClass('subnav-big-is-sticky');
     });
 
+    // Initialize owl carousel
+    $('.owl-carousel').owlCarousel({
+        margin: 10,
+        loop: true,
+        autoWidth: true,
+        items: 1,
+        nav: true,
+        navText: ["&lsaquo;","&rsaquo;"]
+    })
+
     $(document).ready(function(){
         initialize();
         itemarkers=[];

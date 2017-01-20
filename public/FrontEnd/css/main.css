@@ -1001,7 +1001,7 @@ input[type=file] {
   .timeline > li.timeline-inverted > .timeline-badge {
     left: 23px; } }
 .jcarousel-wrapper, .jcarousel-wrapper-iteniary {
-  background: #fcefe3;
+  background: #fae4d1;
   margin: 20px auto;
   position: relative;
   border: 10px solid #fae4d1;
@@ -1070,6 +1070,20 @@ input[type=file] {
 .jcarousel-control-next.inactive {
   opacity: .5;
   cursor: default; }
+
+.owl-prev {
+  color: white;
+  font-size: 44px;
+  position: absolute;
+  top: 26%;
+  left: 12px; }
+
+.owl-next {
+  color: white;
+  font-size: 44px;
+  position: absolute;
+  top: 26%;
+  right: 12px; }
 
 .is-hidden {
   display: none; }

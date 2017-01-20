@@ -1,5 +1,5 @@
 .jcarousel-wrapper {
-  background: $secondary-lighter;
+  background: $secondary;
   margin: 20px auto;
   position: relative;
   border: 10px solid $secondary;
@@ -81,4 +81,22 @@
 .jcarousel-control-next.inactive {
   opacity: .5;
   cursor: default;
+}
+
+// Styles for owl slider 
+
+.owl-prev {
+  color: $white;
+  font-size: 44px;
+  position: absolute;
+  top: 26%;
+  left: 12px;
+}
+
+.owl-next {
+  color: $white;
+  font-size: 44px;
+  position: absolute;
+  top: 26%;
+  right: 12px;
 }
