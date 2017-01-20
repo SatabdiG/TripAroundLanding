@@ -1122,7 +1122,7 @@ input[type=file] {
     width: calc(100% - 65px); }
 
   ul.timeline > li > .timeline-badge {
-    left: 23px;
+    left: 0px;
     margin-left: 0;
     top: -2px; }
 
@@ -1145,7 +1145,7 @@ input[type=file] {
     margin: 30px 0; }
 
   .timeline > li.timeline-inverted > .timeline-badge {
-    left: 23px; } }
+    left: 17px; } }
 .jcarousel-wrapper, .jcarousel-wrapper-iteniary {
   background: #fae4d1;
   margin: 20px auto;
