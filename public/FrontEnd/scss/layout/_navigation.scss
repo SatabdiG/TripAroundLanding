@@ -1,11 +1,24 @@
 // Styles for (top) navigation
 
-.navbar {
-  background: white;
+.nav-container {
+  background: $white;
   border-bottom: 4px solid $secondary;
   height: 70px;
   margin: 0;
+  opacity: 0.98;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-desktop-container {
+  display: block;
+
+  @include respond-to('small') {
+    display: none;
+  } 
 }
 
 .nav-container {
@@ -27,6 +40,30 @@
   }
 }
 
+// // Styles for (top) mobile navigation
+
+.nav-mobile-container {
+  display: none;
+
+  @include respond-to('small') {
+    display: block;
+  } 
+}
+
+.nav-mobile-burger {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
+
+.nav-mobile-login {
+  position: absolute;
+  left: 20px;
+  top: 23px;
+}
+
+
 .nav-lang {
   position: absolute;
   top: 20px;
@@ -37,15 +74,29 @@
   background: url("/frontend/pictures/logo.png") no-repeat;
   background-size: cover;
   display: block;
-  margin-top: 12px;
+  margin-top: -5px;
   position: absolute;
+  top: 20px;
   left: 20px;
   width: 200px;
   height: 38px;
+
+  @include respond-to('small') {
+    margin: -5px auto;
+    top: 25px;
+    left: 0;
+    right: 0;
+    width: 160px;
+    height: 31px;
+  } 
 }
 
-.nav-right-center {
-  float: right;
+.nav-right-container {
+  text-align: right;
+
+  @include respond-to('xlarge') {
+    text-align: center;
+  } 
 }
 
 .nav-right-items {

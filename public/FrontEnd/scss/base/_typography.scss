@@ -40,13 +40,17 @@
   font-family: 'Bangers', sans-serif, cursive;
   font-size: 7.2rem;
   letter-spacing: 0.2rem;
+  margin-top: 0;
   margin-bottom: 60px;
   left: 0;
   right: 0;
   text-align: center;
-  -webkit-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
+
+  @include respond-to('medium') {
+    transform: rotate(0deg);
+    font-size: 3.5rem;
+  } 
 }
 
 .typo-head-copytext {

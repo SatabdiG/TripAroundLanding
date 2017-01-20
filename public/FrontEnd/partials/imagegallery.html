@@ -2,39 +2,62 @@
 
 <!-- Navigation -->
 
-<nav class="navbar navbar-light navbar-fixed-top">
-   
-    <a href="#" class="nav-logo"></a>
+<section id="navigation">
 
-    <div class="container nav-container">
+    <nav class="nav-container">
+       
+        <a href="#" class="nav-logo"></a>
 
-        <ul class="nav-right-center">
-            <div class"row">
-                <ul>
+        <!-- Desktop navigation -->
+        <div class="nav-desktop-container">
+
+            <div class="container">
+
+                <ul class="nav-right-container">
+                    <div class"row">
+                        <ul>
+                            <li>
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                <a href="" class="btn-typo-nav" id="">Logout</a>
+                                <a href="#searchtours" class="btn-xs btn-nav" id="">Touren</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
+            </div>
+
+            <div class="dropdown nav-lang">
+
+                <a href="#" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="lang">Sprache</a>
+
+                <ul class="dropdown-menu nav-dropdown pull-right" id="langdropdown">
                     <li>
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                        <a href="" class="btn-typo-nav" id="">Login</a>
-                        <a href="" class="btn-xs btn-nav" id="">Touren</a>
+                        <a href="#" id="ger" class="nav-dropdown-item">Deutsch</a>
+                    </li>
+                    <li>
+                        <a href="#" id="eng" class="nav-dropdown-item">Englisch</a>
                     </li>
                 </ul>
-            </div>
-        </ul>
 
-        <div class="dropdown nav-lang">
-             <a href="" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="">Sprache</a>
-            <ul class="dropdown-menu nav-dropdown pull-right" id="">
-                <li>
-                    <a href="" id="ger" class="nav-dropdown-item">Deutsch</a>
-                </li>
-                <li>
-                    <a href="" id="eng" class="nav-dropdown-item">Englisch</a>
-                </li>
-            </ul>
+            </div>
+
+        </div>
+        
+        <!-- Mobile navigation -->
+        <div class="nav-mobile-container">
+            <div class="nav-mobile-burger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="nav-mobile-login">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <a href="" class="btn-typo-nav" id="">Logout</a>
+            </div>
         </div>
 
-    </div>
+    </nav>
 
-</nav>
+</section>
 
 <!-- Head with Title and describtion of the tour -->
 

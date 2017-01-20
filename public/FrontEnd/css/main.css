@@ -127,13 +127,20 @@ i {
   font-family: 'Bangers', sans-serif, cursive;
   font-size: 7.2rem;
   letter-spacing: 0.2rem;
+  margin-top: 0;
   margin-bottom: 60px;
   left: 0;
   right: 0;
   text-align: center;
   -webkit-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg); }
+      -ms-transform: rotate(-3deg);
+          transform: rotate(-3deg); }
+  @media (max-width: 850px) {
+    .typo-head-cover {
+      -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+              transform: rotate(0deg);
+      font-size: 3.5rem; } }
 
 .typo-head-copytext {
   font-size: 1.3rem;
@@ -211,12 +218,23 @@ i {
   font-size: 1.4rem;
   display: inline; }
 
-.navbar {
+.nav-container {
   background: white;
   border-bottom: 4px solid #fae4d1;
   height: 70px;
   margin: 0;
-  position: fixed; }
+  opacity: 0.98;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; }
+
+.nav-desktop-container {
+  display: block; }
+  @media (max-width: 650px) {
+    .nav-desktop-container {
+      display: none; } }
 
 .nav-container {
   padding: 22px; }
@@ -230,6 +248,23 @@ i {
 .nav-dropdown-item:hover {
   color: red; }
 
+.nav-mobile-container {
+  display: none; }
+  @media (max-width: 650px) {
+    .nav-mobile-container {
+      display: block; } }
+
+.nav-mobile-burger {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 18px;
+  right: 20px; }
+
+.nav-mobile-login {
+  position: absolute;
+  left: 20px;
+  top: 23px; }
+
 .nav-lang {
   position: absolute;
   top: 20px;
@@ -239,14 +274,26 @@ i {
   background: url("/frontend/pictures/logo.png") no-repeat;
   background-size: cover;
   display: block;
-  margin-top: 12px;
+  margin-top: -5px;
   position: absolute;
+  top: 20px;
   left: 20px;
   width: 200px;
   height: 38px; }
+  @media (max-width: 650px) {
+    .nav-logo {
+      margin: -5px auto;
+      top: 25px;
+      left: 0;
+      right: 0;
+      width: 160px;
+      height: 31px; } }
 
-.nav-right-center {
-  float: right; }
+.nav-right-container {
+  text-align: right; }
+  @media (max-width: 1350px) {
+    .nav-right-container {
+      text-align: center; } }
 
 .nav-right-items {
   margin-left: 14px; }

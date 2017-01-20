@@ -2,40 +2,62 @@
 
 <!-- Navigation -->
 
-<nav class="navbar navbar-light navbar-fixed-top">
-   
-    <a href="#" class="nav-logo"></a>
+<section id="navigation">
 
-    <div class="container nav-container">
-        <ul class="nav-right-center">
-            <div class"row">
-                <ul>
+    <nav class="nav-container">
+       
+        <a href="#" class="nav-logo"></a>
+
+        <!-- Desktop navigation -->
+        <div class="nav-desktop-container">
+
+            <div class="container">
+
+                <ul class="nav-right-container">
+                    <div class"row">
+                        <ul>
+                            <li>
+                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                <a href="#login" class="btn-typo-nav" id="login"></a>
+                                <a href="#searchtours" class="btn-xs btn-nav" id="tour"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
+            </div>
+
+            <div class="dropdown nav-lang">
+
+                <a href="#" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="lang"></a>
+
+                <ul class="dropdown-menu nav-dropdown pull-right" id="langdropdown">
                     <li>
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                        <a href="#login" class="btn-typo-nav" id="login"></a>
-                        <a href="#searchtours" class="btn-xs btn-nav" id="tour"></a>
+                        <a href="#" id="ger" class="nav-dropdown-item"></a>
+                    </li>
+                    <li>
+                        <a href="#" id="eng" class="nav-dropdown-item"></a>
                     </li>
                 </ul>
+
             </div>
-        </ul>
-    </div>
 
-    <div class="dropdown nav-lang">
+        </div>
+        
+        <!-- Mobile navigation -->
+        <div class="nav-mobile-container">
+            <div class="nav-mobile-burger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="nav-mobile-login">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <a href="#login" class="btn-typo-nav" id="login">Login</a>
+            </div>
+        </div>
 
-        <a href="#" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="lang"></a>
+    </nav>
 
-        <ul class="dropdown-menu nav-dropdown pull-right" id="langdropdown">
-            <li>
-                <a href="#" id="ger" class="nav-dropdown-item"></a>
-            </li>
-            <li>
-                <a href="#" id="eng" class="nav-dropdown-item"></a>
-            </li>
-        </ul>
-
-    </div>
-
-</nav>
+</section>
 
 <!-- Cover -->
 
@@ -47,11 +69,12 @@
         <div class="cover-content-container">
             <h1 class="typo-head-cover" id="page1_tagline"></h1>
 
-            <div class="container text-center">
+            <div class="text-center">
                 <a href="#searchtours" class="btn-xl" id="SearchTour"></a>
                 <a href="#SaveTour" class="btn-xl" id="SaveTour"></a>
             </div>
         </div>
+
     </div>
 </section>
 

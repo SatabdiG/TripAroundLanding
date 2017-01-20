@@ -29,3 +29,31 @@
 @mixin modules-margin {
   margin-top: 72px;
 }
+
+// BREAKPOINTS
+
+$breakpoints: (
+  'xlarge': (max-width: 1350px),
+  'large': (max-width: 1050px),
+  'medium': (max-width: 850px),
+  'small': (max-width: 650px),
+);
+
+/// Responsive-Manager.
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
