@@ -2090,7 +2090,19 @@ function imagegallerycontroller(){
         mapname=sessionStorage.getItem("mapname")
     }
     console.log("In gallery page"+userid);
-  $(document).ready(function(){
+
+    // Make navigation sticky
+    var stickyOffset = $('.subnav-small-container').offset().top - 80;
+
+    $(window).scroll(function(){
+        var sticky = $('.subnav-small-container'),
+            scroll = $(window).scrollTop();
+          
+        if (scroll >= stickyOffset) sticky.addClass('subnav-small-is-sticky');
+        else sticky.removeClass('subnav-small-is-sticky');
+    });
+
+    $(document).ready(function(){
      //Launch Filters modal
     $('#logoutbutton').click(function(){
         sessionStorage.setItem("username",undefined);

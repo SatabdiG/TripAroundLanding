@@ -40,8 +40,16 @@
 
 .subnav-big-is-sticky {
 	position: fixed;
-	z-index: 9999;
+	z-index: 1;
 	top: 60px;
+	left: 0;
+	width: 100%;
+}
+
+.subnav-small-is-sticky {
+	position: fixed;
+	z-index: 1;
+	top: 80px;
 	left: 0;
 	width: 100%;
 }
