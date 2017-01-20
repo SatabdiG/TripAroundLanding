@@ -1109,7 +1109,7 @@ input[type=file] {
 
 @media (max-width: 767px) {
   ul.timeline:before {
-    left: 40px; }
+    left: 17px; }
 
   ul.timeline > li {
     clear: left;
@@ -1145,7 +1145,7 @@ input[type=file] {
     margin: 30px 0; }
 
   .timeline > li.timeline-inverted > .timeline-badge {
-    left: 17px; } }
+    left: 0px; } }
 .jcarousel-wrapper, .jcarousel-wrapper-iteniary {
   background: #fae4d1;
   margin: 20px auto;
