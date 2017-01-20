@@ -721,7 +721,6 @@ function dashboardfunction(){
     columnWidth: 360,
     gutter: 30,
     isFitWidth: true,
-    isAnimated: false,
     transitionDuration: 0
   });
 
