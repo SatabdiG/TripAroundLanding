@@ -1064,6 +1064,9 @@ input[type=file] {
     clear: both;
     content: " ";
     display: table; }
+  .timeline > li:nth-child(even) {
+    float: right;
+    clear: right; }
 
 .timeline > li > .timeline-panel {
   background: #fae4d1;
@@ -1082,27 +1085,23 @@ input[type=file] {
   text-align: center;
   z-index: 9999; }
 
-.timeline > li.timeline-inverted > .timeline-panel {
+.timeline > li:nth-child(even) > .timeline-panel {
   float: right; }
-  .timeline > li.timeline-inverted > .timeline-panel:before {
+  .timeline > li:nth-child(even) > .timeline-panel:before {
     border-left-width: 0;
     border-right-width: 15px;
     left: -15px;
     right: auto; }
-  .timeline > li.timeline-inverted > .timeline-panel:after {
+  .timeline > li:nth-child(even) > .timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;
     right: auto; }
 
-.timeline > li.timeline-inverted {
-  clear: right;
-  float: right; }
-
 .timeline > li:nth-child(2) {
   margin-top: 300px; }
 
-.timeline > li.timeline-inverted > .timeline-badge {
+.timeline > li:nth-child(even) > .timeline-badge {
   left: -17px; }
 
 .no-float {
@@ -1140,12 +1139,12 @@ input[type=file] {
       left: -14px;
       right: auto; }
 
-  .timeline > li.timeline-inverted {
+  .timeline > li:nth-child(even) {
     float: left;
     clear: left;
     margin: 30px 0; }
 
-  .timeline > li.timeline-inverted > .timeline-badge {
+  .timeline > li:nth-child(even) > .timeline-badge {
     left: 0px; } }
 .jcarousel-wrapper, .jcarousel-wrapper-iteniary {
   background: #fae4d1;
