@@ -287,7 +287,7 @@ i {
   border-bottom: 4px solid #fae4d1;
   height: 70px;
   margin: 0;
-  opacity: 0.98;
+  opacity: 0.95;
   position: fixed;
   top: 0;
   left: 0;
@@ -318,21 +318,28 @@ i {
     .nav-mobile-container {
       display: block; } }
 
-.nav-mobile-burger {
-  font-size: 1.5rem;
-  position: absolute;
-  top: 18px;
-  left: 20px; }
-
-.nav-mobile-login {
+.nav-mobile-right {
   position: absolute;
   right: 20px;
   top: 23px; }
+
+.nav-mobile-right-items-container {
+  display: inline;
+  float: right; }
+  .nav-mobile-right-items-container li {
+    display: inline;
+    padding: 4px; }
 
 .nav-lang {
   position: absolute;
   top: 20px;
   right: 20px; }
+  @media (max-width: 767px) {
+    .nav-lang {
+      position: static;
+      top: auto;
+      right: auto;
+      display: inline; } }
 
 .nav-logo {
   background: url("/frontend/pictures/logo.png") no-repeat;
@@ -346,12 +353,11 @@ i {
   height: 38px; }
   @media (max-width: 767px) {
     .nav-logo {
+      background: url("/frontend/pictures/logo.svg") no-repeat;
+      background-size: 187px;
       margin: -5px auto;
-      top: 25px;
-      left: 0;
-      right: 0;
-      width: 160px;
-      height: 31px; } }
+      top: 21px;
+      left: 20px; } }
 
 .nav-right-container {
   text-align: right; }
@@ -377,8 +383,8 @@ i {
 
 .subnav-small-wrapper {
   height: 40px;
-  margin-top: 70px;
-  margin-bottom: 24px; }
+  margin-top: 15px;
+  margin-bottom: 10px; }
 
 .subnav-tours-btn-container {
   display: inline;
