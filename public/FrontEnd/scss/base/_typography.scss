@@ -100,6 +100,11 @@
   letter-spacing: 0.2rem;
   margin-bottom: 34px;
 
+  @include respond-to('medium') {
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+  }
+
   @include respond-to('xsmall') {
     font-size: 3rem;
     margin-bottom: 24px;
@@ -117,6 +122,20 @@
   text-align: center;
   margin: 0 auto;
   width: 50%;
+
+  @include respond-to('large') {
+    width: 65%;
+  }
+
+  @include respond-to('medium') {
+    font-size: 1.4rem;
+    width: 70%;
+  }
+
+  @include respond-to('medium') {
+    font-size: 1.2rem;
+    width: 90%;
+  }
 }
 
 .typo-teaser-dashboard {

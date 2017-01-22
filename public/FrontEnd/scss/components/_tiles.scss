@@ -21,7 +21,7 @@
     transition: all 0.3s ease-out;
   }
 
-  @include respond-to('xxsmall') {
+  @include respond-to('xsmall') {
     width: 90vw;
   }
 }

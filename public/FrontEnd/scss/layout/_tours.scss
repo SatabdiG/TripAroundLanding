@@ -25,17 +25,35 @@
 	padding-left: 48px;
 	width: 100%;
 	height: 63px;
+
+	@include respond-to('medium') {
+		background: url("/frontend/pictures/tours-magnifying-glass.png") 10px 10px no-repeat;
+		background-size: 20px;
+		height: 48px;
+		margin-bottom: 14px;
+		padding-left: 38px;
+	}
 }
 
 .tours-search-form-container {
 	@include modules-margin;
 	margin-bottom: 44px;
+
+	@include respond-to('medium') {
+		margin: 34px 0;
+	}
 }
 
 // Tour overview
 
 .tours-ov-head-container {
 	margin-top: 140px;
+	margin-bottom: 44px;
+
+	@include respond-to('medium') {
+		margin-top: 100px;
+		margin-bottom: 24px;
+	}
 }
 
 .tours-ov-map-container {

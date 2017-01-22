@@ -17,6 +17,7 @@
 }
 
 .btn-typo-nav {
+  font-size: 1rem;
 
   &:hover {
     color: $primary;
@@ -120,7 +121,7 @@
     background: $white;
   }
 
-  @include respond-to('small') {
+  @include respond-to('medium') {
     border: 1px solid $primary;
     border-radius: 10px;
     color: $white;
