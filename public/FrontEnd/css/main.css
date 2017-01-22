@@ -505,6 +505,11 @@ i {
   position: absolute;
   top: 0;
   right: -50px; }
+  @media (max-width: 1050px) {
+    .tours-ov-social-container {
+      top: auto;
+      bottom: -55px;
+      right: 13px; } }
 
 .footer-container {
   background: #ee5022;
@@ -808,6 +813,13 @@ input[type=file] {
     color: #ee5022; }
   .btn-social-circle:hover .btn-social-circle-typo, .btn-social-circle-sharing:hover .btn-social-circle-typo {
     color: #ee5022; }
+  @media (max-width: 1050px) {
+    .btn-social-circle, .btn-social-circle-sharing {
+      font-size: 20px;
+      float: left;
+      margin-left: 10px;
+      width: 40px;
+      height: 40px; } }
 
 .btn-social-circle-sharing {
   float: left;

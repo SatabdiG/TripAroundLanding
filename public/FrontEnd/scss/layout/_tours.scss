@@ -65,4 +65,10 @@
 	position: absolute;
 	top: 0;
 	right: -50px;
+
+	@include respond-to('large') {
+		top: auto;
+		bottom: -55px;
+		right: 13px;
+	}
 }

@@ -53,6 +53,14 @@
   &:hover .btn-social-circle-typo {
     color: $primary;
   }
+
+  @include respond-to('large') {
+    font-size: 20px;
+    float: left;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .btn-social-circle-sharing {
