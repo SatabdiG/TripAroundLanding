@@ -111,7 +111,7 @@
   }
 
   @include respond-to('xsmall') {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
   }
 }
@@ -132,7 +132,7 @@
     width: 70%;
   }
 
-  @include respond-to('medium') {
+  @include respond-to('small') {
     font-size: 1.2rem;
     width: 90%;
   }
