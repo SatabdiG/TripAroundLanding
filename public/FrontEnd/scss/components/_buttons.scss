@@ -90,7 +90,7 @@
 
 .btn-xs {
   border: 1px solid $primary;
-  border-radius: 10px;
+  border-radius: 6px;
   color: $white;
   display: inline;
   font-size: 0.9rem;
@@ -141,7 +141,7 @@
 .btn-xl {
   background: $primary;
   border: 1px solid $primary;
-  border-radius: 10px;
+  border-radius: 6px;
   color: $white;
   display: inline-block;
   font-size: 1.125rem;
@@ -179,7 +179,7 @@
   @extend .btn-xl;
   background: $white;
   border: 1px solid $primary;
-  border-radius: 10px;
+  border-radius: 6px;
   color: $primary;
   display: inline-block;
   font-size: 1.125rem;
@@ -216,7 +216,7 @@
 .btn-subnav-small {
   background: $white;
   border: 1px solid $primary;
-  border-radius: 10px;
+  border-radius: 6px;
   color: $primary;
   display: inline-block;
   font-size: 0.8rem;
@@ -260,6 +260,10 @@
   border-right: 2px solid $primary-lighter;
 }
 
+.btn-subnav-typo-triangle {
+  font-size: 2rem;
+}
+
 
 // Buttons in iteniary view
 
@@ -278,7 +282,7 @@
   background: $primary;
   border: 1px solid $primary;
   border-color: none;
-  border-radius: 10px;
+  border-radius: 6px;
   color: $white;
   font-size: 1.6rem;
   float: left;

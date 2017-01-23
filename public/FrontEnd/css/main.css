@@ -952,7 +952,7 @@ input[type=file] {
 
 .btn-xs, .btn-xs-inv, .btn-xs-login, .btn-iteniary {
   border: 1px solid #ee5022;
-  border-radius: 10px;
+  border-radius: 6px;
   color: white;
   display: inline;
   font-size: 0.9rem;
@@ -991,7 +991,7 @@ input[type=file] {
 .btn-xl, .btn-xl-active, .btn-xl-inv, .btn-xl-in-text {
   background: #ee5022;
   border: 1px solid #ee5022;
-  border-radius: 10px;
+  border-radius: 6px;
   color: white;
   display: inline-block;
   font-size: 1.125rem;
@@ -1018,7 +1018,7 @@ input[type=file] {
 .btn-xl-inv {
   background: white;
   border: 1px solid #ee5022;
-  border-radius: 10px;
+  border-radius: 6px;
   color: #ee5022;
   display: inline-block;
   font-size: 1.125rem;
@@ -1046,7 +1046,7 @@ input[type=file] {
 .btn-subnav-small, .btn-small-active {
   background: white;
   border: 1px solid #ee5022;
-  border-radius: 10px;
+  border-radius: 6px;
   color: #ee5022;
   display: inline-block;
   font-size: 0.8rem;
@@ -1078,6 +1078,9 @@ input[type=file] {
 .btn-subnav-mobile-dashboard {
   border-right: 2px solid #ef5f35; }
 
+.btn-subnav-typo-triangle {
+  font-size: 2rem; }
+
 .btn-iteniary {
   height: 55px; }
   @media (max-width: 767px) {
@@ -1090,7 +1093,7 @@ input[type=file] {
   background: #ee5022;
   border: 1px solid #ee5022;
   border-color: none;
-  border-radius: 10px;
+  border-radius: 6px;
   color: white;
   font-size: 1.6rem;
   float: left;
