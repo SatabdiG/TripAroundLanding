@@ -239,7 +239,8 @@ i {
   width: 100%; }
 
 .typo-tourstop-triangle {
-  line-height: 170%; }
+  font-size: 2.5rem;
+  line-height: 110%; }
 
 .typo-tiles-description {
   background: #fcefe3;
@@ -1395,7 +1396,7 @@ input[type=file] {
 .subnav-big-is-sticky {
   position: fixed;
   z-index: 1;
-  top: 60px;
+  top: 70px;
   left: 0;
   width: 100%; }
 

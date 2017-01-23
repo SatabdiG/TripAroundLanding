@@ -19,7 +19,7 @@ function viewtourcontroller()
 
 
     // Make navigation sticky
-    var stickyOffset = $('.subnav-big-container').offset().top - 60;
+    var stickyOffset = $('.subnav-big-container').offset().top - 70;
 
     $(window).scroll(function(){
         var sticky = $('.subnav-big-container'),
