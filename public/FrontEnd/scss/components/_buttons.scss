@@ -232,6 +232,23 @@
   }
 }
 
+.btn-subnav-mobile-typo {
+  color: $white;
+  font-size: 0.9rem;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.btn-subnav-mobile-dashboard {
+  @extend .btn-subnav-mobile-typo;
+  border-right: 2px solid $primary-lighter;
+}
+
+
 // Buttons in iteniary view
 
 .btn-iteniary {

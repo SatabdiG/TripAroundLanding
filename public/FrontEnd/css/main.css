@@ -382,9 +382,13 @@ i {
   height: 101px; }
 
 .subnav-small-wrapper {
+  display: block;
   height: 40px;
   margin-top: 15px;
   margin-bottom: 10px; }
+  @media (max-width: 935px) {
+    .subnav-small-wrapper {
+      display: none; } }
 
 .subnav-tours-btn-container {
   display: inline;
@@ -399,6 +403,45 @@ i {
 .subnav-small-right-items {
   display: inline;
   float: right; }
+
+.subnav-small-mobile-container {
+  background: #ee5022;
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 70px; }
+  .subnav-small-mobile-container:after {
+    content: "";
+    position: absolute;
+    background: -webkit-linear-gradient(left, rgba(238, 80, 34, 0), #ee5022);
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%; }
+  @media (max-width: 935px) {
+    .subnav-small-mobile-container {
+      display: block;
+      z-index: 1; } }
+
+.subnav-small-mobile-item-container {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  margin: 0; }
+
+.subnav-small-mobile-item, .subnav-small-mobile-item-dashboard {
+  display: inline-block;
+  padding: 12px; }
+  .subnav-small-mobile-item:last-child, .subnav-small-mobile-item-dashboard:last-child {
+    margin-right: 48px; }
+
+.subnav-small-mobile-item-active {
+  border-bottom: 4px solid white;
+  padding-bottom: 8px; }
+
+.subnav-small-mobile-item-dashboard {
+  border-right: 1px solid #fae4d1; }
 
 .cover-image-container {
   background: url("/FrontEnd/Pictures/cover-landingpage.jpg") 60% 100% no-repeat;
@@ -501,7 +544,7 @@ i {
   margin-bottom: 44px; }
   @media (max-width: 850px) {
     .tours-ov-head-container {
-      margin-top: 100px;
+      margin-top: 165px;
       margin-bottom: 24px; } }
 
 .tours-ov-map-container {
@@ -983,6 +1026,17 @@ input[type=file] {
     background: white;
     border: 1px solid #ee5022;
     color: #ee5022; }
+
+.btn-subnav-mobile-typo, .btn-subnav-mobile-dashboard {
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase; }
+  .btn-subnav-mobile-typo:hover, .btn-subnav-mobile-dashboard:hover {
+    color: #fae4d1; }
+
+.btn-subnav-mobile-dashboard {
+  border-right: 2px solid #ef5f35; }
 
 .btn-iteniary {
   height: 55px; }

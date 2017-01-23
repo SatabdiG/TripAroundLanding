@@ -113,7 +113,7 @@
   margin-left: 14px;
 }
 
-// Styles for subnavigation
+// Styles for subnavigation (desktop)
 
 .tours-subnav-container {
   margin: 60px 0 30px 0;
@@ -133,9 +133,14 @@
 }
 
 .subnav-small-wrapper {
+  display: block;
   height: 40px;
   margin-top: 15px;
   margin-bottom: 10px;
+
+  @media (max-width: 935px) {
+    display: none;
+  }
 }
 
 .subnav-tours-btn-container {
@@ -155,4 +160,56 @@
 .subnav-small-right-items {
   display: inline;
   float: right;
+}
+
+// Styles for subnavigation (mobile)
+
+.subnav-small-mobile-container {
+  background: $primary;
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 70px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    background: -webkit-linear-gradient(left, rgba(238,80,34,0), rgba(238,80,34,1));
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+  }
+
+  @media (max-width: 935px) {
+    display: block;
+    z-index: 1;
+  }
+}
+
+.subnav-small-mobile-item-container {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  margin: 0;
+}
+
+.subnav-small-mobile-item {
+  display: inline-block;
+  padding: 12px;
+
+  &:last-child {
+    margin-right: 48px;
+  }
+}
+
+.subnav-small-mobile-item-active {
+  border-bottom: 4px solid $white;
+  padding-bottom: 8px;
+}
+
+.subnav-small-mobile-item-dashboard {
+  @extend .subnav-small-mobile-item;
+  border-right: 1px solid $secondary;
 }
