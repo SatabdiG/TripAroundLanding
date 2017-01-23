@@ -176,7 +176,8 @@
   width: 100%;
   top: 70px;
 
-  &:after {
+  @include respond-to('small') {
+    &:after {
     content: "";
     position: absolute;
     background: -webkit-linear-gradient(left, rgba(238,80,34,0), rgba(238,80,34,1));
@@ -185,6 +186,18 @@
     width: 20%;
     height: 100%;
   }
+
+  }
+
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   background: -webkit-linear-gradient(left, rgba(238,80,34,0), rgba(238,80,34,1));
+  //   top: 0;
+  //   right: 0;
+  //   width: 20%;
+  //   height: 100%;
+  // }
 
   @media (max-width: 935px) {
     display: block;

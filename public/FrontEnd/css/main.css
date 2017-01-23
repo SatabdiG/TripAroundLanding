@@ -415,14 +415,15 @@ i {
   position: fixed;
   width: 100%;
   top: 70px; }
-  .subnav-small-mobile-container:after {
-    content: "";
-    position: absolute;
-    background: -webkit-linear-gradient(left, rgba(238, 80, 34, 0), #ee5022);
-    top: 0;
-    right: 0;
-    width: 20%;
-    height: 100%; }
+  @media (max-width: 767px) {
+    .subnav-small-mobile-container:after {
+      content: "";
+      position: absolute;
+      background: -webkit-linear-gradient(left, rgba(238, 80, 34, 0), #ee5022);
+      top: 0;
+      right: 0;
+      width: 20%;
+      height: 100%; } }
   @media (max-width: 935px) {
     .subnav-small-mobile-container {
       display: block;
