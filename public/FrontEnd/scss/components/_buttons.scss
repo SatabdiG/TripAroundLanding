@@ -22,6 +22,10 @@
   &:hover {
     color: $primary;
   }
+
+  @include respond-to('xsmall') {
+    font-size: 0.9rem;
+  }
 }
 
 .btn-typo-nav-white {
@@ -78,7 +82,6 @@
     float: none;
     margin-right: 0;
   }
-
 }
 
 .btn-social-circle-typo {
@@ -310,6 +313,41 @@
   }
 }
 
+.btn-floating {
+  background: $primary;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px $black;
+  color: $white;
+  cursor: pointer;
+  font-size: 25px;
+  float: right;
+  line-height: 2em;
+  padding: 0;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background: $white;
+    border: 1px solid $primary;
+    color: $primary;
+  }
+}
+
+.btn-social-circle-sharing {
+  @extend .btn-social-circle;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0;
+
+  @include respond-to('large') {
+    display: inline-block;
+    float: none;
+    margin-right: 0;
+  }
+}
 // .btn-small-dashboard {
 //   background: $black-light;
 //   border: 1px solid $primary;

@@ -92,3 +92,26 @@
   margin: 10px;
   font-size: medium;
 }
+
+// Floating button
+
+.iteniary-floating-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 3;
+}
+
+.iteniary-floating-form-container {
+  margin-bottom: 15px;
+}
+
+.iteniary-floating-btn-container {
+  // position: fixed;
+  // right: 20px;
+  // bottom: 20px;
+}
+
+.iteniary-floating-form {
+  // width: 20%;
+}

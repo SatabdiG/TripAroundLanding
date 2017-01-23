@@ -58,6 +58,10 @@
                         <a href="#login" class="btn-typo-nav" id="">Logout</a>
                     </li>
 
+                    <li>
+                        <a href="#searchtours" class="btn-typo-nav" id="">Touren</a>
+                    </li>
+
                     <li class="dropdown nav-lang">
 
                         <a href="#" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="">Sprache</a>
@@ -308,6 +312,37 @@
         
     </div>
 
+</section>
+
+<!-- Floating buttons to add tourstops -->
+
+<section id="tours-floating-btn">
+
+    <div class="iteniary-floating-container text-right is-hidden">
+
+        <div class="iteniary-floating-form-container is-hidden">
+            <form class="iteniary-floating-form">
+                <div class="">
+                    <input type="text" placeholder="Enter Tour Stop" id="place" class="iteniary-search-form">
+                </div>
+                <div class="">
+                    <input type="text" placeholder="Time" id="duration" class="iteniary-search-form">
+                </div>
+            </form>
+
+            <div class="">
+                <button type="button" class="btn-iteniary" id="createTourStop">Tourstop hinzufügen</button>
+            </div>
+        </div>
+
+        <div class="iteniary-floating-btn-container">
+            <div class="btn-floating">
+                <i class="fa fa-plus btn-floating-circle-typo" aria-hidden="true"></i>
+            </div>
+        </div>
+
+    </div>
+    
 </section>
 
 <!-- Footer -->

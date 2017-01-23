@@ -16,6 +16,25 @@ function iteniarygenerator()
         nav: true,
         navText: ["&lsaquo;","&rsaquo;"]
     });
+
+    // Make floating button visible
+    var offset = 500;
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > offset) {
+            $('.iteniary-floating-container').removeClass('is-hidden');
+        } else {
+            $('.iteniary-floating-container').addClass('is-hidden');
+        }
+    });
+
+    // Floating button
+    $('.iteniary-floating-btn-container').click(function() {
+        $('.iteniary-floating-form-container').slideToggle('fast', function() {
+            $('.iteniary-floating-form-container').toggleClass('is-hidden');
+        });
+        $('.btn-floating-circle-typo').toggleClass('fa fa-minus');
+        $('.btn-floating-circle-typo').toggleClass('fa fa-plus');
+    });
     
     $(".modal-backdrop").remove()
     var count=1;
