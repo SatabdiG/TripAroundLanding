@@ -379,7 +379,11 @@ i {
   width: 100%; }
 
 .subnav-big-wrapper {
+  display: block;
   height: 101px; }
+  @media (max-width: 767px) {
+    .subnav-big-wrapper {
+      display: none; } }
 
 .subnav-small-wrapper {
   display: block;
@@ -436,7 +440,22 @@ i {
   .subnav-small-mobile-item:last-child, .subnav-small-mobile-item-dashboard:last-child {
     margin-right: 48px; }
 
-.subnav-small-mobile-item-active {
+.subnav-big-mobile-item {
+  display: inline-block;
+  padding: 12px; }
+
+.subnav-big-mobile-container {
+  background: #ee5022;
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 70px; }
+  @media (max-width: 767px) {
+    .subnav-big-mobile-container {
+      display: block;
+      z-index: 1; } }
+
+.subnav-small-item-active {
   border-bottom: 4px solid white;
   padding-bottom: 8px; }
 
@@ -974,14 +993,8 @@ input[type=file] {
     background: white; }
   @media (max-width: 850px) {
     .btn-xl, .btn-xl-active, .btn-xl-inv, .btn-xl-in-text {
-      border: 1px solid #ee5022;
-      border-radius: 10px;
-      color: white;
-      display: inline-block;
       font-size: 1rem;
-      background: #ee5022;
       padding: 12px 24px 12px 24px;
-      text-transform: uppercase;
       width: auto; } }
 
 .btn-xl-active:hover {
@@ -991,11 +1004,25 @@ input[type=file] {
 
 .btn-xl-inv {
   background: white;
-  color: #ee5022; }
+  border: 1px solid #ee5022;
+  border-radius: 10px;
+  color: #ee5022;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 18px 24px 18px 24px;
+  margin: 1%;
+  width: 100%;
+  max-width: 297px;
+  text-transform: uppercase; }
   .btn-xl-inv:hover {
     border: 1px solid #ee5022;
     color: white;
     background: #ee5022; }
+  @media (max-width: 1050px) {
+    .btn-xl-inv {
+      font-size: 1rem;
+      padding: 12px 34px 12px 34px;
+      width: auto; } }
 
 .btn-xl-in-text {
   margin: 0; }

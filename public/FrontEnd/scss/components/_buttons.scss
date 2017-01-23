@@ -155,14 +155,8 @@
   }
 
   @include respond-to('medium') {
-    border: 1px solid $primary;
-    border-radius: 10px;
-    color: $white;
-    display: inline-block;
     font-size: 1rem;
-    background: $primary;
     padding: 12px 24px 12px 24px;
-    text-transform: uppercase;
     width: auto;
   }
 }
@@ -181,12 +175,27 @@
 .btn-xl-inv {
   @extend .btn-xl;
   background: $white;
+  border: 1px solid $primary;
+  border-radius: 10px;
   color: $primary;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 18px 24px 18px 24px;
+  margin: 1%;
+  width: 100%;
+  max-width: 297px;
+  text-transform: uppercase;
 
   &:hover {
     border: 1px solid $primary;
     color: $white;
     background: $primary;
+  }
+
+    @include respond-to('large') {
+      font-size: 1rem;
+      padding: 12px 34px 12px 34px;
+      width: auto;
   }
 }
 

@@ -129,7 +129,12 @@
 }
 
 .subnav-big-wrapper {
+  display: block;
   height: 101px;
+
+  @include respond-to('small') {
+    display: none;
+  }
 }
 
 .subnav-small-wrapper {
@@ -162,7 +167,7 @@
   float: right;
 }
 
-// Styles for subnavigation (mobile)
+// Styles for small subnavigation (mobile)
 
 .subnav-small-mobile-container {
   background: $primary;
@@ -204,7 +209,27 @@
   }
 }
 
-.subnav-small-mobile-item-active {
+.subnav-big-mobile-item {
+  display: inline-block;
+  padding: 12px;
+}
+
+// Styles for big subnavigation (mobile)
+
+.subnav-big-mobile-container {
+  background: $primary;
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 70px;
+
+  @include respond-to('small') {
+    display: block;
+    z-index: 1;
+  }
+}
+
+.subnav-small-item-active {
   border-bottom: 4px solid $white;
   padding-bottom: 8px;
 }
