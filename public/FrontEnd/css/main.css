@@ -538,7 +538,7 @@ i {
 .tours-search {
   background: url("/frontend/pictures/tours-magnifying-glass.png") 14px 14px no-repeat;
   border: 1px solid #ee5022;
-  border-radius: 10px;
+  border-radius: 6px;
   box-shadow: 1px 1px 6px 0px rgba(238, 80, 34, 0.4);
   color: #ee5022;
   padding-left: 48px;
@@ -630,6 +630,9 @@ i {
   margin-left: 2%; }
   .footer-nav-items:nth-child(1) {
     margin-left: 0; }
+
+.gallery-container {
+  margin-top: 20px; }
 
 .gallery-row-container {
   margin-bottom: 30px; }
