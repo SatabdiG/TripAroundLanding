@@ -101,6 +101,11 @@
     background: $white;
     padding: 10px 20px 10px 20px;
   }
+
+  @include respond-to('xsmall') {
+    font-size: 0.7rem;
+    padding: 12px 12px;
+  }
 }
 
 .btn-xs-inv {
@@ -232,7 +237,13 @@
 .btn-iteniary {
   @extend .btn-xs;
   height: 55px;
+
+  @include respond-to('small') {
+    font-size: 0.7rem;
+    height: auto;
+    padding: 12px 12px;
   }
+}
 
 .btn-iteniary-duration {
   background: $primary;
@@ -241,10 +252,22 @@
   border-radius: 10px;
   color: $white;
   font-size: 1.6rem;
+  float: left;
+  margin-bottom: 8px;
   padding: 2%;
   position: relative;
   width: 55px;
   height: 55px;
+
+  @include respond-to('large') {
+    float: right;
+  }
+
+  @include respond-to('xsmall') {
+    font-size: 1.5rem;
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .btn-iteniary-dropdown {

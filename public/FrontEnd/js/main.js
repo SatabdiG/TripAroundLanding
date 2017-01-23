@@ -2710,10 +2710,6 @@ tripapp.config(function($routeProvider) {
         templateUrl:'/FrontEnd/partials/FAQ.html',
    })
 
-    .when('/iteniary-nils',{
-        templateUrl:'/FrontEnd/partials/iteniary-nils.html',
-   })
-
      .when('/share',{
       templateUrl:'/FrontEnd/partials/share.html',
       controller:'ShareController'

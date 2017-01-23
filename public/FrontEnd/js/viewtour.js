@@ -37,7 +37,7 @@ function viewtourcontroller()
         items: 1,
         nav: true,
         navText: ["&lsaquo;","&rsaquo;"]
-    })
+    });
 
     $(document).ready(function(){
         initialize();

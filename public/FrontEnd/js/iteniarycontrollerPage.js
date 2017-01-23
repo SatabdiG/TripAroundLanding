@@ -6,6 +6,17 @@ var itemarkers=[];
 
 function iteniarygenerator()
 {
+
+    // Initialize owl carousel
+    $('.owl-carousel').owlCarousel({
+        margin: 10,
+        loop: true,
+        autoWidth: true,
+        items: 1,
+        nav: true,
+        navText: ["&lsaquo;","&rsaquo;"]
+    });
+    
     $(".modal-backdrop").remove()
     var count=1;
     $(document).ready(function(){
