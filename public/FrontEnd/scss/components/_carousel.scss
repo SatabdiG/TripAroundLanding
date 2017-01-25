@@ -86,8 +86,9 @@
 // Styles for owl slider 
 
 .owl-carousel {
-  background: $secondary;
+  // background: $secondary;
   padding: 8px 0;
+  z-index: -1;
 }
 
 .owl-prev {

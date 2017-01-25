@@ -162,142 +162,135 @@
 
 </section>
 
-<!-- Maps placeholder -->
+<!-- Maps + Add tourstop -->
 
 <section id="tours-overview-map">
-    
-    <div class="container tours-ov-map-container">
-        <img class="img-responsive" src="/frontend/pictures/tours-maps-placeholder-small.png">
-    </div>
 
-</section>
-
-<section>
-    
     <div class="container">
+    
+        <!-- Sticky map -->
+        <div class="iteniary-map-wrapper">
+ 
+            <div class="iteniary-map-container-sticky">
+                <img class="img-responsive" src="/frontend/pictures/map-500x500.png">
+                <aside class="tours-ov-social-container-sticky">
+                    <ul>
+                        <li class="btn-social-circle">
+                            <a>
+                                <i class="fa fa-facebook btn-social-circle-typo" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="btn-social-circle">
+                            <a>
+                                <i class="fa fa-instagram btn-social-circle-typo" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="btn-social-circle">
+                            <a>
+                                <i class="fa fa-twitter btn-social-circle-typo" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="btn-social-circle">
+                            <a>
+                                <i class="fa fa-pinterest-p btn-social-circle-typo" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
 
-        <div class="row">
-
-            <!--  <div class="col-md-12">
-                <div id="googleMap" class="iteniary-map"></div>
-            </div> -->
-        </div>
-        
-        <!-- Create your tour stop here -->
-        <div class="row iteniary-add-container">
-
-            <div class="w3-container w3-blue" id="IteniaryPage">
-                <!--Iteniary pages go here -->
-
-                <!--Create Iteniary pages here -->
-                <div class="col-xs-12 col-md-4">
-                    <input type="text" placeholder="Enter Tour Stop" id="place" class="iteniary-search-form">
-                </div>
-
-                <div class="col-xs-9 col-md-2">
-                    <input type="text" placeholder="Time" id="duration" class="iteniary-search-form">
-                </div>
-
-                <div class="col-xs-3 col-md-1">
-                    <div class="dropdown iteniary-dropdown-container" id="dropdownd">
-                        <button class="btn-iteniary-duration" type="button" id="durationclick" data-toggle="dropdown"><i class="fa fa-calendar" aria-hidden="true"></i><span class="caret"></span></button>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" id="durationmenu">
-                            <li role="presentation">
-                                <div class="iteniary-dropdown-header">Duration in Days</div>
-                            </li>
-                            <li role="presentation"><button role="menuitem" tabindex="-1"  id="dur1" class="btn-iteniary-dropdown">1</button></li>
-                            <li role="presentation"><button role="menuitem" tabindex="-1" id="dur2" class="btn-iteniary-dropdown">2</button></li>
-                            <li role="presentation"><button role="menuitem" tabindex="-1" id="dur3" class="btn-iteniary-dropdown">3</button></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-xs-7 col-md-3 text-left">
-                    <button type="button" class="btn-iteniary" id="createTourStop">Tourstop hinzufügen</button>
-                </div>
-
-                <div class="col-md-2 text-right">
-                    <button type="button" class="btn-iteniary" id="replayTourAnimation">Replay</button>
-                </div>
-                <!--<button type="button" class="btn btn-primary" id="saveIteniary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save </button>-->
             </div>
 
         </div>
         
-
-        <div class="row">
-
-            <div id="" class="col-xs-12">
-                <h3 class="itenary-header">7 Tage Bordeaux</h3>
-            </div>
-                
-            <!-- Add thumbnail -->   
-            <div class="col-sm-4">
-                <div id="" class="itenary-thumbnail">
-
-                    <form id="uploadForm2" enctype="multipart/form-data">
-                        <p id="uploadstatus"></p>
-                
-                            <input type="file" multiple="multiple" id="" accept="image/*" resize="none">
-                      
-                        <div id="dropzonePreview" class="dropzone img-upload-dropzone img-upload-itenairy-title">
-                            <div class="dz-default dz-message"><small class="text-muted">Titelbild hinzufügen</small></div>
-                        </div>
-                        <span id="status"></span>
-                    </form>
-
-                </div>
-            </div>
-            
-            <!-- Add description -->  
-            <div class="col-sm-8">
-                <div id="" class="itenary-des"><textarea id="" class="textboxiteniarypage " placeholder="Bitte fügen Sie eine Beschreibungstext hinzu"></textarea>
-                </div>
-            </div>
-            
-            <!-- Add images to gallery -->
-            <div class="col-sm-8 iteniary-gallery-container">
-                <div class="imageuploadform">
-                    <form id="uploadForm2" enctype="multipart/form-data">
-                        <p id="uploadstatus"></p>
-
-                            <input type="file" name="userPhoto" multiple id="userphoto" />
-
-                        <div id="dropzonePreview" class="dropzone img-upload-dropzone img-upload-itenairy">
-                            <div class="dz-default dz-message"><small class="text-muted">Bilder zum Tourstop hinzufügen</small></div>
-                        </div>
-                        <span id="status"></span>
-                    </form>
-                    <button type="button" class="btn-xs" id="replayTourAnimation">Tourstop Löschen</button>
-                    <div class="float-right">
-                        <button type="button" class="btn-xs-inv" id="replayTourAnimation">Edit</button>
-                        <button type="button" class="btn-xs" id="replayTourAnimation">Speichern</button>
-                    </div>
-                </div>
-            </div>
+        <!-- Map mobile (not sticky) -->
+        <div class="container tours-ov-map-container-mobile">
+            <img class="img-responsive" src="/frontend/pictures/tours-maps-placeholder-small.png">
+            <aside class="tours-ov-social-container-sticky">
+                <ul>
+                    <li class="btn-social-circle">
+                        <a>
+                            <i class="fa fa-facebook btn-social-circle-typo" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="btn-social-circle">
+                        <a>
+                            <i class="fa fa-instagram btn-social-circle-typo" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="btn-social-circle">
+                        <a>
+                            <i class="fa fa-twitter btn-social-circle-typo" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="btn-social-circle">
+                        <a>
+                            <i class="fa fa-pinterest-p btn-social-circle-typo" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
 
         </div>
 
-        <div class="row">
+        <div class="col-lg-6">
 
-            <div class="col-lg-12">
+        <!-- Description + image upload -->
+        <div class="col-lg-12 iteniary-tourstop-container">
 
-                <!-- <div class="jcarousel-wrapper jcarousel-wrapper-iteniary">
-                    <div class="jcarousel">
-                        <ul>
-                            <li><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></li>
-                            <li><img src="/frontend/pictures/landing-tile-placeholder-02.jpg" alt=""></li>
-                            <li><img src="/frontend/pictures/landing-tile-placeholder-03.jpg" alt=""></li>
-                            <li><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></li>
-                            <li><img src="/frontend/pictures/landing-tile-placeholder-02.jpg" alt=""></li>
-                            <li><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></li>
-                        </ul>
+            <div class="iteniary-infobox-container">
+            
+                <div class="row">
+
+                    <div id="" class="col-xs-12 col-lg-12">
+                        <h3 class="itenary-header">7 Tage Bordeaux</h3>
                     </div>
-                    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-                    <a href="#" class="jcarousel-control-next">&rsaquo;</a> 
-                </div> -->
 
-                <!-- Owl carousel -->
+                </div>
+                    
+                    
+                <div class="row">    
+                    <!-- Add description -->  
+                    <div class="col-sm-6">
+                        <div id="" class="itenary-des"><textarea id="" class="textboxiteniarypage " placeholder="Bitte fügen Sie eine Beschreibungstext hinzu"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Add images to gallery -->
+                    <div class="col-sm-6 iteniary-gallery-container">
+                        <div class="imageuploadform">
+                            <form id="uploadForm2" enctype="multipart/form-data">
+                                <p id="uploadstatus"></p>
+
+                                    <input type="file" name="userPhoto" multiple id="userphoto" />
+
+                                <div id="dropzonePreview" class="dropzone img-upload-dropzone img-upload-itenairy">
+                                    <div class="dz-default dz-message"><small class="text-muted">Bilder hochladen</small></div>
+                                </div>
+                                <span id="status"></span>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Buttons tourstop -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <button type="button" class="btn-xs" id="replayTourAnimation">Tourstop Löschen</button>
+                        <div class="float-right">
+                            <button type="button" class="btn-xs-inv" id="replayTourAnimation">Edit</button>
+                            <button type="button" class="btn-xs" id="replayTourAnimation">Speichern</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slideshow -->   
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- Owl carousel -->
                     <div class="owl-carousel owl-theme">
                         <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></div>
                         <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-03.jpg" alt=""></div>
@@ -305,11 +298,154 @@
                         <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-02.jpg" alt=""></div>
                         <div class="item" style="width:150px"><img src="/frontend/pictures/placeholder-veritical.jpg" alt=""></div>
                     </div>
-
+                </div>
+                
             </div>
 
         </div>
-        
+
+        <!-- Description + image upload -->
+        <div class="col-lg-12 iteniary-tourstop-container">
+
+            <div class="iteniary-infobox-container">
+            
+                <div class="row">
+
+                    <div id="" class="col-xs-12 col-lg-12">
+                        <h3 class="itenary-header">7 Tage Bordeaux</h3>
+                    </div>
+
+                </div>
+                    
+                    
+                <div class="row">    
+                    <!-- Add description -->  
+                    <div class="col-sm-6">
+                        <div id="" class="itenary-des"><textarea id="" class="textboxiteniarypage " placeholder="Bitte fügen Sie eine Beschreibungstext hinzu"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Add images to gallery -->
+                    <div class="col-sm-6 iteniary-gallery-container">
+                        <div class="imageuploadform">
+                            <form id="uploadForm2" enctype="multipart/form-data">
+                                <p id="uploadstatus"></p>
+
+                                    <input type="file" name="userPhoto" multiple id="userphoto" />
+
+                                <div id="dropzonePreview" class="dropzone img-upload-dropzone img-upload-itenairy">
+                                    <div class="dz-default dz-message"><small class="text-muted">Bilder hochladen</small></div>
+                                </div>
+                                <span id="status"></span>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Buttons tourstop -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <button type="button" class="btn-xs" id="replayTourAnimation">Tourstop Löschen</button>
+                        <div class="float-right">
+                            <button type="button" class="btn-xs-inv" id="replayTourAnimation">Edit</button>
+                            <button type="button" class="btn-xs" id="replayTourAnimation">Speichern</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slideshow -->   
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- Owl carousel -->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></div>
+                        <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-03.jpg" alt=""></div>
+                        <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></div>
+                        <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-02.jpg" alt=""></div>
+                        <div class="item" style="width:150px"><img src="/frontend/pictures/placeholder-veritical.jpg" alt=""></div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- Description + image upload -->
+        <div class="col-lg-12 iteniary-tourstop-container">
+
+            <div class="iteniary-infobox-container">
+            
+                <div class="row">
+
+                    <div id="" class="col-xs-12 col-lg-12">
+                        <h3 class="itenary-header">7 Tage Bordeaux</h3>
+                    </div>
+
+                </div>
+                    
+                    
+                <div class="row">    
+                    <!-- Add description -->  
+                    <div class="col-sm-6">
+                        <div id="" class="itenary-des"><textarea id="" class="textboxiteniarypage " placeholder="Bitte fügen Sie eine Beschreibungstext hinzu"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Add images to gallery -->
+                    <div class="col-sm-6 iteniary-gallery-container">
+                        <div class="imageuploadform">
+                            <form id="uploadForm2" enctype="multipart/form-data">
+                                <p id="uploadstatus"></p>
+
+                                    <input type="file" name="userPhoto" multiple id="userphoto" />
+
+                                <div id="dropzonePreview" class="dropzone img-upload-dropzone img-upload-itenairy">
+                                    <div class="dz-default dz-message"><small class="text-muted">Bilder hochladen</small></div>
+                                </div>
+                                <span id="status"></span>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Buttons tourstop -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <button type="button" class="btn-xs" id="replayTourAnimation">Tourstop Löschen</button>
+                        <div class="float-right">
+                            <button type="button" class="btn-xs-inv" id="replayTourAnimation">Edit</button>
+                            <button type="button" class="btn-xs" id="replayTourAnimation">Speichern</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slideshow -->   
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- Owl carousel -->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></div>
+                        <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-03.jpg" alt=""></div>
+                        <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-01.jpg" alt=""></div>
+                        <div class="item" style="width:300px"><img src="/frontend/pictures/landing-tile-placeholder-02.jpg" alt=""></div>
+                        <div class="item" style="width:150px"><img src="/frontend/pictures/placeholder-veritical.jpg" alt=""></div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
     </div>
 
 </section>
@@ -318,7 +454,7 @@
 
 <section id="tours-floating-btn">
 
-    <div class="iteniary-floating-container text-right is-hidden">
+    <div class="iteniary-floating-container text-right">
 
         <div class="iteniary-floating-form-container is-hidden">
             <form class="iteniary-floating-form">
@@ -342,6 +478,10 @@
         </div>
 
     </div>
+
+
+
+
     
 </section>
 

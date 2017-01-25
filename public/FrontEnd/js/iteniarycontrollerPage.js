@@ -17,15 +17,39 @@ function iteniarygenerator()
         navText: ["&lsaquo;","&rsaquo;"]
     });
 
-    // Make floating button visible
-    var offset = 500;
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > offset) {
-            $('.iteniary-floating-container').removeClass('is-hidden');
-        } else {
-            $('.iteniary-floating-container').addClass('is-hidden');
-        }
+    // Make navigation sticky
+    var stickyOffset = $('.subnav-small-container').offset().top - 65;
+
+    $(window).scroll(function(){
+        var sticky = $('.subnav-small-container'),
+            scroll = $(window).scrollTop();
+          
+        if (scroll >= stickyOffset) sticky.addClass('subnav-small-is-sticky');
+        else sticky.removeClass('subnav-small-is-sticky');
     });
+
+    //Make map sticky
+    var stickyOffsetMap = $('.iteniary-map-container-sticky').offset().top - 150;
+
+    $(window).scroll(function(){
+      if ($(window).width() > 1350) {
+        var sticky = $('.iteniary-map-wrapper'),
+            scroll = $(window).scrollTop();
+          
+        if (scroll >= stickyOffsetMap) sticky.addClass('iteniary-map-is-sticky');
+        else sticky.removeClass('iteniary-map-is-sticky');
+      }
+    });
+
+    // Make floating button visible
+    // var offset = 500;
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() > offset) {
+    //         $('.iteniary-floating-container').removeClass('is-hidden');
+    //     } else {
+    //         $('.iteniary-floating-container').addClass('is-hidden');
+    //     }
+    // });
 
     // Floating button
     $('.iteniary-floating-btn-container').click(function() {

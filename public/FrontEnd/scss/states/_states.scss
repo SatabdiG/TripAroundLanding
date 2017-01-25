@@ -61,3 +61,8 @@
 	float: right;
 	top: 200px;
 }
+
+.iteniary-map-is-sticky {
+	@extend .map-is-sticky;
+	top: 150px;
+}
