@@ -104,7 +104,7 @@
 .tours-ov-social-container {
 	position: absolute;
 	top: 0;
-	right: -65px;
+	right: -50px;
 
 	@include respond-to('large') {
 		top: auto;
@@ -112,10 +112,15 @@
 		right: 13px;
 	}
 }
+
 .tours-ov-social-container-sticky {
 	position: absolute;
 	top: 0;
-	right: -50px;
+	right: -65px;
+
+	@include respond-to('xlarge') {
+		right: -50px;
+	}
 
 	@include respond-to('large') {
 		top: auto;

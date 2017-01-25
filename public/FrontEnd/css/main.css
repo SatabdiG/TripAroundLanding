@@ -614,7 +614,7 @@ i {
 .tours-ov-social-container {
   position: absolute;
   top: 0;
-  right: -65px; }
+  right: -50px; }
   @media (max-width: 1050px) {
     .tours-ov-social-container {
       top: auto;
@@ -624,7 +624,10 @@ i {
 .tours-ov-social-container-sticky {
   position: absolute;
   top: 0;
-  right: -50px; }
+  right: -65px; }
+  @media (max-width: 1350px) {
+    .tours-ov-social-container-sticky {
+      right: -50px; } }
   @media (max-width: 1050px) {
     .tours-ov-social-container-sticky {
       top: auto;
