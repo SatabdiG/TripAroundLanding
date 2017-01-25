@@ -917,6 +917,7 @@ input[type=file] {
 
 .btn-social-circle, .btn-social-circle-sharing {
   background: #ee5022;
+  border: 2px solid white;
   border-radius: 50%;
   cursor: pointer;
   font-size: 25px;
@@ -929,7 +930,7 @@ input[type=file] {
   text-align: center; }
   .btn-social-circle:hover, .btn-social-circle-sharing:hover {
     background: white;
-    border: 1px solid #ee5022;
+    border: 2px solid #ee5022;
     color: #ee5022; }
   .btn-social-circle:hover .btn-social-circle-typo, .btn-social-circle-sharing:hover .btn-social-circle-typo {
     color: #ee5022; }

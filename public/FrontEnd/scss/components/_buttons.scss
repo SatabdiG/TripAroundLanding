@@ -37,6 +37,7 @@
 
 .btn-social-circle {
   background: $primary;
+  border: 2px solid $white;
   border-radius: 50%;
   cursor: pointer;
   font-size: 25px;
@@ -50,7 +51,7 @@
 
   &:hover {
     background: $white;
-    border: 1px solid $primary;
+    border: 2px solid $primary;
     color: $primary;
   }
 
