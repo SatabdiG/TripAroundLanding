@@ -163,7 +163,7 @@ i {
       -webkit-transform: rotate(0deg);
           -ms-transform: rotate(0deg);
               transform: rotate(0deg);
-      font-size: 5.5rem;
+      font-size: 4.5rem;
       margin-bottom: 30px; } }
   @media (max-width: 600px) {
     .typo-head-cover {
@@ -241,7 +241,7 @@ i {
   display: table-cell;
   vertical-align: middle;
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.05rem;
   text-align: center;
   width: 100%; }
@@ -254,7 +254,7 @@ i {
   background: #fcefe3;
   color: #373737;
   display: block;
-  font-size: 0.98rem;
+  font-size: 0.97rem;
   line-height: 130%;
   padding: 16px;
   margin: 0;
@@ -271,7 +271,7 @@ i {
 
 .typo-tiles-info {
   display: table-cell;
-  font-size: 0.98rem;
+  font-size: 0.97rem;
   vertical-align: middle; }
   .typo-tiles-info:hover {
     color: #373737; }
@@ -422,14 +422,14 @@ i {
   position: fixed;
   width: 100%;
   top: 55px; }
-  @media (max-width: 767px) {
+  @media (max-width: 600px) {
     .subnav-small-mobile-container:after {
       content: "";
       position: absolute;
       background: -webkit-linear-gradient(left, rgba(238, 80, 34, 0), #ee5022);
       top: 0;
       right: 0;
-      width: 20%;
+      width: 10%;
       height: 100%; } }
   @media (max-width: 935px) {
     .subnav-small-mobile-container {
