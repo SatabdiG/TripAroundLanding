@@ -634,8 +634,6 @@ app.post('/mapupload', function(req,res){
 
 });
 
-
-
 //Handler for Map description edit
 app.post('/mapdescriptionedit', function(req, res){
   console.log(req.body);
