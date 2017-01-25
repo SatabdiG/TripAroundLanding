@@ -388,7 +388,8 @@ i {
 
 .subnav-big-wrapper {
   display: block;
-  height: 101px; }
+  height: 101px;
+  margin-bottom: 20px; }
   @media (max-width: 767px) {
     .subnav-big-wrapper {
       display: none; } }
