@@ -34,13 +34,16 @@ html {
   font-size: 16px; }
 
 body {
-  color: #3c3c3c;
+  color: #2d2d2d;
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.01rem; }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
 a {
-  color: #3c3c3c;
+  color: #2d2d2d;
   cursor: pointer;
   outline: none;
   text-decoration: none; }
@@ -48,7 +51,7 @@ a {
 a:hover {
   outline: none;
   text-decoration: none;
-  color: #3c3c3c; }
+  color: #2d2d2d; }
 
 a:focus {
   outline: none;
@@ -112,7 +115,7 @@ i {
   color: white; }
 
 .typo-black {
-  color: #3c3c3c; }
+  color: #2d2d2d; }
 
 .typo-copy-text-xl {
   font-size: 1.2rem;
@@ -187,7 +190,7 @@ i {
     .typo-head-copytext {
       font-size: 1.1rem; } }
 
-.typo-head-big {
+.typo-head-big, .typo-head-big-teaser {
   color: #ee5022;
   display: block;
   font-family: 'Bangers', sans-serif, cursive;
@@ -196,23 +199,26 @@ i {
   letter-spacing: 0.2rem;
   margin-bottom: 34px; }
   @media (max-width: 850px) {
-    .typo-head-big {
+    .typo-head-big, .typo-head-big-teaser {
       font-size: 3.5rem;
       margin-bottom: 24px; } }
   @media (max-width: 600px) {
-    .typo-head-big {
+    .typo-head-big, .typo-head-big-teaser {
       font-size: 3rem;
-      margin-bottom: 24px; } }
+      margin-bottom: 20px; } }
   @media (max-width: 600px) {
-    .typo-head-big {
+    .typo-head-big, .typo-head-big-teaser {
       font-size: 2.8rem;
       margin-bottom: 20px; } }
+
+.typo-head-big-teaser {
+  margin-bottom: 0; }
 
 .typo-teaser, .typo-teaser-dashboard {
   font-size: 1.6rem;
   line-height: 130%;
   text-align: center;
-  margin: 0 auto;
+  margin: 30px auto;
   width: 50%; }
   @media (max-width: 1050px) {
     .typo-teaser, .typo-teaser-dashboard {
@@ -227,7 +233,8 @@ i {
       width: 90%; } }
 
 .typo-teaser-dashboard {
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
 
 .typo-head-tourstop {
   color: white;
@@ -245,7 +252,7 @@ i {
 
 .typo-tiles-description {
   background: #fcefe3;
-  color: #3c3c3c;
+  color: #2d2d2d;
   display: block;
   font-size: 0.98rem;
   line-height: 130%;
@@ -267,7 +274,7 @@ i {
   font-size: 0.98rem;
   vertical-align: middle; }
   .typo-tiles-info:hover {
-    color: #3c3c3c; }
+    color: #2d2d2d; }
 
 .typo-tiles-topbar {
   display: inline; }
@@ -288,9 +295,10 @@ i {
 .nav-container {
   background: white;
   border-bottom: 4px solid #fae4d1;
-  height: 70px;
+  height: 55px;
   margin: 0;
   opacity: 0.95;
+  padding: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -302,9 +310,6 @@ i {
   @media (max-width: 767px) {
     .nav-desktop-container {
       display: none; } }
-
-.nav-container {
-  padding: 22px; }
 
 .nav-dropdown {
   min-width: 60px; }
@@ -335,7 +340,7 @@ i {
 
 .nav-lang {
   position: absolute;
-  top: 20px;
+  top: 16px;
   right: 20px; }
   @media (max-width: 767px) {
     .nav-lang {
@@ -346,20 +351,20 @@ i {
 
 .nav-logo {
   background: url("/frontend/pictures/logo.png") no-repeat;
-  background-size: cover;
+  background-size: 165px;
   display: block;
   margin-top: -5px;
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 20px;
-  width: 200px;
-  height: 38px; }
+  width: 180px;
+  height: 35px; }
   @media (max-width: 767px) {
     .nav-logo {
       background: url("/frontend/pictures/logo.svg") no-repeat;
       background-size: 187px;
       margin: -5px auto;
-      top: 21px;
+      top: 13px;
       left: 20px; } }
 
 .nav-right-container {
@@ -416,7 +421,7 @@ i {
   display: none;
   position: fixed;
   width: 100%;
-  top: 70px; }
+  top: 55px; }
   @media (max-width: 767px) {
     .subnav-small-mobile-container:after {
       content: "";
@@ -440,7 +445,7 @@ i {
 
 .subnav-small-mobile-item, .subnav-small-mobile-item-dashboard {
   display: inline-block;
-  padding: 12px; }
+  padding: 10px; }
   .subnav-small-mobile-item:last-child, .subnav-small-mobile-item-dashboard:last-child {
     margin-right: 48px; }
 
@@ -453,7 +458,7 @@ i {
   display: none;
   position: fixed;
   width: 100%;
-  top: 70px; }
+  top: 55px; }
   @media (max-width: 767px) {
     .subnav-big-mobile-container {
       display: block;
@@ -530,12 +535,12 @@ i {
   background-size: cover;
   border-bottom: 4px solid #fae4d1;
   display: table;
-  margin-top: 70px;
   width: 100%;
   height: 35vh; }
 
 .tours-header-typo-container {
   display: table-cell;
+  padding-top: 50px;
   vertical-align: middle; }
 
 .tours-search {
@@ -714,7 +719,6 @@ i {
   background-size: cover;
   border-bottom: 4px solid #fae4d1;
   display: table;
-  margin-top: 70px;
   width: 100%;
   height: 35vh; }
 
@@ -724,21 +728,20 @@ i {
 
 .dashboard-teaser-container {
   background: white;
+  border-radius: 8px;
   opacity: 0.7;
   margin: 0 auto;
   width: 50%;
-  padding: 24px; }
+  padding: 12px; }
   @media (max-width: 1050px) {
     .dashboard-teaser-container {
       width: 65%; } }
   @media (max-width: 850px) {
     .dashboard-teaser-container {
-      width: 70%;
-      padding: 12px; } }
+      width: 70%; } }
   @media (max-width: 767px) {
     .dashboard-teaser-container {
       width: 90%;
-      padding: 12px;
       margin-bottom: 12px; } }
 
 .modal-title {
@@ -1077,7 +1080,7 @@ input[type=file] {
 
 .btn-subnav-mobile-typo, .btn-subnav-mobile-dashboard {
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 0.03rem;
   text-transform: uppercase; }
   .btn-subnav-mobile-typo:hover, .btn-subnav-mobile-dashboard:hover {
@@ -1122,7 +1125,7 @@ input[type=file] {
 .btn-iteniary-dropdown {
   background: white;
   border: none;
-  color: #3c3c3c;
+  color: #2d2d2d;
   font-size: 1rem;
   padding: 10px;
   width: 100%; }
@@ -1133,7 +1136,7 @@ input[type=file] {
 .btn-floating {
   background: #ee5022;
   border-radius: 50%;
-  box-shadow: 0px 2px 5px #3c3c3c;
+  box-shadow: 0px 2px 5px #2d2d2d;
   color: white;
   cursor: pointer;
   font-size: 25px;
@@ -1454,13 +1457,13 @@ input[type=file] {
 .subnav-big-is-sticky {
   position: fixed;
   z-index: 1;
-  top: 70px;
+  top: 55px;
   left: 0;
   width: 100%; }
 
 .subnav-small-is-sticky {
   position: fixed;
   z-index: 1;
-  top: 80px;
+  top: 65px;
   left: 0;
   width: 100%; }

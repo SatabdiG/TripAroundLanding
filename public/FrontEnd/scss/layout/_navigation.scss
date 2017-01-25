@@ -3,9 +3,10 @@
 .nav-container {
   background: $white;
   border-bottom: 4px solid $secondary;
-  height: 70px;
+  height: 55px;
   margin: 0;
   opacity: 0.95;
+  padding: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,10 +20,6 @@
   @include respond-to('small') {
     display: none;
   } 
-}
-
-.nav-container {
-  padding: 22px;
 }
 
 .nav-dropdown {
@@ -70,7 +67,7 @@
 
 .nav-lang {
   position: absolute;
-  top: 20px;
+  top: 16px;
   right: 20px;
 
   @include respond-to('small') {
@@ -83,20 +80,20 @@
 
 .nav-logo {
   background: url("/frontend/pictures/logo.png") no-repeat;
-  background-size: cover;
+  background-size: 165px;
   display: block;
   margin-top: -5px;
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 20px;
-  width: 200px;
-  height: 38px;
+  width: 180px;
+  height: 35px;
 
   @include respond-to('small') {
     background: url("/frontend/pictures/logo.svg") no-repeat;
     background-size: 187px;
     margin: -5px auto;
-    top: 21px;
+    top: 13px;
     left: 20px;
   } 
 }
@@ -174,7 +171,7 @@
   display: none;
   position: fixed;
   width: 100%;
-  top: 70px;
+  top: 55px;
 
   @include respond-to('small') {
     &:after {
@@ -215,7 +212,7 @@
 
 .subnav-small-mobile-item {
   display: inline-block;
-  padding: 12px;
+  padding: 10px;
 
   &:last-child {
     margin-right: 48px;
@@ -234,7 +231,7 @@
   display: none;
   position: fixed;
   width: 100%;
-  top: 70px;
+  top: 55px;
 
   @include respond-to('small') {
     display: block;

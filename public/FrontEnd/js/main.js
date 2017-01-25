@@ -2093,7 +2093,7 @@ function imagegallerycontroller(){
     console.log("In gallery page"+userid);
 
     // Make navigation sticky
-    var stickyOffset = $('.subnav-small-container').offset().top - 80;
+    var stickyOffset = $('.subnav-small-container').offset().top - 65;
 
     $(window).scroll(function(){
         var sticky = $('.subnav-small-container'),

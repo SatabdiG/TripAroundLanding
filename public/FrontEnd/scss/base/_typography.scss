@@ -107,7 +107,7 @@
 
   @include respond-to('xsmall') {
     font-size: 3rem;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   @include respond-to('xsmall') {
@@ -116,11 +116,16 @@
   }
 }
 
+.typo-head-big-teaser {
+  @extend .typo-head-big;
+  margin-bottom: 0;
+}
+
 .typo-teaser {
   font-size: 1.6rem;
   line-height: 130%;
   text-align: center;
-  margin: 0 auto;
+  margin: 30px auto;
   width: 50%;
 
   @include respond-to('large') {
@@ -141,6 +146,7 @@
 .typo-teaser-dashboard {
   @extend .typo-teaser;
   width: 100%;
+  margin: 0;
 }
 
 // Styles in gallery section
