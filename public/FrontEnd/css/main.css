@@ -1439,7 +1439,10 @@ input[type=file] {
       right: auto; } }
 
 .timeline > li:nth-child(2) {
-  margin-top: 300px; }
+  margin-top: 0px; }
+  @media (max-width: 1350px) {
+    .timeline > li:nth-child(2) {
+      margin-top: 300px; } }
 
 @media (max-width: 1350px) {
   .timeline > li:nth-child(even) > .timeline-badge {
@@ -1489,7 +1492,10 @@ input[type=file] {
       right: auto; }
 
   .timeline > li > .timeline-badge {
-    right: -3px; } }
+    right: -3px; }
+
+  .timeline > li:nth-child(2) {
+    margin-top: 0; } }
 @media (max-width: 767px) and (max-width: 1350px) {
   .timeline > li:nth-child(even) {
     float: left;
@@ -1503,7 +1509,7 @@ input[type=file] {
 /** Carousel Controls **/
 .owl-carousel {
   padding: 8px 0;
-  z-index: -1; }
+  z-index: 0; }
 
 .owl-prev {
   color: white;

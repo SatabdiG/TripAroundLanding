@@ -91,7 +91,11 @@
 }
 
 .timeline > li:nth-child(2) {
+  margin-top: 0px;
+
+  @include respond-to('xlarge') {
     margin-top: 300px;
+  }
 }
 
 .timeline > li:nth-child(even) > .timeline-badge {
@@ -160,6 +164,10 @@
   .timeline > li > .timeline-badge {
     right: -3px;
   }
+
+  .timeline > li:nth-child(2) {
+    margin-top: 0;
+  } 
 
   .timeline > li:nth-child(even) {
     @include respond-to('xlarge') {
