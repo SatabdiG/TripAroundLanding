@@ -1408,7 +1408,7 @@ input[type=file] {
       clear: right; } }
 
 .timeline > li > .timeline-panel {
-  background: #fae4d1;
+  background: #fcefe3;
   border: 1px solid #dcdcdc;
   float: left;
   margin-bottom: 20px;

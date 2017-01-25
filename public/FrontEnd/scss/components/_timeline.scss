@@ -12,7 +12,7 @@
 
   &:before {
     content:" ";
-    background: $primary;;
+    background: $primary;
     position: absolute;
     margin-left: -1.5px;
     top: 10px;
@@ -50,7 +50,7 @@
 }
 
 .timeline > li > .timeline-panel {
-  background: $secondary;
+  background: $secondary-lighter;
   border: 1px solid #dcdcdc;
   float: left;
   margin-bottom: 20px;
