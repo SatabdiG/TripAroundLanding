@@ -1,14 +1,13 @@
 // Timeline 
 
 .timeline-container {
-  @include modules-margin;
+  margin-top: 50px;
 }
 
  .timeline {
   list-style: none;
-  padding: 10px 0;
+  // padding: 10px 0;
   position: relative;
-  font-weight: 300;
   z-index: 0;
 
   &:before {
@@ -19,7 +18,11 @@
     top: 10px;
     bottom: 0px;
     width: 2px;
-    left: 50%;
+    left: 48.5%;
+
+    @include respond-to('xlarge') {
+      left: 50%;
+    }
   }
 }
 
@@ -38,8 +41,11 @@
   }
 
   &:nth-child(even) {
-    float: right;
-    clear: right;
+
+    @include respond-to('xlarge') {
+      float: right;
+      clear: right;
+    }
   }
 }
 
@@ -47,6 +53,7 @@
   background: $secondary;
   border: 1px solid #dcdcdc;
   float: left;
+  margin-bottom: 20px;
   position: relative;
   width: calc(100% - 90px);
 }
@@ -55,7 +62,7 @@
   background: url("/frontend/pictures/maps-marker.png") no-repeat 50% 50%;
   position: absolute;
   top: -3px;
-  right: -18px;
+  right: 0;
   width: 35px;
   height: 47px;
   text-align: center;
@@ -63,22 +70,24 @@
 }
 
 .timeline > li:nth-child(even) > .timeline-panel {
-  float: right;
 
-  &:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
+  @include respond-to('xlarge') {
+    float: right;
+
+    &:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+
+    &:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
   }
-
-  &:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-  }
-
 }
 
 .timeline > li:nth-child(2) {
@@ -86,62 +95,82 @@
 }
 
 .timeline > li:nth-child(even) > .timeline-badge {
-    left: -17px;
+    @include respond-to('xlarge') {
+      left: -32px;
+    }
 }
 
 .no-float {
     float: none !important;
 }
 
+.timeline > li > .timeline-badge {
+  @include respond-to('xlarge') {
+      right: -17px;
+  }
+}
+
+.timeline > li:nth-child(even) > .timeline-badge {
+  @include respond-to('xlarge') {
+      left: -18px;
+  }
+}
+
 @media (max-width: 767px) {
-    ul.timeline:before {
-        left: 17px;
+  ul.timeline:before {
+    left: 17px;
+  }
+
+  ul.timeline > li {
+    clear: left;
+    float: left;
+    margin-bottom: 0px;
+    position: relative;
+    width: 100%;
+  }
+
+  ul.timeline > li > .timeline-panel {
+      width: calc(100% - 50px);
+  }
+
+  ul.timeline > li > .timeline-badge {
+    left: 0px;
+    margin-left: 0;
+    top: -2px;
+  }
+
+  ul.timeline > li > .timeline-panel {
+      float: right;
+
+      &:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+      }
+
+      &:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+      }
+  }
+
+  .timeline > li > .timeline-badge {
+    right: -3px;
+  }
+
+  .timeline > li:nth-child(even) {
+    @include respond-to('xlarge') {
+      float: left;
+      clear: left;
+      margin: 30px 0;
     }
+  }
 
-    ul.timeline > li {
-        clear: left;
-        float: left;
-        margin-bottom: 0px;
-        position: relative;
-        width:100%;
-    }
-
-    ul.timeline > li > .timeline-panel {
-        width: calc(100% - 50px);
-    }
-
-    ul.timeline > li > .timeline-badge {
-        left: 0px;
-        margin-left: 0;
-        top: -2px;
-    }
-
-    ul.timeline > li > .timeline-panel {
-        float: right;
-
-        &:before {
-          border-left-width: 0;
-          border-right-width: 15px;
-          left: -15px;
-          right: auto;
-        }
-
-        &:after {
-          border-left-width: 0;
-          border-right-width: 14px;
-          left: -14px;
-          right: auto;
-        }
-    }
-
-    .timeline > li:nth-child(even) {
-        float: left;
-        clear: left;
-        margin: 30px 0;
-    }
-
-    .timeline > li:nth-child(even) > .timeline-badge {
-        left: 0px;
+  .timeline > li:nth-child(even) > .timeline-badge {
+      left: 0px;
     }
 }
 

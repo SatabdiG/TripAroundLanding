@@ -29,6 +29,19 @@ function viewtourcontroller()
         else sticky.removeClass('subnav-big-is-sticky');
     });
 
+    //Make map sticky
+    var stickyOffsetMap = $('.tours-ov-map-container-sticky').offset().top - 200;
+
+    $(window).scroll(function(){
+      if ($(window).width() > 1350) {
+        var sticky = $('.tours-ov-map-wrapper'),
+            scroll = $(window).scrollTop();
+          
+        if (scroll >= stickyOffsetMap) sticky.addClass('map-is-sticky');
+        else sticky.removeClass('map-is-sticky');
+      }
+    });
+
     // Initialize owl carousel
     $('.owl-carousel').owlCarousel({
         margin: 10,
