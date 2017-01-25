@@ -34,13 +34,13 @@ html {
   font-size: 16px; }
 
 body {
-  color: #282828;
+  color: #323232;
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.01rem; }
 
 a {
-  color: #282828;
+  color: #323232;
   cursor: pointer;
   outline: none;
   text-decoration: none; }
@@ -48,7 +48,7 @@ a {
 a:hover {
   outline: none;
   text-decoration: none;
-  color: #282828; }
+  color: #323232; }
 
 a:focus {
   outline: none;
@@ -112,7 +112,7 @@ i {
   color: white; }
 
 .typo-black {
-  color: #282828; }
+  color: #323232; }
 
 .typo-copy-text-xl {
   font-size: 1.2rem;
@@ -179,7 +179,7 @@ i {
 
 .typo-head-copytext {
   font-size: 1.3rem;
-  font-weight: 700; }
+  font-weight: 500; }
   @media (max-width: 767px) {
     .typo-head-copytext {
       font-size: 1.2rem; } }
@@ -245,7 +245,7 @@ i {
 
 .typo-tiles-description {
   background: #fcefe3;
-  color: #282828;
+  color: #323232;
   display: block;
   font-size: 1rem;
   padding: 20px;
@@ -257,6 +257,7 @@ i {
   color: white;
   display: block;
   font-size: 1.2rem;
+  font-weight: 400;
   margin: 0;
   padding: 20px; }
 
@@ -266,7 +267,7 @@ i {
   text-align: center;
   vertical-align: middle; }
   .typo-tiles-info:hover {
-    color: #282828; }
+    color: #323232; }
 
 .typo-tiles-topbar {
   display: inline; }
@@ -1120,7 +1121,7 @@ input[type=file] {
 .btn-iteniary-dropdown {
   background: white;
   border: none;
-  color: #282828;
+  color: #323232;
   font-size: 1rem;
   padding: 10px;
   width: 100%; }
@@ -1131,7 +1132,7 @@ input[type=file] {
 .btn-floating {
   background: #ee5022;
   border-radius: 50%;
-  box-shadow: 0px 2px 5px #282828;
+  box-shadow: 0px 2px 5px #323232;
   color: white;
   cursor: pointer;
   font-size: 25px;
