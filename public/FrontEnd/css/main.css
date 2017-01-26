@@ -132,6 +132,11 @@ i {
 .typo-copy-text-m {
   font-size: 0.9rem; }
 
+.typo-copy-text-s {
+  color: #c8c8c8;
+  font-size: 0.85rem;
+  line-height: 120%; }
+
 .typo-figcaption {
   background: #fcefe3;
   display: block;
