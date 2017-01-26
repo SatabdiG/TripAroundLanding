@@ -133,7 +133,7 @@ i {
   font-size: 0.9rem; }
 
 .typo-copy-text-s {
-  color: #c8c8c8;
+  color: whitesmoke;
   font-size: 0.85rem;
   line-height: 120%; }
 
@@ -409,10 +409,10 @@ i {
     .subnav-small-wrapper {
       display: none; } }
 
-.subnav-tours-btn-container {
+.subnav-tours-btn-container, .btn-subnav-dashboard {
   display: inline;
   margin-left: 1.5%; }
-  .subnav-tours-btn-container:nth-child(1) {
+  .subnav-tours-btn-container:nth-child(1), .btn-subnav-dashboard:nth-child(1) {
     margin-left: 0; }
 
 .subnav-small-left-items {
@@ -1150,7 +1150,7 @@ input[type=file] {
 .btn-xl-margin-bottom {
   margin-bottom: 44px; }
 
-.btn-subnav-small, .btn-small-active {
+.btn-subnav-small, .btn-small-active, .btn-subnav-mobile-dashboard {
   background: white;
   border: 1px solid #ee5022;
   border-radius: 6px;
@@ -1160,7 +1160,7 @@ input[type=file] {
   padding: 10px 20px 10px 20px;
   text-transform: uppercase;
   width: 140px; }
-  .btn-subnav-small:hover, .btn-small-active:hover {
+  .btn-subnav-small:hover, .btn-small-active:hover, .btn-subnav-mobile-dashboard:hover {
     background: #ee5022;
     border: 1px solid white;
     color: white;
@@ -1174,13 +1174,16 @@ input[type=file] {
     border: 1px solid #ee5022;
     color: #ee5022; }
 
-.btn-subnav-mobile-typo, .btn-subnav-mobile-dashboard {
+.btn-subnav-mobile-typo {
   color: white;
   font-size: 0.85rem;
   letter-spacing: 0.03rem;
   text-transform: uppercase; }
-  .btn-subnav-mobile-typo:hover, .btn-subnav-mobile-dashboard:hover {
+  .btn-subnav-mobile-typo:hover {
     color: #fae4d1; }
+
+.btn-subnav-dashboard {
+  background: whitesmoke; }
 
 .btn-subnav-mobile-dashboard {
   border-right: 2px solid #ef5f35; }

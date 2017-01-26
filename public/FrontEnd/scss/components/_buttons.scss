@@ -282,8 +282,13 @@
   }
 }
 
+.btn-subnav-dashboard {
+  @extend .subnav-tours-btn-container;
+  background: $grey-light;
+}
+
 .btn-subnav-mobile-dashboard {
-  @extend .btn-subnav-mobile-typo;
+  @extend .btn-subnav-small;
   border-right: 2px solid $primary-lighter;
 }
 
