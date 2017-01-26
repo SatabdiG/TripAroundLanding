@@ -16,11 +16,11 @@ function serachpage()
 
         // Initialize Masonry (grid)
         $('.tiles-grid').masonry({
-          itemSelector: '.tiles-single-container',
-          columnWidth: 360,
-          gutter: 30,
-          isFitWidth: true,
-          transitionDuration: 0
+            itemSelector: '.tiles-single-container',
+            columnWidth: '.tiles-grid-sizer',
+            gutter: 30,
+            isFitWidth: true,
+            transitionDuration: 0
         });
 
         $('#durationmodal').on("click", function(){
