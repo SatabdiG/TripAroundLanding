@@ -17,17 +17,8 @@ function viewtourcontroller()
         serachmap=sessionStorage.getItem("searchmap");
     }
 
-
-    // Make navigation sticky
-    var stickyOffset = $('.subnav-big-container').offset().top - 55;
-
-    $(window).scroll(function(){
-        var sticky = $('.subnav-big-container'),
-            scroll = $(window).scrollTop();
-          
-        if (scroll >= stickyOffset) sticky.addClass('subnav-big-is-sticky');
-        else sticky.removeClass('subnav-big-is-sticky');
-    });
+    // Make sub navigation sticky
+    stickyNavBig();
 
     //Make map sticky
     var stickyOffsetMap = $('.tours-ov-map-container-sticky').offset().top - 200;
@@ -380,6 +371,9 @@ function overviewpagecontroller()
 
     });
 
+    // Make big sub navigation sticky
+    stickyNavBig();
+
 }
 
 //The View Gallery Controller
@@ -440,10 +434,13 @@ function viewgallerycontrol()
 
         });
 
+        // Make big sub navigation sticky
+        stickyNavBig();
 
 
 
-}
+
+} 
 
 var requestarr=[];
 

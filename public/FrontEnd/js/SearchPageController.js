@@ -14,15 +14,6 @@ function serachpage()
              window.location.href="#";
         });
 
-        // Initialize Masonry (grid)
-        $('.tiles-grid').masonry({
-            itemSelector: '.tiles-single-container',
-            columnWidth: '.tiles-grid-sizer',
-            gutter: 30,
-            isFitWidth: true,
-            transitionDuration: 0
-        });
-
         $('#durationmodal').on("click", function(){
            console.log("Element had been clicked");
 
@@ -120,5 +111,8 @@ function serachpage()
 
         });
     });
+
+    // Initialize Masonry
+    initializeGrid();
 
 }

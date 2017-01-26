@@ -715,14 +715,8 @@ function dashboardfunction(){
   $("#beforepagebutton").click(function(){
     window.location.href="#"; });*/
 
-  // Initialize Masonry (grid)
-  $('.tiles-grid').masonry({
-      itemSelector: '.tiles-single-container',
-      columnWidth: '.tiles-grid-sizer',
-      gutter: 30,
-      isFitWidth: true,
-      transitionDuration: 0
-  });
+  // Initialize Masonry
+  initializeGrid();
 
   // Change the state of the public/privat icon in dashboard
   $('.btn-private').click(function() {
@@ -769,6 +763,9 @@ function imagecontroller(){
     userid=sessionStorage.getItem("username");
     mapname=sessionStorage.getItem("mapname")
   }
+
+  // Make small sub navigation sticky
+  stickyNavSmall();
 
   ////console.log("User logged in as" + userid);
   ////console.log("The map id is as"+ mapname);
@@ -2092,17 +2089,6 @@ function imagegallerycontroller(){
     }
     console.log("In gallery page"+userid);
 
-    // Make navigation sticky
-    var stickyOffset = $('.subnav-small-container').offset().top - 65;
-
-    $(window).scroll(function(){
-        var sticky = $('.subnav-small-container'),
-            scroll = $(window).scrollTop();
-          
-        if (scroll >= stickyOffset) sticky.addClass('subnav-small-is-sticky');
-        else sticky.removeClass('subnav-small-is-sticky');
-    });
-
     $(document).ready(function(){
      //Launch Filters modal
     $('#logoutbutton').click(function(){
@@ -2253,6 +2239,9 @@ function imagegallerycontroller(){
 
       }
     });
+    // Make small sub navigation sticky
+    stickyNavSmall();
+
     translateFunction(translateNavbar,translateImageGallery);
   });
 }
@@ -2637,6 +2626,44 @@ function translateFunction(arr1,arr2) {
 
 
 }
+
+// Masonry grid
+function initializeGrid() {
+  $('.tiles-grid').masonry({
+      itemSelector: '.tiles-single-container',
+      columnWidth: '.tiles-grid-sizer',
+      gutter: 30,
+      isFitWidth: true,
+      transitionDuration: 0
+  });
+}
+
+ // Make small navigation sticky
+function stickyNavSmall() {
+  var stickyOffset = $('.subnav-small-container').offset().top - 65;
+
+  $(window).scroll(function(){
+      var sticky = $('.subnav-small-container'),
+          scroll = $(window).scrollTop();
+        
+      if (scroll >= stickyOffset) sticky.addClass('subnav-small-is-sticky');
+      else sticky.removeClass('subnav-small-is-sticky');
+  });
+}
+
+// Make big navigation sticky
+function stickyNavBig() {
+  var stickyOffset = $('.subnav-big-container').offset().top - 55;
+
+  $(window).scroll(function(){
+      var sticky = $('.subnav-big-container'),
+          scroll = $(window).scrollTop();
+        
+      if (scroll >= stickyOffset) sticky.addClass('subnav-big-is-sticky');
+      else sticky.removeClass('subnav-big-is-sticky');
+  });
+}
+
 
 //Angular js and Routing
 

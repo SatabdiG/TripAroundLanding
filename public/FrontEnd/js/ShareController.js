@@ -24,4 +24,6 @@ function ShareController()
             });
 
     });
+    // Make small sub navigation sticky
+    stickyNavSmall();
 }

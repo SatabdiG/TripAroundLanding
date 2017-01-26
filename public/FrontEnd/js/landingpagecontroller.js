@@ -42,15 +42,6 @@ function landingpagecontroller() {
             console.log("trans has been clicked");
         });
 
-        // Initialize Masonry (grid)
-        $('.tiles-grid').masonry({
-            itemSelector: '.tiles-single-container',
-            columnWidth: '.tiles-grid-sizer',
-            gutter: 30,
-            isFitWidth: true,
-            transitionDuration: 0
-        });
-
       /*  $('#About').on('click', function(evt){
             console.log("The about button has been clicked");
             window.location.href="#About";
@@ -112,7 +103,9 @@ function landingpagecontroller() {
             sessionStorage.setItem("lang", lang);
         }
         }
-       translateFunction(arraynull,translateLanding);
+        translateFunction(arraynull,translateLanding);
+        // Initialize Masonry
+        initializeGrid();
 
     });
 }

@@ -17,16 +17,8 @@ function iteniarygenerator()
         navText: ["&lsaquo;","&rsaquo;"]
     });
 
-    // Make navigation sticky
-    var stickyOffset = $('.subnav-small-container').offset().top - 65;
-
-    $(window).scroll(function(){
-        var sticky = $('.subnav-small-container'),
-            scroll = $(window).scrollTop();
-          
-        if (scroll >= stickyOffset) sticky.addClass('subnav-small-is-sticky');
-        else sticky.removeClass('subnav-small-is-sticky');
-    });
+    // Make small sub navigation sticky
+    stickyNavSmall();
 
     //Make map sticky
     var stickyOffsetMap = $('.iteniary-map-container-sticky').offset().top - 150;
