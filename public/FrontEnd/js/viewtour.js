@@ -24,7 +24,7 @@ function viewtourcontroller()
     var stickyOffsetMap = $('.tours-ov-map-container-sticky').offset().top - 200;
 
     $(window).scroll(function(){
-      if ($(window).width() > 1350) {
+      if ($(window).width() > 1200) {
         var sticky = $('.tours-ov-map-wrapper'),
             scroll = $(window).scrollTop();
           

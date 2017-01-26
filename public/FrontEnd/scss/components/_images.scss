@@ -19,7 +19,7 @@
 	margin: 0 auto;
 	width: 42%;
 
-  @include respond-to('xlarge') {
+  @include respond-to('xxlarge') {
     width: 60%;
   }
 

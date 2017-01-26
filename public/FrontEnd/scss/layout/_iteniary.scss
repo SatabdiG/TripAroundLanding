@@ -71,7 +71,7 @@
   height: 500px;
   top: 0;
 
-  @include respond-to('xlarge') {
+  @include respond-to('xxlarge') {
     display: none;
     width: 100%;
     height: 300px;

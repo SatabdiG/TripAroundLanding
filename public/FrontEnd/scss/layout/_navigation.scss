@@ -101,7 +101,7 @@
 .nav-right-container {
   text-align: right;
 
-  @include respond-to('xlarge') {
+  @include respond-to('xxlarge') {
     text-align: center;
   } 
 }
