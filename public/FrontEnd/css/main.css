@@ -913,7 +913,7 @@ input[type=file] {
   width: 500px;
   height: 500px;
   top: 0; }
-  @media (max-width: 1350px) {
+  @media (max-width: 1200px) {
     .iteniary-map-wrapper {
       display: none;
       width: 100%;

@@ -24,7 +24,7 @@ function iteniarygenerator()
     var stickyOffsetMap = $('.iteniary-map-container-sticky').offset().top - 150;
 
     $(window).scroll(function(){
-      if ($(window).width() > 1350) {
+      if ($(window).width() > 1200) {
         var sticky = $('.iteniary-map-wrapper'),
             scroll = $(window).scrollTop();
           
