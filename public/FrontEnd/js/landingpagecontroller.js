@@ -45,7 +45,7 @@ function landingpagecontroller() {
         // Initialize Masonry (grid)
         $('.tiles-grid').masonry({
             itemSelector: '.tiles-single-container',
-            columnWidth: 360,
+            columnWidth: '.tiles-grid-sizer',
             gutter: 30,
             isFitWidth: true,
             transitionDuration: 0

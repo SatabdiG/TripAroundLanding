@@ -1295,6 +1295,15 @@ input[type=file] {
   .tiles-grid:after:after {
     clear: both; }
 
+.tiles-grid-sizer {
+  width: 360px; }
+  @media (max-width: 600px) {
+    .tiles-grid-sizer {
+      width: 300px; } }
+  @media (max-width: 350px) {
+    .tiles-grid-sizer {
+      width: 290px; } }
+
 .tiles-single-container {
   width: 360px;
   float: left;
@@ -1308,7 +1317,10 @@ input[type=file] {
             transition: all 0.3s ease-out; }
   @media (max-width: 600px) {
     .tiles-single-container {
-      width: 90vw; } }
+      width: 300px; } }
+  @media (max-width: 350px) {
+    .tiles-single-container {
+      width: 290px; } }
 
 .tiles-container {
   margin-bottom: 30px; }

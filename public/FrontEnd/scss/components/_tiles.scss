@@ -9,6 +9,18 @@
   }
 }
 
+.tiles-grid-sizer {
+  width: 360px;
+
+  @include respond-to('xsmall') {
+    width: 300px;
+  }
+
+  @include respond-to('xxsmall') {
+    width: 290px;
+  }
+}
+
 .tiles-single-container {
   width: 360px;
   float: left;
@@ -22,7 +34,11 @@
   }
 
   @include respond-to('xsmall') {
-    width: 90vw;
+    width: 300px;
+  }
+
+  @include respond-to('xxsmall') {
+    width: 290px;
   }
 }
 
