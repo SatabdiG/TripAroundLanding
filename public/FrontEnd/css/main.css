@@ -1008,10 +1008,12 @@ input[type=file] {
     color: #ee5022; }
   .btn-social-circle:hover .btn-social-circle-typo, .btn-social-circle-tours:hover .btn-social-circle-typo, .btn-social-circle-sharing:hover .btn-social-circle-typo {
     color: #ee5022; }
-  @media (max-width: 1050px) {
+  @media (max-width: 1350px) {
     .btn-social-circle, .btn-social-circle-tours, .btn-social-circle-sharing {
       font-size: 20px;
       float: left;
+      line-height: 100%;
+      padding-top: 8px;
       margin-left: 10px;
       width: 40px;
       height: 40px; }
