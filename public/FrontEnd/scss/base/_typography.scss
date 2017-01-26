@@ -134,12 +134,13 @@
   margin: 30px auto;
   width: 50%;
 
-  @include respond-to('large') {
+  @include respond-to('xlarge') {
+    font-size: 1.4rem;
     width: 65%;
   }
 
   @include respond-to('medium') {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     width: 70%;
   }
 

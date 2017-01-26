@@ -225,12 +225,13 @@ i {
   text-align: center;
   margin: 30px auto;
   width: 50%; }
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
     .typo-teaser, .typo-teaser-dashboard {
+      font-size: 1.4rem;
       width: 65%; } }
   @media (max-width: 850px) {
     .typo-teaser, .typo-teaser-dashboard {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       width: 70%; } }
   @media (max-width: 767px) {
     .typo-teaser, .typo-teaser-dashboard {
@@ -765,6 +766,7 @@ i {
   background-size: cover;
   border-bottom: 4px solid #fae4d1;
   display: table;
+  padding-top: 40px;
   width: 100%;
   height: 35vh; }
 
