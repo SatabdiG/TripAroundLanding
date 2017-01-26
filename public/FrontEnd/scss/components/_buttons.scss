@@ -135,6 +135,11 @@
       padding: 8px 12px;
     }
   }
+
+  @include respond-to('xxsmall') {
+    font-size: 0.6rem;
+    padding: 6px 6px;
+  }
 }
 
 .btn-xs-inv {

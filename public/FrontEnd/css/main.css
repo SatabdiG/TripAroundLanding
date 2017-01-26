@@ -1074,6 +1074,10 @@ input[type=file] {
       padding: 8px 12px; }
       .btn-xs:hover, .btn-xs-inv:hover, .btn-xs-login:hover, .btn-iteniary:hover {
         padding: 8px 12px; } }
+  @media (max-width: 350px) {
+    .btn-xs, .btn-xs-inv, .btn-xs-login, .btn-iteniary {
+      font-size: 0.6rem;
+      padding: 6px 6px; } }
 
 .btn-xs-inv {
   background: white;
