@@ -4,48 +4,9 @@
 
 
 function landingpagecontroller() {
-    alert("In JS");
+    console.log("In JS");
     
-    $(document).ready(function () {
-      
-         $('.dropdown-toggle').dropdown();
-        $('#viewall').on('click', function()
-        {
-           window.location.href="#searchtours";        });
-
-        console.log("Welcome to the trip Around -- landing page");
-        $('#login').on('click', function () {
-            window.location.href = "#login";
-
-        });
-
-        $('#SearchTour').on('click', function(evt)
-        {
-            console.log("Search tour has been clicked");
-            window.location.href="#searchtours";
-            //window.location.reload();
-
-        });
-
-        $('#SaveTour').on('click', function(evt){
-            console.log("The Save button has been clicked");
-            window.location.href="#login";
-        });
-
-        $('#langdropdown').on('click', function(evt){
-            console.log("trans has been clicked");
-        });
-
-     
-        var arraynull=[];
-        if(lang === "")
-        {
-        if($("#eng").text()===""){
-            lang = "Deutsch";
-            sessionStorage.setItem("lang", lang);
-        }
-        }
-        //translateFunction(arraynull,translateLanding);
+    $(document).ready(function () {        
         // Initialize Masonry
         initializeGrid();
 
