@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="TripAround">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TripAround</title>
+    <!-- Vendor - Bootstrap stylesheet go here -->
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
+   <link href="https://fonts.googleapis.com/css?family=Bangers|Open+Sans" rel="stylesheet">  
+    
+    <!-- New CSS compiled from main.scss -->
+    <link rel="stylesheet" href="./public/FrontEnd/css/main.css">
+  </head>
+
+  <body>
+    <div>
+      <section id="navigation">
+
+    <nav class="nav-container">
+       
+        <a href="#" class="nav-logo"></a>
+
+        <!-- Desktop navigation -->
+        <div class="nav-desktop-container">
+
+            <div class="container">
+
+                <ul class="nav-right-container">
+        <!--             <div class"row">
+                        <ul> -->
+                            <li>
+                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                <a href="#login" class="btn-typo-nav" id="login"></a>
+                                <a href="#searchtours" class="btn-xs btn-nav" id="tour"></a>
+                            </li>
+            <!--             </ul>
+                    </div> -->
+                </ul>
+
+            </div>
+
+            <div class="dropdown nav-lang">
+
+                <a href="#" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="lang"></a>
+
+                <ul class="dropdown-menu nav-dropdown pull-right" id="langdropdown">
+                    <li>
+                        <a href="#" id="ger" class="nav-dropdown-item"></a>
+                    </li>
+                    <li>
+                        <a href="#" id="eng" class="nav-dropdown-item"></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        
+        <!-- Mobile navigation -->
+        <div class="nav-mobile-container">
+
+            <a href="#" class="nav-logo"></a>
+
+            <div class="nav-mobile-right-container">
+
+                <ul class="nav-mobile-right-items-container">
+
+                    <li>
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <a href="#login" class="btn-typo-nav" id="">Login</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#searchtours" class="btn-typo-nav" id="">Touren</a>
+                    </li>
+
+                    <li class="dropdown nav-lang">
+
+                        <a href="#" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="">Sprache</a>
+
+                        <ul class="dropdown-menu nav-dropdown pull-right" id="">
+                            <li>
+                                <a href="#" id="" class="nav-dropdown-item">Deutsch</a>
+                            </li>
+                            <li>
+                                <a href="#" id="" class="nav-dropdown-item">Englisch</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+                
+            </div>
+
+        </div>
+
+    </nav>
+
+</section>
+
+<!-- Cover -->
+
+<section>
+    <div class="cover-container">
+
+        <div class="cover-image-container"></div>
+
+        <div class="cover-content-container">
+            <h1 class="typo-head-cover" id="page1_tagline"></h1>
+
+            <div class="text-center">
+                <a href="#searchtours" class="btn-xl" id="SearchTour"></a>
+                <a href="#SaveTour" class="btn-xl" id="SaveTour"></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- New Tours -->
+
+<section id="new-tours">
+    <div class="container text-center tours-container">
+
+        <h2 class="typo-head-big">Neue Touren</h2>
+
+        <div class="tiles-grid">
+            <div class="tiles-grid-sizer">
+            <!-- tiles container -->
+            <div class="tiles-single-container">
+                <a href="">
+                    <div class="img-tiles" style="background-image:url(./public/FrontEnd/Pictures/landing-tile-placeholder-01.jpg);"></div>
+                    <h3 class="typo-tiles-head text-center">Frankreich & Spanien</h3>
+                    <!-- tiles bottom information -->
+                    <ul class="tiles-info-container">
+                        <li class="tiles-info-content-top">
+                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>43 Tage</p>
+                        </li>
+                        <li class="tiles-info-content-top">
+                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>945 km</p>
+                        </li>
+                        <li class="tiles-info-content-top">
+                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>24 Stops</p>
+                        </li>
+                        <li class="tiles-info-content-transport">
+                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Flug, Schiff, Bahn, Fahrrad, Bus, Auto</p>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+
+            <!-- tiles container -->
+            <div class="tiles-single-container">
+                <a href="">
+                    <div class="img-tiles" style="background-image:url(./public/FrontEnd/Pictures/landing-tile-placeholder-02.jpg);"></div>
+                    <h3 class="typo-tiles-head text-center">Island</h3>
+                    <!-- tiles bottom information -->
+                    <ul class="tiles-info-container">
+                        <li class="tiles-info-content-top">
+                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>12 Tage</p>
+                        </li>
+                        <li class="tiles-info-content-top">
+                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>512 km</p>
+                        </li>
+                        <li class="tiles-info-content-top">
+                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>11 Stops</p>
+                        </li>
+                        <li class="tiles-info-content-transport">
+                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Auto, Fahrrad, Bahn</p>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+                
+            <!-- tiles container -->
+            <div class="tiles-single-container">
+                <a href="">
+                    <div class="img-tiles" style="background-image:url(./public/FrontEnd/Pictures/landing-tile-placeholder-03.jpg);"></div>
+                    <h3 class="typo-tiles-head text-center">Roadtrip durch Südostasien</h3>
+                    <!-- tiles bottom information -->
+                    <ul class="tiles-info-container">
+                        <li class="tiles-info-content-top">
+                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>45 Tage</p>
+                        </li>
+                        <li class="tiles-info-content-top">
+                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>787 km</p>
+                        </li>
+                        <li class="tiles-info-content-top">
+                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>14 Stops</p>
+                        </li>
+                        <li class="tiles-info-content-transport">
+                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Flug, Bahn, Bus, Fahrrad, Motorad</p>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <a href="#searchtours" class="btn-xl btn-xl-in-text" id="SearchTour">Zeige alle Touren</a>
+
+</section>
+
+<!-- Features -->
+
+<section id="features">
+
+    <div class="container container-padding features-container">
+
+        <h2 class="typo-head-big text-center" id="features_heading"></h2>
+
+        <div class="row">
+            <img class="img-responsive img-feature-vector features-plane" src="./public/FrontEnd/Pictures/landing-feature-plane.png" alt="picture of your features">
+
+            <div class="col-sm-5">
+                <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-feature-01.png" alt="picture of your features">
+                <h4 class="typo-head-copytext" id="feat_head1"></h4>
+                <p class="typo-copy-text-xl" id="feat_content1"></p>
+            </div>
+
+            <div class="col-sm-5 col-sm-offset-2 img-features features-container-right">
+                <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-feature-02.png" alt="picture of your features">
+                <h4 class="typo-head-copytext" id="feat_head2"></h4>
+                <p class="typo-copy-text-xl" id="feat_content2">.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5">
+                <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-feature-03.png" alt="picture of your features">
+                <h4 class="typo-head-copytext" id="feat_head3"></h4>
+                <p class="typo-copy-text-xl" id="feat_content3"></p>
+            </div>
+
+            <div class="col-sm-5 col-sm-offset-2 col-md-offset-2 img-features features-container-right">
+                <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-feature-04.png" alt="picture of your features">
+                <h4 class="typo-head-copytext" id="feat_head4"></h4>
+                <p class="typo-copy-text-xl" id="feat_content4"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5">
+                <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-feature-05.png" alt="picture of your features">
+                <h4 class="typo-head-copytext" id="feat_head5"></h4>
+                <p class="typo-copy-text-xl" id="feat_content5"></p>
+            </div>
+
+            <div class="col-sm-5 col-sm-offset-2 col-md-offset-2 img-features features-container-right">
+
+                <img class="img-responsive img-feature-vector" src="./public/FrontEnd/Pictures/landing-feature-camera.png" alt="picture of your features">
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- Infographic -->
+
+<section id="infographic">
+
+    <div class="infographic-container">
+        <div class="container text-center">
+            <h2 class="typo-head-big text-center" id="infographic_heading"></h2>
+        </div>
+        <img class="img-responsive img-infographic" src="./public/FrontEnd/Pictures/landing-infographic.png" alt="">
+    </div>
+
+</section>
+
+<!-- About us -->
+
+<section id="about">
+
+    <div class="container container-padding about-container">
+
+        <h2 class="typo-head-big text-center" id="about_heading"></h2>
+
+        <div class="row about-row-margin">
+            <div class="col-sm-6 col-lg-4">
+                <h4 class="typo-head-copytext" id="about_head1"></h4>
+                <p class="typo-copy-text-xl" id="about_content1"></p>
+            </div>
+
+            <div class="col-sm-6 col-lg-7 col-md-offset-0 col-lg-offset-1">
+                <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-about-01.jpg" alt="picture of your features">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-about-02.jpg" alt="picture of your features">
+            </div>
+
+            <div class="col-sm-6 col-lg-7 col-md-offset-0 col-lg-offset-1">
+                <p class="typo-copy-text-xl" id="about_content2"></p>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-container-content">
+
+            <ul class="footer-social-container">
+                <li class="footer-social-icons">
+                    <a href="">
+                        <i class="fa fa-facebook typo-social-icons btn-typo-nav-white" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="footer-social-icons">
+                    <a href="">
+                        <i class="fa fa-twitter typo-social-icons btn-typo-nav-white" aria-hidden="true"></i>
+                    </a>
+                <li class="footer-social-icons">
+                    <a href="">
+                        <i class="fa fa-instagram typo-social-icons btn-typo-nav-white"  aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer-nav-container">
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">FAQ</a>
+                </li>
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">Partner</a>
+                </li>
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">AGB</a>
+                </li>
+                <li class="footer-nav-items">
+                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">Impressum</a>
+                </li>
+             </ul>
+             
+        </div>
+
+    </div>
+
+</footer>
+    </div>
+  <!---------------------------- Script loading section ------------------------------------------------>
+    <!--Vendor Libraries -->
+     <script src="https://use.fontawesome.com/f2fd1efe28.js"></script>	
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+
+    <!-- Vendor JS: Angular JS, exif, dropzone, binaryajax -->
+    <script src="./public/FrontEnd/js/masonry.pkgd.min.js"></script>    
+    <script src="./public/FrontEnd/js/JIC.js"></script>      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>   
+    <!--Our Main javascript  file -->      
+    <script src="./public/FrontEnd/js/landingpagecontrollerstatic.js"></script>  
+
+  
+    
+
+    <!---------------------------------------- Script loadind ends ---------------------------------------->
+  </body>
+</html>

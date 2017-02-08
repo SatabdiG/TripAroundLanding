@@ -471,7 +471,7 @@ i {
   border-right: 1px solid #fae4d1; }
 
 .cover-image-container {
-  background: url("cover-landingpage.jpg") 60% 100% no-repeat;
+  background: url("./public/FrontEnd/Pictures/cover-landingpage.jpg") 60% 100% no-repeat;
   background-size: cover;
   margin-bottom: 200px;
   position: relative;
