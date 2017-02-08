@@ -22,7 +22,7 @@
     <div>
       <section id="navigation">
 
-    <nav class="nav-container">
+    <nav class="nav-container navbar-transparent" id="nav">
        
         <a href="#" class="nav-logo"></a>
 
@@ -31,20 +31,33 @@
 
             <div class="container">
 
+                <!--Commenting for nav
                 <ul class="nav-right-container">
-        <!--             <div class"row">
-                        <ul> -->
+                  <div class"row">
+                        <ul>
                             <li>
                                 <i class="fa fa-user-circle" aria-hidden="true"></i>
                                 <a href="#login" class="btn-typo-nav" id="login"></a>
                                 <a href="#searchtours" class="btn-xs btn-nav" id="tour"></a>
+                                <a href="#covers" class="active" title="CoverPage"  class="btn-typo-nav">Slide 1</a>
                             </li>
             <!--             </ul>
-                    </div> -->
+                    </div>
+                </ul> -->
+
+                <ul class="nav-right-container">
+
+                    <li>
+                        <a href="#covers" title="CoverPage" class="btn-xs btn-nav">Top</a>
+                        <a href="#new-tours" title="New Tours" class="btn-xs btn-nav">Description</a>
+                        <a href="#infographic" title="InfoGraphic" class="btn-xs btn-nav">How it Works</a>
+                        <a href="#features" title="Features" class="btn-xs btn-nav">Features</a>
+                        <a href="#about" title="About us" class="btn-xs btn-nav">The Team</a>
+
+                    </li>
+
                 </ul>
-
-            </div>
-
+            <!--
             <div class="dropdown nav-lang">
 
                 <a href="#" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="lang"></a>
@@ -58,8 +71,9 @@
                     </li>
                 </ul>
 
-            </div>
+            </div> -->
 
+        </div>
         </div>
         
         <!-- Mobile navigation -->
@@ -72,33 +86,26 @@
                 <ul class="nav-mobile-right-items-container">
 
                     <li>
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                        <a href="#login" class="btn-typo-nav" id="">Login</a>
+                       <!-- <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <a href="#" class="btn-typo-nav" >Logout</a> -->
+                        <a href="#covers" title="CoverPage" class="btn-typo-nav">Top</a>
                     </li>
-                    
                     <li>
-                        <a href="#searchtours" class="btn-typo-nav" id="">Touren</a>
+                        <a href="#new-tours" title="New Tours" class="btn-typo-nav">Description</a>
+                    </li>
+                    <li>
+                        <a href="#infographic" title="InfoGraphic" class="btn-typo-nav">How it Works</a>
+                    </li>
+                    <li>
+                        <a href="#features" title="Features" class="btn-typo-nav">Features</a>
                     </li>
 
-                    <li class="dropdown nav-lang">
-
-                        <a href="#" class="dropdown-toggle btn-typo-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id ="">Sprache</a>
-
-                        <ul class="dropdown-menu nav-dropdown pull-right" id="">
-                            <li>
-                                <a href="#" id="" class="nav-dropdown-item">Deutsch</a>
-                            </li>
-                            <li>
-                                <a href="#" id="" class="nav-dropdown-item">Englisch</a>
-                            </li>
-                        </ul>
-
+                    <li>
+                        <a href="#about" title="About us" class="btn-typo-nav">The Team</a>
                     </li>
-
                 </ul>
-                
-            </div>
 
+            </div>
         </div>
 
     </nav>
@@ -107,16 +114,16 @@
 
 <!-- Cover -->
 
-<section>
+<section id="covers">
     <div class="cover-container">
 
         <div class="cover-image-container"></div>
 
         <div class="cover-content-container">
             <h1 class="typo-head-cover" id="page1_tagline">
-             Dein Ort fur
+             Your Place for
             <br>
-             deine RundResie
+             Round trips
             </h1>
 
             <div class="text-center">
@@ -133,86 +140,42 @@
 <section id="new-tours">
     <div class="container text-center tours-container">
 
-        <h2 class="typo-head-big">Neue Touren</h2>
+        <h2 class="typo-head-big">TripAround</h2>
+        <h3 class="missionheader" id="description1">As sharing and benefitting from experiences is priceless!</h3>
+        <br>
+        <div class="row about-row-margin">
+            <div class="col-sm-6 col-lg-4">
 
-        <div class="tiles-grid">
-            <div class="tiles-grid-sizer">
-            <!-- tiles container -->
-            <div class="tiles-single-container">
-                <a href="">
-                    <div class="img-tiles" style="background-image:url(./public/FrontEnd/Pictures/landing-tile-placeholder-01.jpg);"></div>
-                    <h3 class="typo-tiles-head text-center">Frankreich & Spanien</h3>
-                    <!-- tiles bottom information -->
-                    <ul class="tiles-info-container">
-                        <li class="tiles-info-content-top">
-                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>43 Tage</p>
-                        </li>
-                        <li class="tiles-info-content-top">
-                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>945 km</p>
-                        </li>
-                        <li class="tiles-info-content-top">
-                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>24 Stops</p>
-                        </li>
-                        <li class="tiles-info-content-transport">
-                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Flug, Schiff, Bahn, Fahrrad, Bus, Auto</p>
-                        </li>
-                    </ul>
-                </a>
+        <p class="typo-copy-text-xldes" id="bodydescription">
+            TripAround is a travel experience platform to search and document round trips.
+            It offers an automated creation of overview maps, structured galleries with space for experiences and tips via a simple picture upload.
+            By making user-generated as well as professionally organized multimedia-driven tours searchable by personal preferences, everyone can find and book a tour they are interested in.
+        </p>
+        </div>
+            <div class="col-sm-6 col-lg-7 col-md-offset-0 col-lg-offset-1">
+                <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/giphy.gif" alt="picture of your features">
             </div>
-
-            <!-- tiles container -->
-            <div class="tiles-single-container">
-                <a href="">
-                    <div class="img-tiles" style="background-image:url(./public/FrontEnd/Pictures/landing-tile-placeholder-02.jpg);"></div>
-                    <h3 class="typo-tiles-head text-center">Island</h3>
-                    <!-- tiles bottom information -->
-                    <ul class="tiles-info-container">
-                        <li class="tiles-info-content-top">
-                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>12 Tage</p>
-                        </li>
-                        <li class="tiles-info-content-top">
-                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>512 km</p>
-                        </li>
-                        <li class="tiles-info-content-top">
-                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>11 Stops</p>
-                        </li>
-                        <li class="tiles-info-content-transport">
-                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Auto, Fahrrad, Bahn</p>
-                        </li>
-                    </ul>
-                </a>
-            </div>
-                
-            <!-- tiles container -->
-            <div class="tiles-single-container">
-                <a href="">
-                    <div class="img-tiles" style="background-image:url(./public/FrontEnd/Pictures/landing-tile-placeholder-03.jpg);"></div>
-                    <h3 class="typo-tiles-head text-center">Roadtrip durch Südostasien</h3>
-                    <!-- tiles bottom information -->
-                    <ul class="tiles-info-container">
-                        <li class="tiles-info-content-top">
-                            <p class="typo-tiles-info"><i class="fa fa-calendar" aria-hidden="true"></i><br>45 Tage</p>
-                        </li>
-                        <li class="tiles-info-content-top">
-                            <p class="typo-tiles-info"><i class="fa fa-map-signs" aria-hidden="true"></i><br>787 km</p>
-                        </li>
-                        <li class="tiles-info-content-top">
-                            <p class="typo-tiles-info"><i class="fa fa-map-o" aria-hidden="true"></i><br>14 Stops</p>
-                        </li>
-                        <li class="tiles-info-content-transport">
-                            <p class="typo-tiles-info"><i class="fa fa-plane" aria-hidden="true"></i><br>Flug, Bahn, Bus, Fahrrad, Motorad</p>
-                        </li>
-                    </ul>
-                </a>
-            </div>
-
         </div>
 
     </div>
-    
-    <a href="#searchtours" class="btn-xl btn-xl-in-text" id="SearchTour">Zeige alle Touren</a>
+
 
 </section>
+
+
+<!-- Infographic -->
+
+<section id="infographic">
+
+            <div class="infographic-container">
+                <div class="container text-center">
+                    <h2 class="typo-head-big text-center" id="infographic_heading">How it works</h2>
+                </div>
+                <img class="img-responsive img-infographic" src="./public/FrontEnd/Pictures/So funktionierts EN.png" alt="">
+            </div>
+
+        </section>
+
 
 <!-- Features -->
 
@@ -220,24 +183,26 @@
 
     <div class="container container-padding features-container">
 
-        <h2 class="typo-head-big text-center" id="features_heading"></h2>
+        <h2 class="typo-head-big text-center" id="features_heading">
+            Features
+        </h2>
 
         <div class="row">
             <img class="img-responsive img-feature-vector features-plane" src="./public/FrontEnd/Pictures/landing-feature-plane.png" alt="picture of your features">
 
             <div class="col-sm-5">
                 <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-feature-01.png" alt="picture of your features">
-                <h4 class="typo-head-copytext" id="feat_head1"></h4>
+                <h4 class="typo-head-copytext" id="feat_head1">Learn from others experiences!</h4>
                 <p class="typo-copy-text-xl" id="feat_content1">
-                Nutze das Wissen von Reisenden, die deine Destination bereits erkundet haben. Lass dir ein Gefühl für die passende 		 Aufenthaltsdauer an deinen Stopps geben und wie du sie am besten verbindest. Baue deine ganz persönliche Entdeckungstour auf diesen Erfahrungen auf.
+                    Use the knowledge of travelers who have already explored your destination. Get an idea about the appropriate length of stay at your stops and how to connect them best. Build your personal discovery tour based on their experience.
                 </p>
             </div>
 
             <div class="col-sm-5 col-sm-offset-2 img-features features-container-right">
                 <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-feature-02.png" alt="picture of your features">
-                <h4 class="typo-head-copytext" id="feat_head2"></h4>
+                <h4 class="typo-head-copytext" id="feat_head2">Discover the possibilities!</h4>
                 <p class="typo-copy-text-xl" id="feat_content2">
-                Starte deine Vorbereitungen sobald du weißt, wo es hingehen soll. Erhalte wichtige Tipps, buche Unterkünfte und mehr, so wie es zu deinem Abenteuer passt. Oder doch lieber ganz komfortabel alles organisieren lassen? Dann browse durch unsere sofort buchbaren Rundreisepakete ausgesuchter Anbieter. Egal wie, denk unbedingt daran Bilder mit Geotags zu schießen.
+                    Browse through the journeys of various round trips. Get first hand information from travelers on destinations that seemed unreachable to you so far. Find the adventure that fits your imagination.
                 </p>
             </div>
         </div>
@@ -245,24 +210,28 @@
         <div class="row">
             <div class="col-sm-5">
                 <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-feature-03.png" alt="picture of your features">
-                <h4 class="typo-head-copytext" id="feat_head3"></h4>
+                <h4 class="typo-head-copytext" id="feat_head3">Immerse yourself!</h4>
                 <p class="typo-copy-text-xl" id="feat_content3">
-                Wenn du von deinem Erlebnis zurückkommst, zeig es deinen Freunden und der Welt. Teile deine Erfahrungen, um andere zu inspirieren. Einfach Bilder hochladen. Mit etwas Magie helfen wir dir, deine Erfahrungen zu einem unvergesslichen Highlight aufzubereiten.
+                    Let yourself be carried away by the big picture of the roundtrips. Discover what your tour stops and the way in between really have to offer. Increase your anticipation with vivid photos and videos of the travel community.
                 </p>
             </div>
 
             <div class="col-sm-5 col-sm-offset-2 col-md-offset-2 img-features features-container-right">
                 <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-feature-04.png" alt="picture of your features">
-                <h4 class="typo-head-copytext" id="feat_head4"></h4>
-                <p class="typo-copy-text-xl" id="feat_content4"></p>
+                <h4 class="typo-head-copytext" id="feat_head4">Get started!</h4>
+                <p class="typo-copy-text-xl" id="feat_content4">
+                    Found your inspiration? Don't hesitate any longer and start your trip. Get important tips, book accommodations and more depending on your preferences. Or do you prefer an all-round carefree package? Then browse through our bookable tour packages of selected tour providers. In any case, don't forget to take pictures with geotags on your tour.
+                </p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-5">
                 <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-feature-05.png" alt="picture of your features">
-                <h4 class="typo-head-copytext" id="feat_head5"></h4>
-                <p class="typo-copy-text-xl" id="feat_content5"></p>
+                <h4 class="typo-head-copytext" id="feat_head5">Share and inspire others!</h4>
+                <p class="typo-copy-text-xl" id="feat_content5">
+                    When you return from your experience, double it up by sharing with your friends and the world. Inspire others with your experiences. Just upload your pictures. With a bit of magic we'll help you to present your adventure as a memorable highlight.
+                </p>
             </div>
 
             <div class="col-sm-5 col-sm-offset-2 col-md-offset-2 img-features features-container-right">
@@ -272,20 +241,7 @@
         </div>
 
         </div>
-    </div>
 
-</section>
-
-<!-- Infographic -->
-
-<section id="infographic">
-
-    <div class="infographic-container">
-        <div class="container text-center">
-            <h2 class="typo-head-big text-center" id="infographic_heading"></h2>
-        </div>
-        <img class="img-responsive img-infographic" src="./public/FrontEnd/Pictures/landing-infographic.png" alt="">
-    </div>
 
 </section>
 
@@ -295,23 +251,28 @@
 
     <div class="container container-padding about-container">
 
-        <h2 class="typo-head-big text-center" id="about_heading"></h2>
-
+        <h2 class="typo-head-big text-center" id="about_heading">The Team</h2>
+        <h4 class="missionheader" id="about_head1">One team, Five nationalities, One vision </h4>
+        <br>
         <div class="row about-row-margin">
             <div class="col-sm-6 col-lg-4">
-                <h4 class="typo-head-copytext" id="about_head1"></h4>
+               <!-- <h4 class="typo-head-copytext" id="about_head1">As sharing and benefitting from experiences is priceless!</h4> -->
+
                 <p class="typo-copy-text-xl" id="about_content1">
-                Unterschiedlicher und multikultureller könnte das Team TripAround kaum sein, aber eine gemeinsame Vision verbindet uns: Wir wollen das Rundreisen vom Planen bis Erinnern einfacher und effizienter machen. Dafür setzen wir uns mit aktuellster Technik aus der universitären Forschung ein. Wir befreien dich von Zeitraubendem und geben dir mehr Zeit für Erlebnisse. Wir wollen den Wissensdurst nach Ländern, Kulturen, fremdem Essen und den schönsten Flecken auf unserem Planeten entfachen, und Lust auf Erlebnisse fernab des Massentourismus machen.
+                    We want to make round trips simpler and more efficient beginning from the initial stages of planning it up to the very last stage of reviving it. We free you from time-consuming tasks and give you more time to indulge in your experiences. We wish to spark your curiosity for various countries, different cultures, foreign food as well as the hidden gems of this planet, and raise your desire to traverse unexplored paths besides typical tourist spots.
+                    For that we count on your experiences and those of many others like you who make you this travel community. We provide you with the proper tools so that sharing and benefitting from experiences becomes easy and enjoyable. <br>
+
                 </p>
             </div>
 
-            <div class="col-sm-6 col-lg-7 col-md-offset-0 col-lg-offset-1">
-                <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-about-01.jpg" alt="picture of your features">
+            <div class="col-sm-6 col-lg-7 col-md-offset-0 col-lg-offset-1" id="placeimg">
+              <!--  <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-about-01.jpg" alt="picture of your features"> -->
+               <!-- <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/adventure.jpg" alt="picture of your features"> -->
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-6 col-lg-4">
+           <!-- <div class="col-sm-6 col-lg-4">
                 <img class="img-responsive img-features" src="./public/FrontEnd/Pictures/landing-about-02.jpg" alt="picture of your features">
             </div>
 
@@ -321,12 +282,19 @@
                 <a class="btn-text-link" href="mailto:hello@triparound.de">hello@triparound.de</a>
                 
                 </p>
+            </div> -->
+
+            <div class="text-center">
+                <!-- <a href="#searchtours" class="btn-xl" id="SearchTour"></a> -->
+                <a class="btn-xl" href="http://www.triparound.world/#/" target="_blank"> Vist TripAround Now ! </a>
             </div>
+
         </div>
 
     </div>
     
 </section>
+
 
 <!-- Footer -->
 
@@ -335,7 +303,7 @@
     <div class="footer-container">
 
         <div class="footer-container-content">
-
+            <!--
             <ul class="footer-social-container">
                 <li class="footer-social-icons">
                     <a href="">
@@ -351,20 +319,12 @@
                         <i class="fa fa-instagram typo-social-icons btn-typo-nav-white"  aria-hidden="true"></i>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
 
             <ul class="footer-nav-container">
-                <li class="footer-nav-items">
-                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">FAQ</a>
-                </li>
-                <li class="footer-nav-items">
-                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">Partner</a>
-                </li>
-                <li class="footer-nav-items">
-                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">AGB</a>
-                </li>
-                <li class="footer-nav-items">
-                    <a href="" class="nav-menu-item typo-nav-items btn-typo-nav-white">Impressum</a>
+                <li  class="footer-nav-items">
+                    <i class="fa fa-copyright" aria-hidden="true"></i>
+                    2017.<a href="http://www.triparound.world/#/" class="nav-menu-item typo-nav-items btn-typo-nav-white">TripAround.world</a>
                 </li>
              </ul>
              
