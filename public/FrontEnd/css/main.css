@@ -124,7 +124,7 @@ i {
     box-sizing: border-box; }
 
 .container-padding {
-  padding: 0; }
+  padding: 35px; }
   @media (max-width: 1050px) {
     .container-padding {
       padding: 0 24px; } }
@@ -564,7 +564,7 @@ i {
 .infographic-container {
   margin-top: 72px;
   background: #fae4d1;
-  padding-top: 24px;
+  padding-top: 30px;
   padding-bottom: 48px;
   width: 100%; }
 
@@ -1659,8 +1659,13 @@ input[type=file] {
   height: 400px;
   width: 600px;
   background: url(../Pictures/adventure.jpg) no-repeat;
-  box-shadow: 15px 15px 5px #ED4910;
-  -moz-box-shadow: 15px 15px 5px #ED4910;
-  -webkit-box-shadow: 15px 15px 5px #ED4910;
-  -khtml-box-shadow: 15px 15px 5px #ED4910;
+  box-shadow: 15px 15px 0px #ED4910;
+  -moz-box-shadow: 15px 15px 0px #ED4910;
+  -webkit-box-shadow: 15px 15px 0px #ED4910;
+  -khtml-box-shadow: 15px 15px 0px #ED4910;
+  }
+  
+  .tours-container
+  {
+  padding:35px;
   }

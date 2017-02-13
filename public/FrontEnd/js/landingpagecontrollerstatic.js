@@ -21,7 +21,7 @@ function landingpagecontroller() {
                var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
                if ($target) {
                    var targetOffset = $target.offset().top;
-                   var dis=targetOffset-30;
+                   var dis=targetOffset;
                    $(this).click(function(event) {
                        var currselection=$(event.target).text();
                        if(currselection !== "Top")
@@ -62,7 +62,7 @@ function initializeGrid() {
 
 function MouseWheelHandler(e)
 {
-    console.log("Mouse wheel detected");
+   
     //Remove class from navbar
     var e= window.event || e;
     var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
