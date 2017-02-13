@@ -1655,7 +1655,7 @@ input[type=file] {
 {
   width: 400px;
   height: 200px;
-  border:2px solid #fff;
+  /*border:2px solid #fff;*/
   height: 400px;
   width: 600px;
   background: url(../Pictures/adventure.jpg) no-repeat;
